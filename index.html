@@ -1,0 +1,962 @@
+<!doctype html>
+<html lang="en-CA">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Federal Policy Pathways</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=Public+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+  :root {
+    --ground: #ECEBE6;
+    --surface: #F8F7F3;
+    --surface-2: #FFFFFF;
+    --ink: #1C2321;
+    --ink-2: #4B5652;
+    --ink-3: #79837F;
+    --line: #D3D2CB;
+    --line-2: #E4E3DD;
+    --accent: #2E6B5B;
+    --accent-ink: #FFFFFF;
+    --accent-soft: #DCE8E3;
+    --copper: #B0602B;
+    --copper-ink: #FFFFFF;
+    --copper-soft: #F2E3D6;
+    --meter-on: #1C2321;
+    --meter-off: #D3D2CB;
+    --shadow: 0 1px 0 rgba(28,35,33,0.06), 0 8px 24px rgba(28,35,33,0.06);
+    --serif: "Newsreader", Georgia, "Times New Roman", serif;
+    --sans: "Public Sans", system-ui, -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
+    --mono: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --ground: #151918;
+      --surface: #1C2220;
+      --surface-2: #242B29;
+      --ink: #E8E6DF;
+      --ink-2: #B5BCB7;
+      --ink-3: #8B948F;
+      --line: #353D3A;
+      --line-2: #2B3330;
+      --accent: #6FB39D;
+      --accent-ink: #10201B;
+      --accent-soft: #23362F;
+      --copper: #D98D57;
+      --copper-ink: #211610;
+      --copper-soft: #3B2A1E;
+      --meter-on: #E8E6DF;
+      --meter-off: #3A423F;
+      --shadow: 0 1px 0 rgba(0,0,0,0.3), 0 8px 24px rgba(0,0,0,0.35);
+    }
+  }
+  :root[data-theme="dark"] {
+    --ground: #151918;
+    --surface: #1C2220;
+    --surface-2: #242B29;
+    --ink: #E8E6DF;
+    --ink-2: #B5BCB7;
+    --ink-3: #8B948F;
+    --line: #353D3A;
+    --line-2: #2B3330;
+    --accent: #6FB39D;
+    --accent-ink: #10201B;
+    --accent-soft: #23362F;
+    --copper: #D98D57;
+    --copper-ink: #211610;
+    --copper-soft: #3B2A1E;
+    --meter-on: #E8E6DF;
+    --meter-off: #3A423F;
+    --shadow: 0 1px 0 rgba(0,0,0,0.3), 0 8px 24px rgba(0,0,0,0.35);
+  }
+
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--ground);
+    color: var(--ink);
+    font-family: var(--sans);
+    font-size: 16px;
+    line-height: 1.55;
+  }
+  a { color: var(--accent); text-decoration-thickness: 1px; text-underline-offset: 2px; }
+  a:hover { text-decoration-thickness: 2px; }
+  button { font: inherit; color: inherit; }
+  :focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  .wrap { max-width: 1120px; margin: 0 auto; padding: 0 20px; }
+
+  /* Header */
+  .masthead { padding: 28px 0 18px; border-bottom: 1px solid var(--line); }
+  .masthead .wrap { display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 12px 24px; }
+  .brand { display: flex; flex-direction: column; gap: 4px; }
+  .brand h1 { font-family: var(--serif); font-weight: 500; font-size: 30px; line-height: 1.1; margin: 0; letter-spacing: -0.01em; text-wrap: balance; }
+  .brand p { margin: 0; color: var(--ink-2); font-size: 15px; max-width: 46ch; }
+  .chips { display: flex; flex-wrap: wrap; gap: 8px; }
+  .chip { font-family: var(--mono); font-size: 12px; letter-spacing: 0.02em; padding: 4px 9px; border: 1px solid var(--line); border-radius: 3px; color: var(--ink-2); background: var(--surface); white-space: nowrap; }
+  .chip.accent { border-color: var(--accent); color: var(--accent); }
+
+  /* Stage track */
+  .track-wrap { border-bottom: 1px solid var(--line); background: var(--surface); }
+  .track { display: grid; grid-template-columns: repeat(6, minmax(150px, 1fr)); gap: 0; overflow-x: auto; scroll-snap-type: x proximity; -webkit-overflow-scrolling: touch; }
+  .stage-btn {
+    appearance: none; background: transparent; border: 0; border-top: 3px solid transparent; border-right: 1px solid var(--line-2);
+    padding: 14px 14px 16px; text-align: left; cursor: pointer; display: flex; flex-direction: column; gap: 6px; min-height: 108px; scroll-snap-align: start;
+    color: var(--ink-2); transition: background 120ms ease, color 120ms ease;
+  }
+  .stage-btn:last-child { border-right: 0; }
+  .stage-btn:hover { background: var(--surface-2); color: var(--ink); }
+  .stage-btn[aria-pressed="true"] { border-top-color: var(--accent); color: var(--ink); background: var(--surface-2); }
+  .stage-btn .num { font-family: var(--mono); font-size: 12px; letter-spacing: 0.04em; color: var(--ink-3); }
+  .stage-btn[aria-pressed="true"] .num { color: var(--accent); }
+  .stage-btn .name { font-weight: 600; font-size: 15px; line-height: 1.2; }
+  .stage-btn .line { font-size: 13px; color: var(--ink-3); line-height: 1.3; }
+  .meter { display: inline-flex; gap: 3px; margin-top: auto; padding-top: 6px; }
+  .meter i { width: 9px; height: 9px; background: var(--meter-off); display: inline-block; }
+  .meter i.on { background: var(--meter-on); }
+  .meter.big i { width: 14px; height: 14px; gap: 4px; }
+  .stage-btn .meter-label { font-family: var(--mono); font-size: 11px; color: var(--ink-3); }
+
+  /* Stage panel */
+  .stage { padding: 30px 0 40px; }
+  .stage-head { display: grid; grid-template-columns: 1fr; gap: 6px; margin-bottom: 20px; }
+  .eyebrow { font-family: var(--mono); font-size: 12px; letter-spacing: 0.06em; text-transform: uppercase; color: var(--ink-3); }
+  .stage-head h2 { font-family: var(--serif); font-weight: 500; font-size: 40px; line-height: 1.05; margin: 0; letter-spacing: -0.015em; text-wrap: balance; }
+  .stage-head .tag { font-family: var(--serif); font-style: italic; font-size: 21px; color: var(--ink-2); margin: 2px 0 0; }
+
+  .controls { position: sticky; top: 0; z-index: 5; background: var(--ground); padding: 10px 0 12px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 10px; }
+  .seg { display: inline-flex; border: 1px solid var(--line); border-radius: 6px; background: var(--surface); padding: 3px; gap: 2px; }
+  .seg button { appearance: none; border: 0; background: transparent; padding: 8px 14px; border-radius: 4px; font-weight: 600; font-size: 14px; cursor: pointer; color: var(--ink-2); display: inline-flex; align-items: center; gap: 8px; }
+  .seg button .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--line); }
+  .seg button[aria-pressed="true"] { color: var(--ink); background: var(--surface-2); box-shadow: 0 1px 0 rgba(0,0,0,0.05); }
+  .seg button[data-view="process"][aria-pressed="true"] .dot { background: var(--accent); }
+  .seg button[data-view="influence"][aria-pressed="true"] .dot { background: var(--copper); }
+  .seg button[data-view="both"][aria-pressed="true"] .dot { background: linear-gradient(90deg, var(--accent) 50%, var(--copper) 50%); }
+  .seg button[data-view="both"] { display: none; }
+  .pager { display: flex; gap: 8px; }
+  .pager button { appearance: none; border: 1px solid var(--line); background: var(--surface); border-radius: 6px; padding: 8px 12px; font-size: 14px; cursor: pointer; color: var(--ink-2); }
+  .pager button:hover:not(:disabled) { color: var(--ink); border-color: var(--ink-3); }
+  .pager button:disabled { opacity: 0.4; cursor: default; }
+
+  .panes { display: grid; grid-template-columns: 1fr; gap: 24px; margin-top: 8px; }
+  .pane { background: var(--surface-2); border: 1px solid var(--line); border-radius: 8px; padding: 26px 26px 28px; box-shadow: var(--shadow); min-width: 0; }
+  .pane[hidden] { display: none; }
+  .pane-title { display: flex; align-items: center; gap: 10px; margin: 0 0 14px; font-family: var(--mono); font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-3); }
+  .pane-title::before { content: ""; width: 10px; height: 10px; border-radius: 50%; background: var(--accent); }
+  .pane.influence .pane-title::before { background: var(--copper); }
+  .lead { font-family: var(--serif); font-size: 21px; line-height: 1.4; margin: 0 0 22px; color: var(--ink); max-width: 62ch; text-wrap: pretty; }
+
+  .sec { display: grid; grid-template-columns: 150px 1fr; gap: 6px 18px; padding: 14px 0; border-top: 1px solid var(--line-2); }
+  .sec:last-child { padding-bottom: 0; }
+  .sec h4 { margin: 0; font-family: var(--mono); font-size: 12px; letter-spacing: 0.06em; text-transform: uppercase; color: var(--ink-3); padding-top: 3px; }
+  .sec div { max-width: 66ch; min-width: 0; }
+  .sec p { margin: 0 0 8px; color: var(--ink); }
+  .sec p:last-child { margin-bottom: 0; }
+  .sec ul { margin: 0; padding-left: 18px; }
+  .sec li { margin: 0 0 6px; }
+  .sec li:last-child { margin-bottom: 0; }
+  .signals li::marker { color: var(--accent); }
+  .tracks { display: grid; gap: 12px; }
+  .tracklet { border: 1px solid var(--line-2); border-radius: 6px; padding: 12px 14px; background: var(--surface); }
+  .tracklet h5 { margin: 0 0 6px; font-size: 15px; font-weight: 700; }
+  .tracklet p { margin: 0; font-size: 15px; color: var(--ink-2); }
+
+  /* Influence */
+  .verdict { display: grid; grid-template-columns: auto 1fr; gap: 14px 18px; align-items: center; padding: 14px 16px; border-radius: 6px; background: var(--copper-soft); margin-bottom: 20px; }
+  .verdict .meter { margin: 0; padding: 0; }
+  .verdict .meter i.on { background: var(--copper); }
+  .verdict .open-label { font-family: var(--mono); font-size: 12px; letter-spacing: 0.04em; color: var(--ink-2); margin-top: 6px; }
+  .verdict .say { font-family: var(--serif); font-style: italic; font-size: 20px; line-height: 1.3; margin: 0; text-wrap: pretty; }
+  .routes-label { display: flex; justify-content: space-between; align-items: baseline; font-family: var(--mono); font-size: 12px; letter-spacing: 0.06em; text-transform: uppercase; color: var(--ink-3); margin: 0 0 8px; }
+  .routes { list-style: none; margin: 0; padding: 0; display: grid; gap: 0; counter-reset: route; }
+  .route { border-top: 1px solid var(--line-2); padding: 16px 0 16px 44px; position: relative; counter-increment: route; }
+  .route::before { content: counter(route); position: absolute; left: 0; top: 14px; width: 28px; height: 28px; border-radius: 50%; border: 1.5px solid var(--copper); color: var(--copper); font-family: var(--mono); font-size: 13px; display: grid; place-items: center; }
+  .route h5 { margin: 0 0 4px; font-size: 17px; font-weight: 700; line-height: 1.25; text-wrap: balance; }
+  .route .oneliner { margin: 0 0 10px; color: var(--ink-2); max-width: 62ch; }
+  .kv { display: grid; grid-template-columns: 82px 1fr; gap: 4px 12px; font-size: 14.5px; max-width: 62ch; }
+  .kv dt { font-family: var(--mono); font-size: 11.5px; letter-spacing: 0.05em; text-transform: uppercase; color: var(--ink-3); padding-top: 3px; }
+  .kv dd { margin: 0; }
+  details.rules { margin-top: 10px; }
+  details.rules summary { cursor: pointer; font-weight: 600; font-size: 14px; color: var(--accent); list-style: none; display: inline-flex; align-items: center; gap: 6px; }
+  details.rules summary::-webkit-details-marker { display: none; }
+  details.rules summary::before { content: "+"; font-family: var(--mono); width: 16px; height: 16px; border: 1px solid var(--accent); border-radius: 3px; display: inline-grid; place-items: center; font-size: 12px; line-height: 1; }
+  details.rules[open] summary::before { content: "\2013"; }
+  details.rules ul { margin: 8px 0 0; padding-left: 18px; font-size: 14.5px; max-width: 62ch; }
+  details.rules li { margin-bottom: 5px; }
+  .v { font-family: var(--mono); font-size: 11px; letter-spacing: 0.03em; color: var(--accent); border: 1px solid var(--accent); border-radius: 3px; padding: 1px 5px; white-space: nowrap; vertical-align: middle; }
+  .v.check { color: var(--copper); border-color: var(--copper); }
+  .assets { border-top: 1px solid var(--line-2); margin-top: 6px; padding-top: 16px; display: grid; grid-template-columns: 150px 1fr; gap: 6px 18px; }
+  .assets h4 { margin: 0; font-family: var(--mono); font-size: 12px; letter-spacing: 0.06em; text-transform: uppercase; color: var(--ink-3); padding-top: 3px; }
+  .assets ul { margin: 0; padding-left: 18px; max-width: 62ch; }
+  .assets li { margin-bottom: 6px; }
+  .mistake { margin-top: 18px; padding: 14px 16px; border-left: 3px solid var(--copper); background: var(--surface); border-radius: 0 6px 6px 0; max-width: 66ch; }
+  .mistake h4 { margin: 0 0 4px; font-family: var(--mono); font-size: 12px; letter-spacing: 0.06em; text-transform: uppercase; color: var(--copper); }
+  .mistake p { margin: 0; }
+
+  /* Lower sections */
+  .lower { border-top: 1px solid var(--line); background: var(--surface); padding: 30px 0 40px; }
+  .lower .wrap { display: grid; grid-template-columns: 1fr; gap: 28px; }
+  .block h3 { font-family: var(--serif); font-weight: 500; font-size: 24px; margin: 0 0 6px; letter-spacing: -0.01em; }
+  .block .sub { margin: 0 0 14px; color: var(--ink-2); max-width: 60ch; }
+  .sigmap { display: grid; gap: 10px; }
+  .sigmap .row { display: grid; grid-template-columns: 34px 1fr; gap: 12px; align-items: start; }
+  .sigmap .row .n { font-family: var(--mono); font-size: 12px; color: var(--ink-3); padding-top: 4px; }
+  .sigmap .row ul { margin: 0; padding: 0; list-style: none; display: flex; flex-wrap: wrap; gap: 6px; }
+  .sigmap .row li button { appearance: none; border: 1px solid var(--line); background: var(--surface-2); border-radius: 999px; padding: 5px 11px; font-size: 13.5px; cursor: pointer; color: var(--ink); text-align: left; }
+  .sigmap .row li button:hover { border-color: var(--accent); color: var(--accent); }
+  .live { list-style: none; margin: 0; padding: 0; display: grid; gap: 0; }
+  .live li { display: grid; grid-template-columns: 120px 1fr auto; gap: 8px 16px; padding: 12px 0; border-top: 1px solid var(--line-2); align-items: start; }
+  .live .date { font-family: var(--mono); font-size: 13px; color: var(--ink-2); font-variant-numeric: tabular-nums; padding-top: 2px; }
+  .live .what { max-width: 60ch; }
+  .live .what strong { font-weight: 600; }
+  .live .goto { appearance: none; border: 1px solid var(--line); background: var(--surface-2); border-radius: 999px; padding: 4px 10px; font-size: 12.5px; cursor: pointer; color: var(--ink-2); white-space: nowrap; }
+  .live .goto:hover { border-color: var(--accent); color: var(--accent); }
+  .legend { display: flex; flex-wrap: wrap; gap: 8px 18px; font-size: 13.5px; color: var(--ink-2); align-items: center; }
+
+  footer { padding: 22px 0 40px; color: var(--ink-3); font-size: 13.5px; }
+  footer .wrap { display: flex; flex-wrap: wrap; gap: 8px 24px; justify-content: space-between; }
+
+  @media (min-width: 1000px) {
+    .seg button[data-view="both"] { display: inline-flex; }
+    .panes.both { grid-template-columns: 1fr 1fr; }
+    .panes.both .sec, .panes.both .assets { grid-template-columns: 1fr; gap: 4px; }
+    .panes.both .lead { font-size: 19px; }
+    .lower .wrap { grid-template-columns: 1.1fr 1fr; }
+  }
+  @media (max-width: 700px) {
+    .brand h1 { font-size: 26px; }
+    .stage-head h2 { font-size: 32px; }
+    .track { grid-template-columns: repeat(6, 168px); }
+    .pane { padding: 20px 16px 22px; }
+    .sec, .assets { grid-template-columns: 1fr; gap: 4px; }
+    .lead { font-size: 19px; }
+    .live li { grid-template-columns: 1fr; gap: 4px; }
+    .route { padding-left: 38px; }
+    .kv { grid-template-columns: 1fr; gap: 2px; }
+    .kv dt { padding-top: 6px; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    * { transition: none !important; }
+  }
+</style>
+</head>
+<body>
+
+<header class="masthead">
+  <div class="wrap">
+    <div class="brand">
+      <h1>Federal Policy Pathways</h1>
+      <p>How a decision moves through Ottawa, stage by stage, and where a researcher can get in.</p>
+    </div>
+    <div class="chips">
+      <span class="chip accent">Federal layer</span>
+      <span class="chip">Verified 3 Sept 2026</span>
+      <span class="chip">Pathways to Impact</span>
+    </div>
+  </div>
+</header>
+
+<nav class="track-wrap" aria-label="Stages">
+  <div class="wrap" style="padding:0;">
+    <div class="track" id="track"></div>
+  </div>
+</nav>
+
+<main class="stage">
+  <div class="wrap">
+    <div class="stage-head">
+      <span class="eyebrow" id="eyebrow">Stage 1 of 6</span>
+      <h2 id="stage-title"></h2>
+      <p class="tag" id="stage-tag"></p>
+    </div>
+
+    <div class="controls">
+      <div class="seg" role="group" aria-label="View">
+        <button type="button" data-view="process" aria-pressed="true"><span class="dot"></span>The machine</button>
+        <button type="button" data-view="influence" aria-pressed="false"><span class="dot"></span>Your opening</button>
+        <button type="button" data-view="both" aria-pressed="false"><span class="dot"></span>Both</button>
+      </div>
+      <div class="pager">
+        <button type="button" id="prev">&larr; Previous stage</button>
+        <button type="button" id="next">Next stage &rarr;</button>
+      </div>
+    </div>
+
+    <div class="panes" id="panes">
+      <section class="pane process" id="pane-process" aria-label="The machine"></section>
+      <section class="pane influence" id="pane-influence" aria-label="Your opening" hidden></section>
+    </div>
+  </div>
+</main>
+
+<section class="lower">
+  <div class="wrap">
+    <div class="block">
+      <h3>Not sure which stage you are at?</h3>
+      <p class="sub">Match the signal you can see. Each one is a tell for a stage. Tap it to jump there.</p>
+      <div class="sigmap" id="sigmap"></div>
+    </div>
+    <div class="block">
+      <h3>Live right now</h3>
+      <p class="sub">Dated openings, checked against the source on 3 September 2026. This list goes stale in weeks. Treat it as a snapshot.</p>
+      <ul class="live" id="live"></ul>
+      <p class="legend" style="margin-top:16px;">
+        <span><span class="v">Verified</span> checked against the official page on 3 Sept 2026</span>
+        <span><span class="v check">Check</span> inferred from pattern, confirm before you rely on it</span>
+      </p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>Federal layer. Quebec and other provinces to follow.</span>
+    <span>Built for Pathways to Impact, Concordia University. Sources: parliament.gc.ca, sencanada.ca, canada.ca, gazette.gc.ca, science.gc.ca.</span>
+  </div>
+</footer>
+
+<script>
+(function () {
+  const V = '<span class="v">Verified</span>';
+  const C = '<span class="v check">Check</span>';
+
+  const STAGES = [
+    {
+      id: 1,
+      name: "The issue gets noticed",
+      short: "Agenda",
+      line: "Something becomes a file with an owner.",
+      tag: "Most open. Least visible. Nobody is asking.",
+      openness: 4,
+      openLabel: "Open, unmarked",
+      process: {
+        lead: "Government has more problems than time. This stage decides which ones get a file, a lead department and a minister who owns them. Nothing exists yet that you can submit to. That is exactly why it is the most open moment.",
+        what: `<p>Priorities get set in a handful of documents and moments: the election platform, the Speech from the Throne, ministers' mandate letters, the budget, Cabinet retreats.</p><p>Outside events push in. A court ruling. An Auditor General report. A crisis. A trade dispute. A parliamentary committee deciding, on its own, to study something.</p>`,
+        who: `<p>Prime Minister's Office. Privy Council Office. Ministers' political staff. Deputy ministers. Committee chairs. And the small set of people each of them already listens to.</p>`,
+        produces: `<p>A line in a mandate letter. A sentence in the throne speech. A budget line that says "the government will consult on". A committee motion to study. A Departmental Plan commitment that says "will develop" or "will explore".</p>`,
+        duration: `<p>Unpredictable. Months of nothing, then a week.</p>`,
+        signals: [
+          "Mandate letters are published or refreshed",
+          "A House or Senate committee adopts a motion to study a topic",
+          "Policy Horizons Canada publishes a foresight piece on it",
+          "A consultation shows up as <em>Planned</em> on Consulting with Canadians",
+          "A Departmental Plan (tabled each spring) uses \"will develop\" language",
+          "An advisory body is announced before its members are named"
+        ]
+      },
+      influence: {
+        say: "No one will invite you. You show up with the problem already framed.",
+        routes: [
+          {
+            name: "Get a committee to study it",
+            line: "House committees choose their own studies by motion. Any member on the committee can move one. Senate committees do the same, and the Senate will take a direct approach from you.",
+            need: "A one-page problem statement, a suggested study title, three witnesses you would recommend.",
+            timing: "Committees set work plans when Parliament returns, in September and late January. Any sitting week works.",
+            rules: [
+              `Find the committee and its members on <a href="https://www.ourcommons.ca/committees/en" target="_blank" rel="noopener">ourcommons.ca/committees</a>. Government or opposition members both move study motions.`,
+              `Senate: write to the committee clerk directly. Fallback address <span style="font-family:var(--mono)">ctm@sen.parl.gc.ca</span>. Self-nomination is accepted. ${V}`,
+              `A study that is adopted opens a "Submit a brief" page and starts building a witness list. The earlier you are known to the clerk, the better.`
+            ]
+          },
+          {
+            name: "Feed the foresight and advisory layer",
+            line: "A small set of bodies tell government what is coming. They read, they convene, and they are reachable.",
+            need: "A synthesis in plain language and, for the Council of Canadian Academies, a sponsor.",
+            timing: "Rolling. No deadlines. Relationships, not submissions.",
+            rules: [
+              `<a href="https://horizons.service.canada.ca/en/home" target="_blank" rel="noopener">Policy Horizons Canada</a>, the government's foresight unit, sits in Employment and Social Development Canada. Published "Foresight on AI" in February 2026. ${V}`,
+              `<a href="https://cca-reports.ca/process/" target="_blank" rel="noopener">Council of Canadian Academies</a> assessments can be sponsored by any level of government, a foundation, an NGO or the private sector. Contact projects@cca-reports.ca. The sponsor sets the question, which is where the influence sits. ${V}`,
+              `<a href="https://science.gc.ca/site/science/en/office-chief-science-advisor" target="_blank" rel="noopener">Office of the Chief Science Advisor</a> (Mona Nemer, term to September 2027) runs no open call. The practical door is the <a href="https://science.gc.ca/site/science/en/office-chief-science-advisor/science-advisory-team/departmental-science-advisors-network" target="_blank" rel="noopener">Departmental Science Advisors</a> in nine departments. ${V}`,
+              `Watch the new Science and Innovation Advisory Council, committed in ISED's 2026-27 Departmental Plan, chaired by the Minister of Industry. No members named as of September 2026. A body is most open between announcement and appointment. ${C}`
+            ]
+          },
+          {
+            name: "Put it in the public conversation",
+            line: "Library of Parliament analysts and ministers' staff read what is short, plain and findable. Give them that version.",
+            need: "An 800-word plain-language piece with one number and one story.",
+            timing: "Any time, but time it to a moment: a report release, a budget, a committee study opening.",
+            rules: [
+              `Venues that Ottawa reads: Policy Options, The Conversation Canada, The Hill Times, iPolitics.`,
+              `Library of Parliament <a href="https://lop.parl.ca/sites/PublicWebsite/default/en_CA/ResearchPublications" target="_blank" rel="noopener">HillNotes and HillStudies</a> cite published, accessible work. No submission channel exists; being citable is the channel. ${V}`,
+              `Carriers: Federation for the Humanities and Social Sciences, U15, Acfas, Evidence for Democracy, and the Canadian Science Policy Conference in Ottawa each autumn.`
+            ]
+          },
+          {
+            name: "Ask a parliamentarian to ask",
+            line: "MPs and Senators can put a question on the Order Paper, ask in Question Period, or request an analysis from the Parliamentary Budget Officer. You cannot. They can, with one letter.",
+            need: "An MP or Senator with a reason to care: your region, their critic portfolio, their committee seat.",
+            timing: "While the House sits.",
+            rules: [
+              `The <a href="https://www.pbo-dpb.ca/en/faqs--faq" target="_blank" rel="noopener">Parliamentary Budget Officer</a> (Annette Ryan, appointed April 2026) takes requests only from parliamentarians, committees and parties. One MP's letter is enough. ${V}`,
+              `Written questions on the Order Paper force a departmental answer within 45 days. Useful for surfacing data government holds and has not published.`
+            ]
+          }
+        ],
+        assets: [
+          "The problem in one page, in plain language",
+          "Who owns it: which minister, which department, which committee",
+          "The government's own words you can attach to: a mandate letter line, a throne speech sentence, a budget line",
+          "A credible messenger organization behind you"
+        ],
+        mistake: "Waiting for a call for submissions. There is none at this stage. By the time one appears, you are at stage 2 or 4."
+      }
+    },
+    {
+      id: 2,
+      name: "The department writes the options",
+      short: "Options",
+      line: "Public servants draft the choices.",
+      tag: "Doors exist. They are unmarked.",
+      openness: 4,
+      openLabel: "Open, hidden",
+      process: {
+        lead: "Once an issue has an owner, policy analysts in the lead department draft the options. This takes months and happens mostly out of sight. It is where evidence has the most effect, because the options are still being shaped.",
+        what: `<p>Analysts scope the problem, gather evidence and draft options with costs, risks and trade-offs. Consultations run: discussion papers, roundtables, online surveys, expert panels.</p><p>Mandatory analyses get done: Gender-based Analysis Plus, costing, and for regulations a Regulatory Impact Analysis. Other departments are consulted. Then the central agencies (Privy Council Office, Finance, Treasury Board Secretariat) challenge the work before it can go to Cabinet.</p>`,
+        who: `<p>The Director General and Directors of the policy branch. Analysts. The Departmental Science Advisor where one exists. The minister's policy advisor. Analysts at PCO and Finance.</p>`,
+        produces: `<p>A discussion paper. A consultation paper. A "What We Heard" report. Draft options. Eventually a draft Memorandum to Cabinet.</p>`,
+        duration: `<p>Six to 24 months. Regulations often longer.</p>`,
+        signals: [
+          "A consultation appears on Consulting with Canadians, as <em>Open</em> or <em>Planned</em>",
+          "A discussion paper is released",
+          "An expert panel or task force is struck",
+          "The department posts a research contract on CanadaBuys",
+          "SSHRC opens a Knowledge Synthesis Grant on a theme set with a department",
+          "The item appears in the department's Forward Regulatory Plan (a two-year look ahead every department publishes)"
+        ]
+      },
+      influence: {
+        say: "Analysts want evidence and are allowed to talk to you. Find them before the consultation opens.",
+        routes: [
+          {
+            name: "Submit to the formal consultation",
+            line: "Every open consultation is indexed in one place. Each sets its own format. What you send is summarized in a What We Heard report, usually by theme, rarely by name.",
+            need: "Two to four pages with one quotable finding and one discrete recommendation. Submit under an organization name; organizations get named, individuals get aggregated.",
+            timing: "Windows are typically 30 to 60 days. The Planned filter lets you draft before it opens.",
+            rules: [
+              `<a href="https://www.canada.ca/en/government/system/consultations/consultingcanadians.html" target="_blank" rel="noopener">Consulting with Canadians</a> (Treasury Board Secretariat) indexes 876 consultations with filters for status, year, subject and department. Filter to <em>Planned</em>: it is the only public forward-look. ${V}`,
+              `What We Heard reports aggregate by theme and rarely cite a study by name. To survive synthesis, give them a quotable sentence and a recommendation, not a literature review. ${C}`
+            ]
+          },
+          {
+            name: "Go direct to the policy shop",
+            line: "The Director General responsible is a public servant with a name, a phone number and a mandate to gather evidence. Find them and offer a briefing.",
+            need: "A two-page evidence note: what the evidence says, what it means for the options, what you can offer (data, a briefing, a synthesis).",
+            timing: "Before the consultation closes. Ideally before it opens.",
+            rules: [
+              `Names and titles are public in <a href="https://geds-sage.gc.ca/en/GEDS/" target="_blank" rel="noopener">GEDS</a>, the Government Electronic Directory Services. Search the department, then the policy branch.`,
+              `Offer 30 minutes. Bring the note, not the paper. Ask what evidence they are missing.`
+            ]
+          },
+          {
+            name: "Use the Departmental Science Advisor",
+            line: "Nine departments have one. They meet monthly with the Chief Science Advisor. This is the working substitute for an open call that does not exist.",
+            need: "A research summary and a specific question you can help answer.",
+            timing: "Rolling.",
+            rules: [
+              `Departments with an advisor: Canadian Nuclear Safety Commission, Polar Knowledge Canada, Public Health Agency, Canadian Space Agency, Environment and Climate Change, National Research Council, Defence Research and Development, Natural Resources, Health Canada. <a href="https://science.gc.ca/site/science/en/office-chief-science-advisor/science-advisory-team/departmental-science-advisors-network" target="_blank" rel="noopener">Network page</a>. ${V}`,
+              `No advisor at Fisheries and Oceans, Agriculture, Transport or Statistics Canada. For those, go to the policy DG.`
+            ]
+          },
+          {
+            name: "Get on the panel or win the contract",
+            line: "Expert panels get struck at this stage. Research gets commissioned. Synthesis grants get funded on themes departments chose.",
+            need: "A CV that reads as policy-useful and a record of plain-language synthesis.",
+            timing: "Per call.",
+            rules: [
+              `Federal research contracts are tendered on <a href="https://canadabuys.canada.ca/en" target="_blank" rel="noopener">CanadaBuys</a>.`,
+              `SSHRC <a href="https://sshrc-crsh.canada.ca/en/funding/opportunities/knowledge-synthesis-grants.aspx" target="_blank" rel="noopener">Knowledge Synthesis Grants</a> fund syntheses on themes set with government. The December 2026 competition is on the changing nature of security and conflict. ${V}`,
+              `Council of Canadian Academies panels are assembled per assessment. Being known to the CCA's scientific advisory committee is how you get asked.`
+            ]
+          },
+          {
+            name: "Go inside for a while",
+            line: "Build Canada Exchange places a university employee in a department for up to three years. You keep your salary; the host reimburses your employer.",
+            need: "Six months' employment at your institution, no exchange in the last two years, and a chair who will let you go.",
+            timing: "Rolling. No deadlines.",
+            rules: [
+              `<a href="https://www.canada.ca/en/treasury-board-secretariat/services/professional-development/build-canada-exchange.html" target="_blank" rel="noopener">Build Canada Exchange</a> is the 2026 name for Interchange Canada. Same policy. Contact BCE-EBC@tbs-sct.gc.ca. ${V}`,
+              `The Mitacs Canadian Science Policy Fellowship is closed. Do not plan around it. ${V}`
+            ]
+          }
+        ],
+        assets: [
+          "A two- to four-page evidence synthesis",
+          "One sentence that can be quoted without you in the room",
+          "A recommendation with a scope and, if possible, a cost",
+          "An organization name to submit under",
+          "A named contact in the policy branch"
+        ],
+        mistake: "Sending the paper. Analysts need the implication for the options, not the methods section."
+      }
+    },
+    {
+      id: 3,
+      name: "Cabinet decides",
+      short: "Decision",
+      line: "The minister takes it to the closed room.",
+      tag: "You do not get into this room. You get into the heads of the people who do.",
+      openness: 1,
+      openLabel: "Closed",
+      process: {
+        lead: "The minister takes the department's recommendation to Cabinet as a Memorandum to Cabinet, to the Minister of Finance as a budget ask, or to Treasury Board for spending authority. This is the closed room. Cabinet papers are confidences, shielded from access-to-information requests for 20 years.",
+        what: `<p>The Memorandum to Cabinet goes through a Cabinet committee, then full Cabinet. Or the ask goes into the budget process at Finance. Political staff, the Prime Minister's Office and the Privy Council Office weigh in.</p><p>The decision surfaces as a budget measure, a ministerial announcement, or a bill on the Notice Paper. You see the announcement. You never see the paper.</p>`,
+        who: `<p>The minister. Cabinet colleagues. The Prime Minister's Office. The Privy Council Office. Finance. Treasury Board Secretariat. Chiefs of staff and policy advisors in ministers' offices.</p>`,
+        produces: `<p>A Cabinet record of decision. A budget measure. A Treasury Board approval. None of it public.</p>`,
+        duration: `<p>Weeks to months once the memorandum is drafted. The budget runs on its own calendar; the current government tables a fall budget.</p>`,
+        signals: [
+          "Pre-budget consultations open (two separate processes: the Finance committee and the Department of Finance)",
+          "Ministers' language shifts from \"exploring\" to \"will\"",
+          "A Cabinet retreat is scheduled, usually January and August",
+          "A bill appears on the Notice Paper",
+          "A Treasury Board submission is mentioned in a Departmental Plan"
+        ]
+      },
+      influence: {
+        say: "One page. One number. Their words, not yours.",
+        routes: [
+          {
+            name: "Pre-budget consultations, both of them",
+            line: "The House Finance committee runs one. The Department of Finance runs another. Different rules, different deadlines, and neither replaces the other.",
+            need: "A costed ask in the government's own vocabulary. Three recommendations, each one sentence.",
+            timing: "Finance committee: expect the Budget 2027 call between January and June 2027; the 2026 cycle closed 30 April. Department of Finance: the Budget 2026 consultation closes 8 September 2026.",
+            rules: [
+              `<a href="https://www.ourcommons.ca/Committees/en/FINA" target="_blank" rel="noopener">Finance committee (FINA)</a>: 2,000 words maximum and everything counts, including graphs, footnotes and quotes. One brief per organization or individual. Committee template. The Budget 2026 cycle received 1,356 briefs. ${V}`,
+              `<a href="https://www.canada.ca/en/department-finance/programs/consultations.html" target="_blank" rel="noopener">Department of Finance</a>: letters or papers, no word limit, through the consultation form. ${V}`,
+              `Timing of the next FINA call is inferred from the last two cycles. Watch <a href="https://www.ourcommons.ca/Committees/en/FINA/NewsReleases" target="_blank" rel="noopener">FINA news releases</a> rather than assuming. ${C}`
+            ]
+          },
+          {
+            name: "The minister's office",
+            line: "The policy advisor in a minister's office is political staff. They brief the minister. A one-pager that ties your evidence to a mandate-letter commitment gets read.",
+            need: "One page. The mandate-letter sentence you are helping deliver. A reason it is good politics.",
+            timing: "Before the budget letters go in, which is months before budget day.",
+            rules: [
+              `Ministers' office staff are listed in <a href="https://geds-sage.gc.ca/en/GEDS/" target="_blank" rel="noopener">GEDS</a> under the minister's office, separate from the department.`,
+              `Political staff read for two things: does this help the minister deliver a commitment, and does it create a risk. Answer both on the page.`
+            ]
+          },
+          {
+            name: "Caucus and critics",
+            line: "Government MPs raise things in regional and national caucus. Opposition critics shape the politics of the decision. For Montreal-based work, Quebec MPs and the Quebec lieutenant matter.",
+            need: "A local angle and a constituency number.",
+            timing: "Caucus meets Wednesdays when the House sits.",
+            rules: [
+              `Find your MP and their committee seats on <a href="https://www.ourcommons.ca/members/en" target="_blank" rel="noopener">ourcommons.ca/members</a>.`,
+              `Opposition critics are listed on each party's site. A critic asking a question in the House puts the issue on the minister's briefing note the same day.`
+            ]
+          },
+          {
+            name: "An independent cost estimate",
+            line: "The Parliamentary Budget Officer costs proposals at the request of any MP, Senator or committee. An independent number changes the Cabinet conversation.",
+            need: "A parliamentarian to make the request. A proposal specified well enough to cost.",
+            timing: "PBO analyses take weeks to months. Ask early in the budget cycle.",
+            rules: [
+              `<a href="https://www.pbo-dpb.ca/en" target="_blank" rel="noopener">PBO</a> does not take requests from the public. One letter from a parliamentarian starts a costing. ${V}`
+            ]
+          }
+        ],
+        assets: [
+          "One page",
+          "A costed number",
+          "The government's own words: mandate letter, throne speech, budget",
+          "A coalition or association behind you",
+          "The budget calendar"
+        ],
+        mistake: "Sending the 40-page report to the minister. It goes to the policy shop, which is stage 2, or it goes nowhere."
+      }
+    },
+    {
+      id: 4,
+      name: "It becomes law, regulation or money",
+      short: "Authorization",
+      line: "Three doors, three rulebooks.",
+      tag: "The doors are marked. Most of the building is already built.",
+      openness: 3,
+      openLabel: "Open, formal, late",
+      process: {
+        lead: "The decision now has to be made real through one of three instruments, each with its own rulebook. This is the most public stage and the only one with formal submission channels. It is also late. The substance was settled at stages 2 and 3. What you can still move here is a clause, a threshold, a definition, a timeline.",
+        what: `<div class="tracks">
+          <div class="tracklet"><h5>A. Law: a bill</h5><p>Introduction and first reading. Second reading (a vote on the principle). Committee: witnesses, briefs, clause-by-clause amendments. Report stage. Third reading. The Senate repeats the steps and amends more often than it used to. Royal assent. Track every bill on <a href="https://www.parl.ca/legisinfo/en" target="_blank" rel="noopener">LEGISinfo</a>.</p></div>
+          <div class="tracklet"><h5>B. Regulation</h5><p>Made by Cabinet or a minister under a power in an existing Act, following the Cabinet Directive on Regulation. Draft published in Canada Gazette Part I with a Regulatory Impact Analysis Statement. Comment window: 30 days standard, at least 70 where international trade is affected. Some regulations skip pre-publication entirely. Final text in Part II.</p></div>
+          <div class="tracklet"><h5>C. Money</h5><p>Budget. Budget Implementation Act, often omnibus. Main and Supplementary Estimates. Treasury Board submission. Program terms and conditions. Committees review the Estimates, rarely deeply.</p></div>
+        </div>`,
+        who: `<p>The MPs and Senators on the committee. Committee clerks. Library of Parliament analysts, who write the briefing the committee works from. The department's legislative and regulatory teams. The Standing Joint Committee for the Scrutiny of Regulations.</p>`,
+        produces: `<p>An Act. A regulation in Part II. Appropriated money with terms and conditions attached. Committee reports, to which the government must respond within 120 days (Standing Order 109).</p>`,
+        duration: `<p>A bill: months to two years. A regulation: 12 to 36 months from Forward Regulatory Plan to Part II. Money: months.</p>`,
+        signals: [
+          "A bill appears on LEGISinfo",
+          "A committee's \"Submit a brief\" page opens",
+          "A Canada Gazette Part I notice is published (Saturdays)",
+          "The item is listed in a department's Forward Regulatory Plan",
+          "Estimates are tabled"
+        ]
+      },
+      influence: {
+        say: "Argue one clause, not the whole bill. Send an unlocked file.",
+        routes: [
+          {
+            name: "House of Commons committee brief",
+            line: "Any individual or organization can submit. The rules are precise and most people get them wrong.",
+            need: "Ten pages maximum. Over ten, a 500-word summary, and the committee may publish only the summary. Unlocked file, no password. Your name on the cover; contact details only in the form or covering email.",
+            timing: "Five working days before you appear, or as early as possible. Speaking notes to the clerk 72 hours before the meeting.",
+            rules: [
+              `<a href="https://www.ourcommons.ca/procedure/guides/brief-e.html" target="_blank" rel="noopener">Guide for submitting briefs</a>. English or French; the clerk arranges translation. Briefs reach members only once both languages exist, so late means undistributed. ${V}`,
+              `Submit through the study's e-brief page (pattern: ourcommons.ca/committee-participation/en/submit-brief/&lt;committee&gt;/&lt;study&gt;) or email the clerk at &lt;ACRONYM&gt;@parl.gc.ca. Open studies: <a href="https://www.ourcommons.ca/committees/en/participate" target="_blank" rel="noopener">Participate</a>. ${V}`,
+              `<a href="https://www.ourcommons.ca/procedure/guides/witness-e.html" target="_blank" rel="noopener">Appearing as a witness</a>: members recommend witnesses and the clerk invites. You can email the clerk to express interest; it is considered. Travel and a headset (up to $250) are reimbursed for one or two witnesses per organization. ${V}`,
+              `The "2,000 words" figure people repeat is the Finance committee's pre-budget rule, not the general one. ${V}`
+            ]
+          },
+          {
+            name: "Senate committee brief",
+            line: "Lower volume, longer studies, and self-nomination to appear is accepted. For a researcher with no political sponsor, the higher-yield chamber.",
+            need: "About ten pages with a one-page executive summary. Word or PowerPoint, editable, so translation can work from it.",
+            timing: "Allow one business day of translation per 2,000 words before it reaches senators.",
+            rules: [
+              `Email the committee clerk. No portal. General address ctm@sen.parl.gc.ca. <a href="https://sencanada.ca/en/committees/forwitnesses/" target="_blank" rel="noopener">For witnesses</a>. ${V}`,
+              `Give the Senate a reason it should care: regional, minority-language, rights, or technical detail the House skipped.`
+            ]
+          },
+          {
+            name: "Canada Gazette Part I comment",
+            line: "The most citable channel per hour of effort. Everything you send is published, with your organization's name, for ten years.",
+            need: "The Regulatory Impact Analysis Statement read closely. One specific claim in it challenged with evidence. An alternative wording or threshold.",
+            timing: "30 days from the Saturday of publication, 70 days for trade-affecting proposals. Check the notice.",
+            rules: [
+              `Comment at <a href="https://www.gazette.gc.ca/consult/consult-eng.html" target="_blank" rel="noopener">gazette.gc.ca/consult</a>. Create an account or comment anonymously. Comments go in text boxes; attachments are optional. Individual names are withheld, organization names are published. ${V}`,
+              `Aim at the "Regulatory analysis" or "Regulatory development" sections of the RIAS. That is where the evidence base and the consultation record live. ${C}`,
+              `The department must publish comments. It has no obligation to explain how they changed the proposal. Expect no reply. ${V}`,
+              `Every department publishes a two-year <a href="https://www.canada.ca/en/government/system/laws/developing-improving-federal-regulations/requirements-developing-managing-reviewing-regulations/guidelines-tools/cabinet-directive-regulation.html" target="_blank" rel="noopener">Forward Regulatory Plan</a>. Read yours to see what is coming before Part I. ${V}`
+            ]
+          },
+          {
+            name: "Sponsor an amendment",
+            line: "Amendments are moved by members at committee or by senators. Bring the clause text and the person who will move it.",
+            need: "Draft clause wording. A member or senator. A one-paragraph rationale.",
+            timing: "Before clause-by-clause at committee. The clerk knows the date.",
+            rules: [
+              `The Library of Parliament's Legislative Summary for the bill shows how analysts framed each clause. Write your amendment in that frame.`,
+              `Senate amendments have a real chance of surviving on technical and rights grounds. Government majority committees in the House rarely accept opposition amendments.`
+            ]
+          }
+        ],
+        assets: [
+          "The brief: ten pages plus a 500-word summary, unlocked",
+          "The specific clause, threshold or wording you want changed",
+          "A witness available on short notice",
+          "A bilingual summary if you can, to speed distribution"
+        ],
+        mistake: "Arguing against the whole bill. Also: a locked PDF, contact details on the cover page, and stopping at 2,000 words when ten pages are allowed."
+      }
+    },
+    {
+      id: 5,
+      name: "The department builds it",
+      short: "Implementation",
+      line: "Guidelines, forms, data, delivery.",
+      tag: "Nobody is asking for evidence. Everybody needs it.",
+      openness: 3,
+      openLabel: "Open, quiet",
+      process: {
+        lead: "Royal assent is not the end. The program guidelines, eligibility rules, forms, data systems and enforcement practices get written now, and this is where policy lands on actual people. Fewer people are watching. That makes it quietly influential.",
+        what: `<p>The department designs the program or service: terms and conditions, eligibility, guidance documents, standards, delivery model, data collection. Regulations get operational guidance. Pilots run.</p><p>Money flows out through agencies, Crown corporations, provinces and territories under bilateral agreements, and Indigenous governments through distinctions-based tables. Performance indicators get set in the Departmental Results Framework.</p>`,
+        who: `<p>The Assistant Deputy Minister for programs. Directors General of operations. Regional offices. Agencies such as the granting councils. Provincial counterparts. Indigenous governments and organizations. Program advisory committees.</p>`,
+        produces: `<p>Program guidelines. Funding calls. Guidance documents. Service standards. Data collection instruments. Departmental Plan commitments each spring.</p>`,
+        duration: `<p>Years. Programs get built, then rebuilt.</p>`,
+        signals: [
+          "A funding call or program launch",
+          "A guidance document is published",
+          "A program advisory committee is announced",
+          "A call for pilots or an Impact Canada challenge opens",
+          "A Departmental Plan line names the program"
+        ]
+      },
+      influence: {
+        say: "The guidelines are the policy. Help write them.",
+        routes: [
+          {
+            name: "Join the program's advisory layer",
+            line: "Program advisory committees, technical committees and standards committees get struck as programs are built. Ask the Director General whether one exists or is planned.",
+            need: "An implementation question you can help answer: what works, for whom, at what cost.",
+            timing: "At launch. Committees fill early and stay filled.",
+            rules: [
+              `Find the program DG in <a href="https://geds-sage.gc.ca/en/GEDS/" target="_blank" rel="noopener">GEDS</a>. Ask one question: who advises you on design?`
+            ]
+          },
+          {
+            name: "Run the pilot or the evaluation",
+            line: "Departments need evidence that a design works. Offer a pilot, a demonstration project, or an evaluation partnership with a federal partner named.",
+            need: "Capacity to deliver on a government timeline. Ethics approval and data agreements ready.",
+            timing: "Per program. Multi-year.",
+            rules: [
+              `<a href="https://impact.canada.ca/en/challenges" target="_blank" rel="noopener">Impact Canada</a> runs challenge prizes, grand challenges and accelerators. Eligibility and format are set per challenge. ${V}`,
+              `SSHRC Partnership and Partnership Engage grants fund work with a government partner. Tri-agency Indigenous research funds (Connection grants, network grants, the Inuit Research Network) apply where the program touches Indigenous communities. ${V}`
+            ]
+          },
+          {
+            name: "Shape what gets measured",
+            line: "Programs decide their indicators now. If your field's key outcome is not in the Departmental Results Framework, it will never be reported and never be reviewed.",
+            need: "A measurable indicator with a named data source.",
+            timing: "Before the first Departmental Plan that names the program.",
+            rules: [
+              `Departmental Results Frameworks are published with each department's Departmental Plan. Propose the indicator in writing to the program DG and the department's head of evaluation.`
+            ]
+          },
+          {
+            name: "Go inside",
+            line: "Build Canada Exchange, up to three years, rolling. Or watch for a Departmental Science Advisor posting.",
+            need: "A chair who will let you go, and a host who will reimburse your salary.",
+            timing: "Rolling.",
+            rules: [
+              `<a href="https://www.canada.ca/en/treasury-board-secretariat/services/professional-development/build-canada-exchange.html" target="_blank" rel="noopener">Build Canada Exchange</a>. ${V}`,
+              `Departmental Science Advisor postings are advertised by each department and circulate through university research offices. No central page. ${C}`
+            ]
+          }
+        ],
+        assets: [
+          "Evidence on delivery, not only on the problem",
+          "A willingness to co-design and be named",
+          "Data-sharing and ethics agreements",
+          "Multi-year availability"
+        ],
+        mistake: "Assuming the policy is finished at royal assent. The guidelines are the policy."
+      }
+    },
+    {
+      id: 6,
+      name: "It gets checked",
+      short: "Review",
+      line: "Evaluations, audits, statutory reviews.",
+      tag: "The date is in the law. Show up before they ask.",
+      openness: 4,
+      openLabel: "Open, scheduled",
+      process: {
+        lead: "Every major program and many Acts come back for review on a schedule. The date is often written into the law itself. A review reopens the file and sends the issue back to stage 1 or 2 with an evidence base already being assembled. Researchers who know the calendar arrive first.",
+        what: `<p>Treasury Board's Policy on Results requires an evaluation of every ongoing grants and contributions program spending $5 million a year or more, at least once every five years. The Auditor General runs performance audits; the Commissioner of the Environment and Sustainable Development reports from inside that office.</p><p>Many Acts carry a statutory review clause: a parliamentary committee reviews the Act after a set number of years. Departmental Results Reports come out each fall. The Parliamentary Budget Officer analyses cost and outcomes. Sunset clauses expire programs.</p>`,
+        who: `<p>The department's evaluation unit, led by a Head of Evaluation. The Office of the Auditor General. Parliamentary committees on statutory reviews. The PBO. Treasury Board Secretariat.</p>`,
+        produces: `<p>Published evaluation reports. Auditor General reports tabled in Parliament. Committee review reports, with a government response due within 120 days. Departmental Results Reports.</p>`,
+        duration: `<p>Evaluations: 12 to 18 months. Statutory reviews: six to 12 months. An Auditor General audit: about 18 months.</p>`,
+        signals: [
+          "A review clause in the Act itself (search the Act for \"review\")",
+          "The department's published evaluation plan lists the program",
+          "The Auditor General announces upcoming audits",
+          "A committee adopts a statutory review",
+          "Departmental Results Reports are tabled in the fall"
+        ]
+      },
+      influence: {
+        say: "Publish a year ahead. Analysts start with what is already findable.",
+        routes: [
+          {
+            name: "Statutory review submission",
+            line: "Same brief mechanics as stage 4: ten pages, 500-word summary, the clerk. The committee's Library of Parliament analysts begin with published evidence, so get yours published and findable a year before the date.",
+            need: "Outcome evidence. Comparative evidence from other jurisdictions. A short \"what to change\" list.",
+            timing: "The review date is in the Act. Work back 12 months.",
+            rules: [
+              `<a href="https://www.ourcommons.ca/procedure/guides/brief-e.html" target="_blank" rel="noopener">Brief rules</a> apply unchanged. ${V}`,
+              `Ask the clerk which analyst is assigned. Send them your published work directly.`
+            ]
+          },
+          {
+            name: "The evaluation unit",
+            line: "Every department has a Head of Evaluation. Evaluation teams look for external evidence and sometimes commission it.",
+            need: "Outcome data or a rigorous study. Willingness to share data under agreement.",
+            timing: "When the departmental evaluation plan lists your program, usually a year before the evaluation starts.",
+            rules: [
+              `The $5 million, five-year requirement comes from the <a href="https://www.tbs-sct.canada.ca/pol/doc-eng.aspx?id=31300" target="_blank" rel="noopener">Policy on Results</a> and section 42.1 of the Financial Administration Act. ${V}`,
+              `Departmental evaluation plans are published on each department's site under "Evaluation".`
+            ]
+          },
+          {
+            name: "The Auditor General and the environmental petition",
+            line: "The Auditor General consults experts when scoping audits. Separately, under the Auditor General Act, anyone can file an environmental petition and the responsible minister must reply within 120 days. A real, underused lever on sustainability files.",
+            need: "A specific question a minister must answer.",
+            timing: "Any time.",
+            rules: [
+              `<a href="https://www.oag-bvg.gc.ca/internet/English/pet_fs_e_919.html" target="_blank" rel="noopener">Environmental petitions</a> are managed by the Commissioner of the Environment and Sustainable Development. Section 22 of the Auditor General Act. ${V}`
+            ]
+          },
+          {
+            name: "PBO through a parliamentarian",
+            line: "An independent analysis of what the program cost and delivered. Same rule as stage 1: a parliamentarian asks, not you.",
+            need: "An MP or Senator on the reviewing committee.",
+            timing: "Early in the review.",
+            rules: [
+              `<a href="https://www.pbo-dpb.ca/en" target="_blank" rel="noopener">PBO</a>. ${V}`
+            ]
+          }
+        ],
+        assets: [
+          "Outcome and cost evidence",
+          "The review date",
+          "A plain-language \"what to change\" list",
+          "A parliamentarian on the reviewing committee"
+        ],
+        mistake: "Waiting for the review to be announced. The date was public the day the Act passed."
+      }
+    }
+  ];
+
+  const LIVE = [
+    { date: "8 Sept 2026", stage: 3, html: `<strong>Department of Finance Budget 2026 consultation closes.</strong> No word limit. Open to anyone. <a href="https://www.canada.ca/en/department-finance/programs/consultations/2026/pre-budget-consultations-2026.html" target="_blank" rel="noopener">Consultation page</a>. ${V}` },
+    { date: "Open now", stage: 1, html: `<strong>Standing Committee on Science and Research: study on scientific information in French.</strong> Adopted 15 June 2026. Zero meetings held. Witness list unformed. <a href="https://www.ourcommons.ca/Committees/en/SRSR/StudyActivity?studyActivityId=13583486" target="_blank" rel="noopener">Study page</a>. ${V}` },
+    { date: "Open now", stage: 4, html: `<strong>SRSR: Canada's dual-use and defence research needs.</strong> Four meetings held, briefs still accepted. <a href="https://www.ourcommons.ca/Committees/en/SRSR/StudyActivity?studyActivityId=13466423" target="_blank" rel="noopener">Study page</a>. ${V}` },
+    { date: "Unfilled", stage: 1, html: `<strong>Science and Innovation Advisory Council.</strong> Committed in ISED's 2026-27 Departmental Plan, chaired by the Minister of Industry, supported by the Chief Science Advisor. No members named. ${C}` },
+    { date: "Jan to Jun 2027", stage: 3, html: `<strong>Finance committee pre-budget call for Budget 2027.</strong> Expected window, inferred from the last two cycles. ${C}` },
+    { date: "5 Oct 2026", stage: 1, html: `<strong>Quebec general election.</strong> National Assembly dissolved 27 August. No commission route until the new legislature sits, likely November. New Chief Scientist (Jérôme Dupras) since June. Provincial layer to come. ${V}` }
+  ];
+
+  const $ = (s) => document.querySelector(s);
+  const track = $("#track");
+  const paneP = $("#pane-process");
+  const paneI = $("#pane-influence");
+  const panes = $("#panes");
+  const segButtons = Array.from(document.querySelectorAll(".seg button"));
+  const prevBtn = $("#prev");
+  const nextBtn = $("#next");
+
+  let current = 1;
+  let view = "process";
+
+  function meter(n, big) {
+    let s = '<span class="meter' + (big ? " big" : "") + '" aria-hidden="true">';
+    for (let i = 1; i <= 5; i++) s += '<i class="' + (i <= n ? "on" : "") + '"></i>';
+    return s + "</span>";
+  }
+
+  function buildTrack() {
+    track.innerHTML = STAGES.map(st => `
+      <button type="button" class="stage-btn" data-stage="${st.id}" aria-pressed="false" aria-label="Stage ${st.id}: ${st.short}">
+        <span class="num">STAGE ${st.id}</span>
+        <span class="name">${st.short}</span>
+        <span class="line">${st.line}</span>
+        ${meter(st.openness)}
+        <span class="meter-label">${st.openLabel}</span>
+      </button>`).join("");
+    track.querySelectorAll(".stage-btn").forEach(b => b.addEventListener("click", () => setStage(+b.dataset.stage)));
+  }
+
+  function renderProcess(st) {
+    const p = st.process;
+    paneP.innerHTML = `
+      <h3 class="pane-title">The machine</h3>
+      <p class="lead">${p.lead}</p>
+      <div class="sec"><h4>What happens</h4><div>${p.what}</div></div>
+      <div class="sec"><h4>Who is in the room</h4><div>${p.who}</div></div>
+      <div class="sec"><h4>What it produces</h4><div>${p.produces}</div></div>
+      <div class="sec"><h4>How long</h4><div>${p.duration}</div></div>
+      <div class="sec"><h4>How you can tell</h4><div><ul class="signals">${p.signals.map(s => `<li>${s}</li>`).join("")}</ul></div></div>`;
+  }
+
+  function renderInfluence(st) {
+    const f = st.influence;
+    paneI.innerHTML = `
+      <h3 class="pane-title">Your opening</h3>
+      <div class="verdict">
+        <div>${meter(st.openness, true)}<div class="open-label">${st.openLabel.toUpperCase()}</div></div>
+        <p class="say">${f.say}</p>
+      </div>
+      <p class="routes-label"><span>Routes</span><span>Ranked by leverage</span></p>
+      <ol class="routes">
+        ${f.routes.map(r => `
+          <li class="route">
+            <h5>${r.name}</h5>
+            <p class="oneliner">${r.line}</p>
+            <dl class="kv">
+              <dt>You need</dt><dd>${r.need}</dd>
+              <dt>Timing</dt><dd>${r.timing}</dd>
+            </dl>
+            <details class="rules"><summary>The rules and the links</summary><ul>${r.rules.map(x => `<li>${x}</li>`).join("")}</ul></details>
+          </li>`).join("")}
+      </ol>
+      <div class="assets"><h4>Have in hand</h4><ul>${f.assets.map(a => `<li>${a}</li>`).join("")}</ul></div>
+      <div class="mistake"><h4>The mistake people make</h4><p>${f.mistake}</p></div>`;
+  }
+
+  function applyView() {
+    const wide = window.matchMedia("(min-width: 1000px)").matches;
+    let v = view;
+    if (v === "both" && !wide) v = "process";
+    segButtons.forEach(b => b.setAttribute("aria-pressed", String(b.dataset.view === view)));
+    panes.classList.toggle("both", v === "both");
+    paneP.hidden = !(v === "process" || v === "both");
+    paneI.hidden = !(v === "influence" || v === "both");
+  }
+
+  function setStage(n, opts) {
+    n = Math.min(6, Math.max(1, n));
+    current = n;
+    const st = STAGES[n - 1];
+    track.querySelectorAll(".stage-btn").forEach(b => b.setAttribute("aria-pressed", String(+b.dataset.stage === n)));
+    $("#eyebrow").textContent = "Stage " + n + " of 6";
+    $("#stage-title").textContent = st.name;
+    $("#stage-tag").textContent = st.tag;
+    renderProcess(st);
+    renderInfluence(st);
+    prevBtn.disabled = n === 1;
+    nextBtn.disabled = n === 6;
+    prevBtn.textContent = n === 1 ? "← Previous stage" : "← " + STAGES[n - 2].short;
+    nextBtn.textContent = n === 6 ? "Next stage →" : STAGES[n].short + " →";
+    const active = track.querySelector('.stage-btn[aria-pressed="true"]');
+    if (active && active.scrollIntoView) active.scrollIntoView({ block: "nearest", inline: "nearest" });
+    try { history.replaceState(null, "", "#s" + n + (view !== "process" ? "-" + view : "")); } catch (e) {}
+    try { localStorage.setItem("fpp-stage", String(n)); localStorage.setItem("fpp-view", view); } catch (e) {}
+    if (opts && opts.scroll) {
+      const top = document.querySelector(".stage").getBoundingClientRect().top + window.scrollY - 8;
+      window.scrollTo({ top: top, behavior: "smooth" });
+    }
+  }
+
+  function setView(v) {
+    view = v;
+    applyView();
+    try { history.replaceState(null, "", "#s" + current + (view !== "process" ? "-" + view : "")); } catch (e) {}
+    try { localStorage.setItem("fpp-view", view); } catch (e) {}
+  }
+
+  segButtons.forEach(b => b.addEventListener("click", () => setView(b.dataset.view)));
+  prevBtn.addEventListener("click", () => setStage(current - 1, { scroll: true }));
+  nextBtn.addEventListener("click", () => setStage(current + 1, { scroll: true }));
+  window.addEventListener("resize", applyView);
+  document.addEventListener("keydown", (e) => {
+    if (e.target && /input|textarea|select/i.test(e.target.tagName)) return;
+    if (e.key === "ArrowRight") setStage(current + 1);
+    if (e.key === "ArrowLeft") setStage(current - 1);
+  });
+
+  // Signal map
+  const sig = $("#sigmap");
+  sig.innerHTML = STAGES.map(st => `
+    <div class="row">
+      <span class="n">S${st.id}</span>
+      <ul>${st.process.signals.map(s => `<li><button type="button" data-stage="${st.id}">${s}</button></li>`).join("")}</ul>
+    </div>`).join("");
+  sig.querySelectorAll("button").forEach(b => b.addEventListener("click", () => { setStage(+b.dataset.stage, { scroll: true }); }));
+
+  // Live list
+  $("#live").innerHTML = LIVE.map(l => `
+    <li>
+      <span class="date">${l.date}</span>
+      <span class="what">${l.html}</span>
+      <button type="button" class="goto" data-stage="${l.stage}">Stage ${l.stage}</button>
+    </li>`).join("");
+  document.querySelectorAll("#live .goto").forEach(b => b.addEventListener("click", () => setStage(+b.dataset.stage, { scroll: true })));
+
+  // Init
+  buildTrack();
+  let startStage = 1, startView = "process";
+  const m = (location.hash || "").match(/^#s([1-6])(?:-(process|influence|both))?$/);
+  if (m) { startStage = +m[1]; if (m[2]) startView = m[2]; }
+  else {
+    try {
+      const s = +localStorage.getItem("fpp-stage"); const v = localStorage.getItem("fpp-view");
+      if (s >= 1 && s <= 6) startStage = s;
+      if (v === "process" || v === "influence" || v === "both") startView = v;
+    } catch (e) {}
+  }
+  view = startView;
+  applyView();
+  setStage(startStage);
+})();
+</script>
+
+</body>
+</html>
