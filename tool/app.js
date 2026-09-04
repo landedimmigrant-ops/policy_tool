@@ -502,6 +502,11 @@
     var d = daysUntil(record.expires_on);
     return d !== null && d < 0;
   }
+  function isClosed(record) {
+    if (!record.closes || isStanding(record)) return false;
+    var d = daysUntil(record.closes);
+    return d !== null && d < 0;
+  }
   function isGone(record) {
     if (!record.expires_on) return false;
     var d = daysUntil(record.expires_on);
@@ -745,6 +750,8 @@
          spec section 8.5. */
       var ae = isExpired(a), be = isExpired(b);
       if (ae !== be) return ae ? 1 : -1;
+      var ac = isClosed(a), bc = isClosed(b);
+      if (ac !== bc) return ac ? 1 : -1;
       var as = isStanding(a), bs = isStanding(b);
       if (as !== bs) return as ? 1 : -1;
       if (as && bs) return String(a.title).localeCompare(String(b.title));
