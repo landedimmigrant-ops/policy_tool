@@ -1,0 +1,710 @@
+{
+  "verified_on": "2026-09-03",
+  "disciplines": [
+    {
+      "id": "math-stats-computing",
+      "name": "Mathematics, statistics and computing",
+      "division": "Natural sciences",
+      "crdc_groups": ["RDF101", "RDF102"],
+      "domains": ["science-research-innovation", "digital-data-privacy", "economy-finance-trade"],
+      "lead_departments": ["Innovation, Science and Economic Development Canada", "Statistics Canada", "Treasury Board of Canada Secretariat", "Natural Sciences and Engineering Research Council of Canada"],
+      "committees": ["INDU", "SRSR", "ETHI", "OGGO", "Standing Senate Committee on Banking, Commerce and the Economy"],
+      "evidence_culture": "A reproducible method, published code and data, quantified uncertainty and a benchmark against a named alternative. What does not land: an accuracy figure with no baseline, a model with no deployment story, a claim about algorithmic risk with no measurement. Ottawa's digital and artificial intelligence files are crowded with vendors, so an independent, replicable number is the scarce thing you can supply.",
+      "best_stages": [
+        { "policyStage": 2, "why": "Departments draft digital, data and artificial intelligence options continuously and their analysts want a number they did not buy." },
+        { "policyStage": 5, "why": "The standard, the audit method and the data collection instrument are all written at implementation, and almost nobody shows up for that." },
+        { "policyStage": 4, "why": "Instruments governing data and automated decision-making reach Canada Gazette Part I, where a technical comment is published and citable." }
+      ],
+      "route_weights": {
+        "Go direct to the policy shop": 3,
+        "Shape what gets measured": 3,
+        "Get on the panel or win the contract": 3,
+        "Go inside for a while": 3,
+        "Caucus and critics": 1
+      },
+      "influencers": ["Canadian Science Policy Centre", "Council of Canadian Academies", "CIFAR", "Evidence for Democracy", "Mitacs", "U15", "Statistical Society of Canada"],
+      "actors": {
+        "decision_makers": ["Minister of Industry", "President of the Treasury Board", "Chief Information Officer of Canada", "Chief Statistician of Canada"],
+        "influencers": ["Office of the Chief Science Advisor", "Council of Canadian Academies panels", "CIFAR", "Office of the Privacy Commissioner of Canada", "Canadian Science Policy Centre"],
+        "implementers": ["Statistics Canada", "Shared Services Canada", "Standards Council of Canada", "departmental data and artificial intelligence teams"]
+      },
+      "hook": { "text": "SRSR is taking briefs on Canada's dual use and defence research needs, a study adopted on 9 February 2026 that turns on how research security rules apply to computing and modelling work.", "date": "2026-02-09", "confidence": "verified" },
+      "confidence": "check"
+    },
+    {
+      "id": "physical-chemical",
+      "name": "Physical and chemical sciences",
+      "division": "Natural sciences",
+      "crdc_groups": ["RDF103", "RDF104"],
+      "domains": ["science-research-innovation", "environment-climate", "energy-natural-resources", "health"],
+      "lead_departments": ["Innovation, Science and Economic Development Canada", "National Research Council Canada", "Environment and Climate Change Canada", "Health Canada", "Natural Resources Canada"],
+      "committees": ["SRSR", "INDU", "ENVI", "RNNR", "Standing Senate Committee on Energy, the Environment and Natural Resources"],
+      "evidence_culture": "Measurement, method and detection limits. Regulatory chemistry lands when it speaks to a threshold, a substance list or a monitoring protocol. Peer-reviewed work carries weight, and a named uncertainty carries more. What does not land: hazard framing with no exposure estimate, and a call for more research with no decision attached to it.",
+      "best_stages": [
+        { "policyStage": 4, "why": "Substance assessments and thresholds appear in Canada Gazette Part I with a Regulatory Impact Analysis Statement you can challenge line by line." },
+        { "policyStage": 2, "why": "Draft risk assessments and screening approaches are built inside departments long before a Gazette notice exists." },
+        { "policyStage": 5, "why": "Monitoring protocols and laboratory methods become the operational rule once the regulation is in force." }
+      ],
+      "route_weights": {
+        "Canada Gazette Part I comment": 3,
+        "Use the Departmental Science Advisor": 3,
+        "Go direct to the policy shop": 3,
+        "Caucus and critics": 1,
+        "An independent cost estimate": 1
+      },
+      "influencers": ["Chemical Institute of Canada", "Council of Canadian Academies", "Canadian Science Policy Centre", "Evidence for Democracy", "U15", "Acfas"],
+      "actors": {
+        "decision_makers": ["Minister of Environment and Climate Change", "Minister of Health", "Governor in Council for regulations"],
+        "influencers": ["Departmental Science Advisors at Environment and Climate Change Canada and Health Canada", "Office of the Chief Science Advisor", "Council of Canadian Academies"],
+        "implementers": ["Environment and Climate Change Canada science and technology branch", "Health Canada laboratories", "National Research Council Canada", "Standards Council of Canada"]
+      },
+      "hook": { "text": "Canada Gazette Part I publishes every Saturday and each proposed instrument opens a comment window of at least 30 days, so a chemistry group can find a live threshold to argue in any given month.", "date": "2026-09-03", "confidence": "verified" },
+      "confidence": "check"
+    },
+    {
+      "id": "earth-environment",
+      "name": "Earth and environmental sciences",
+      "division": "Natural sciences",
+      "crdc_groups": ["RDF105"],
+      "domains": ["environment-climate", "energy-natural-resources", "fisheries-oceans", "science-research-innovation"],
+      "lead_departments": ["Environment and Climate Change Canada", "Natural Resources Canada", "Fisheries and Oceans Canada", "Impact Assessment Agency of Canada", "Canada Water Agency"],
+      "committees": ["ENVI", "RNNR", "FOPO", "Standing Senate Committee on Energy, the Environment and Natural Resources", "Standing Senate Committee on Fisheries and Oceans"],
+      "evidence_culture": "Long time series, spatial coverage and a stated confidence interval. Federal environmental files run on monitoring data, so anyone holding a record that predates the department's own is immediately useful. What does not land: a single site presented as a national picture, and modelled projections with no observational anchor. Indigenous knowledge is expected alongside, not instead of, monitoring data.",
+      "best_stages": [
+        { "policyStage": 6, "why": "The Commissioner of the Environment and Sustainable Development audits on a published schedule, and anyone may file an environmental petition with a 120-day reply obligation." },
+        { "policyStage": 2, "why": "Impact assessments and departmental science advice are assembled inside the department, where a data holder is welcome." },
+        { "policyStage": 4, "why": "Gazette Part I windows on species listings, water and emissions instruments accept technical comment that is published and citable." }
+      ],
+      "route_weights": {
+        "The Auditor General and the environmental petition": 3,
+        "Use the Departmental Science Advisor": 3,
+        "Canada Gazette Part I comment": 3,
+        "Run the pilot or the evaluation": 3,
+        "Caucus and critics": 1
+      },
+      "influencers": ["Canadian Meteorological and Oceanographic Society", "Council of Canadian Academies", "Evidence for Democracy", "Canadian Science Policy Centre", "Acfas", "U15"],
+      "actors": {
+        "decision_makers": ["Minister of Environment and Climate Change", "Minister of Energy and Natural Resources", "Governor in Council"],
+        "influencers": ["Commissioner of the Environment and Sustainable Development", "Departmental Science Advisor at Environment and Climate Change Canada", "Office of the Chief Science Advisor", "Policy Horizons Canada"],
+        "implementers": ["Environment and Climate Change Canada monitoring programs", "Canada Water Agency", "Impact Assessment Agency of Canada", "provincial and Indigenous co-management bodies"]
+      },
+      "hook": { "text": "Environmental petitions under section 22 of the Auditor General Act stay open with no deadline, and the responsible minister must reply within 120 days, which makes them the fastest route from a finding to a written federal answer.", "date": "2026-09-03", "confidence": "verified" },
+      "confidence": "check"
+    },
+    {
+      "id": "biology",
+      "name": "Biological sciences",
+      "division": "Natural sciences",
+      "crdc_groups": ["RDF106"],
+      "domains": ["environment-climate", "health", "fisheries-oceans", "agriculture-food", "science-research-innovation"],
+      "lead_departments": ["Environment and Climate Change Canada", "Fisheries and Oceans Canada", "Public Health Agency of Canada", "Canadian Food Inspection Agency", "Parks Canada Agency"],
+      "committees": ["ENVI", "FOPO", "HESA", "AGRI", "Standing Senate Committee on Fisheries and Oceans"],
+      "evidence_culture": "Population data, taxonomic authority and a defensible sampling design. Species at risk and biosecurity files run on assessments with named methods and reviewable data. What does not land: advocacy framed as science, and a conservation claim with no baseline. Where the work touches Indigenous territory, co-authorship and data governance under OCAP or CARE principles are read as a marker of quality.",
+      "best_stages": [
+        { "policyStage": 4, "why": "Species listings, permits and biosecurity instruments run through Canada Gazette Part I with a comment window tied to the science." },
+        { "policyStage": 2, "why": "Status assessments and recovery strategies are drafted inside departments over months and analysts actively seek external data." },
+        { "policyStage": 5, "why": "Recovery plans, monitoring designs and permit conditions are written at implementation and rarely revisited." }
+      ],
+      "route_weights": {
+        "Canada Gazette Part I comment": 3,
+        "Use the Departmental Science Advisor": 3,
+        "Go direct to the policy shop": 3,
+        "The Auditor General and the environmental petition": 3,
+        "An independent cost estimate": 1
+      },
+      "influencers": ["Canadian Society for Ecology and Evolution", "Council of Canadian Academies", "Evidence for Democracy", "Canadian Science Policy Centre", "U15", "Acfas"],
+      "actors": {
+        "decision_makers": ["Minister of Environment and Climate Change", "Minister of Fisheries and Oceans", "Governor in Council"],
+        "influencers": ["Committee on the Status of Endangered Wildlife in Canada", "Departmental Science Advisors", "Council of Canadian Academies", "Commissioner of the Environment and Sustainable Development"],
+        "implementers": ["Canadian Wildlife Service", "Fisheries and Oceans Canada science branch", "Parks Canada Agency", "Canadian Food Inspection Agency"]
+      },
+      "hook": { "text": "Fisheries and Oceans Canada has no Departmental Science Advisor, so on ocean and freshwater files the practical door is the policy Director General found through GEDS.", "date": "2026-09-03", "confidence": "verified" },
+      "confidence": "check"
+    },
+    {
+      "id": "civil-environmental-transport-eng",
+      "name": "Civil, environmental and transport engineering",
+      "division": "Engineering and technology",
+      "crdc_groups": ["RDF201", "RDF208"],
+      "domains": ["transport-infrastructure-housing", "environment-climate", "energy-natural-resources"],
+      "lead_departments": ["Housing, Infrastructure and Communities Canada", "Transport Canada", "National Research Council Canada", "Canada Mortgage and Housing Corporation"],
+      "committees": ["TRAN", "ENVI", "HUMA", "Standing Senate Committee on Transport and Communications"],
+      "evidence_culture": "Codes, standards and life-cycle cost. Federal infrastructure decisions are made against the National Building Code, National Research Council guidance and a cost per unit of service. What does not land: a demonstration project with no cost figure, and a resilience claim with no design load behind it. A number a Treasury Board analyst can put in a business case is the unit of influence.",
+      "best_stages": [
+        { "policyStage": 5, "why": "Program terms, eligibility rules and technical guidance decide what actually gets built, and they are written after the money is voted." },
+        { "policyStage": 2, "why": "Infrastructure program design happens inside departments where a costed alternative is welcome." },
+        { "policyStage": 4, "why": "Transport safety and building instruments reach Canada Gazette Part I, and the Building Canada Act joint committee reviews the exercise of major project powers." }
+      ],
+      "route_weights": {
+        "Shape what gets measured": 3,
+        "Go direct to the policy shop": 3,
+        "Join the program's advisory layer": 3,
+        "Get on the panel or win the contract": 3,
+        "Put it in the public conversation": 1
+      },
+      "influencers": ["Engineers Canada", "Canadian Standards Association Group", "National Research Council Canada Construction Research Centre", "Canadian Science Policy Centre", "U15"],
+      "actors": {
+        "decision_makers": ["Minister of Housing and Infrastructure", "Minister of Transport", "Treasury Board"],
+        "influencers": ["National Research Council Canada codes centre", "Canadian Standards Association Group", "Canada Infrastructure Bank", "Federation of Canadian Municipalities"],
+        "implementers": ["Housing, Infrastructure and Communities Canada program branches", "Transport Canada regional offices", "provincial and municipal delivery partners"]
+      },
+      "hook": { "text": "The Special Joint Committee on the Exercise of Powers Under the Building Canada Act reviews how the Governor in Council and the Minister use their powers on major projects, which puts project selection and design standards in front of parliamentarians.", "date": "2026-09-03", "confidence": "verified" },
+      "confidence": "check"
+    },
+    {
+      "id": "electrical-computer-eng",
+      "name": "Electrical, computer and information engineering",
+      "division": "Engineering and technology",
+      "crdc_groups": ["RDF203"],
+      "domains": ["digital-data-privacy", "science-research-innovation", "energy-natural-resources", "international-defence"],
+      "lead_departments": ["Innovation, Science and Economic Development Canada", "National Research Council Canada", "Communications Research Centre Canada", "Department of National Defence"],
+      "committees": ["INDU", "SRSR", "ETHI", "NDDN", "Standing Senate Committee on Transport and Communications"],
+      "evidence_culture": "Test results, interoperability and spectrum or grid impact. Telecommunications and electronics policy runs on measured performance and standards bodies, and the department reads submissions against a specific technical rule. What does not land: a capability claim with no test conditions, and a security argument with no threat model. Research security and export control now sit on top of every dual-use conversation.",
+      "best_stages": [
+        { "policyStage": 2, "why": "Spectrum, connectivity and research security options are drafted inside ISED and the department buys technical work through CanadaBuys." },
+        { "policyStage": 4, "why": "Spectrum and telecommunications instruments and CRTC processes are formal, published channels with real technical content." },
+        { "policyStage": 1, "why": "Research security and dual-use questions are scoped by committee before the rules are written, and a study with no meetings held is the earliest opening there is." }
+      ],
+      "route_weights": {
+        "Go direct to the policy shop": 3,
+        "Get on the panel or win the contract": 3,
+        "Get a committee to study it": 3,
+        "Caucus and critics": 1,
+        "An independent cost estimate": 1
+      },
+      "influencers": ["Engineers Canada", "Standards Council of Canada", "Canadian Science Policy Centre", "Council of Canadian Academies", "Mitacs", "U15"],
+      "actors": {
+        "decision_makers": ["Minister of Industry", "Minister of National Defence", "Governor in Council for spectrum instruments"],
+        "influencers": ["Office of the Chief Science Advisor", "Standards Council of Canada", "Communications Research Centre Canada", "Canadian Science Policy Centre"],
+        "implementers": ["ISED spectrum management", "National Research Council Canada", "Defence Research and Development Canada", "Canadian Radio-television and Telecommunications Commission"]
+      },
+      "hook": { "text": "SRSR adopted a study on Canada's dual use and defence research needs on 9 February 2026, covering universities, colleges, the National Research Council and industry, and it is still accepting briefs.", "date": "2026-02-09", "confidence": "verified" },
+      "confidence": "check"
+    },
+    {
+      "id": "mechanical-industrial-aerospace-eng",
+      "name": "Mechanical, industrial and aerospace engineering",
+      "division": "Engineering and technology",
+      "crdc_groups": ["RDF202", "RDF204"],
+      "domains": ["science-research-innovation", "economy-finance-trade", "international-defence", "transport-infrastructure-housing"],
+      "lead_departments": ["Innovation, Science and Economic Development Canada", "Department of National Defence", "Transport Canada", "Canadian Space Agency", "National Research Council Canada"],
+      "committees": ["INDU", "NDDN", "TRAN", "SRSR", "Standing Senate Committee on National Security, Defence and Veterans Affairs"],
+      "evidence_culture": "Qualification testing, certification pathways and industrial capacity. Aerospace and defence industrial policy is argued in terms of supply chains, offsets and time to certification. What does not land: a technology readiness claim with no independent test, and a capability argument with no Canadian industrial base attached. Defence procurement conversations move on schedule and cost before they move on performance.",
+      "best_stages": [
+        { "policyStage": 2, "why": "Industrial and defence strategies are drafted inside departments and research is bought through CanadaBuys before any consultation opens." },
+        { "policyStage": 1, "why": "Defence industrial and dual-use questions reach committee as self-initiated studies well ahead of the policy being written." },
+        { "policyStage": 5, "why": "Certification pathways, standards and program terms decide what a Canadian firm can actually deliver." }
+      ],
+      "route_weights": {
+        "Get on the panel or win the contract": 3,
+        "Go direct to the policy shop": 3,
+        "Get a committee to study it": 3,
+        "Put it in the public conversation": 1,
+        "The Auditor General and the environmental petition": 1
+      },
+      "influencers": ["Aerospace Industries Association of Canada", "Engineers Canada", "Canadian Science Policy Centre", "Council of Canadian Academies", "Mitacs", "U15"],
+      "actors": {
+        "decision_makers": ["Minister of Industry", "Minister of National Defence", "Minister of Public Services and Procurement"],
+        "influencers": ["Defence Research and Development Canada", "National Research Council Canada", "Canadian Space Agency", "industry associations"],
+        "implementers": ["Public Services and Procurement Canada", "Transport Canada certification branches", "Canadian Space Agency program offices"]
+      },
+      "hook": { "text": "NDDN is taking briefs on Arctic Transformation, a study on security, defence and partnerships in the North with no meetings held yet, so the witness list is still open.", "date": "2026-09-03", "confidence": "verified" },
+      "confidence": "check"
+    },
+    {
+      "id": "chemical-materials-biotech-eng",
+      "name": "Chemical, materials and biotechnology engineering",
+      "division": "Engineering and technology",
+      "crdc_groups": ["RDF205", "RDF206", "RDF209", "RDF210", "RDF211"],
+      "domains": ["science-research-innovation", "energy-natural-resources", "environment-climate", "health", "agriculture-food"],
+      "lead_departments": ["Innovation, Science and Economic Development Canada", "Natural Resources Canada", "Environment and Climate Change Canada", "Health Canada", "National Research Council Canada"],
+      "committees": ["INDU", "RNNR", "ENVI", "HESA", "Standing Senate Committee on Energy, the Environment and Natural Resources"],
+      "evidence_culture": "Process data at a stated scale, energy and emissions per unit, and a route to commercial volume. Federal clean technology and biomanufacturing files are decided on cost curves and scale-up risk. What does not land: bench-scale performance presented as a deployment case, and a lifecycle claim with no system boundary declared. Regulatory approval timelines are usually the binding constraint, not the chemistry.",
+      "best_stages": [
+        { "policyStage": 4, "why": "Emissions, substance and biomanufacturing instruments run through Canada Gazette Part I where a process argument is published and citable." },
+        { "policyStage": 2, "why": "Clean technology and biomanufacturing programs are designed inside departments, and departments buy technical analysis on those themes." },
+        { "policyStage": 5, "why": "Eligibility rules and technical standards in program guidelines decide which processes can be funded at all." }
+      ],
+      "route_weights": {
+        "Canada Gazette Part I comment": 3,
+        "Get on the panel or win the contract": 3,
+        "Go direct to the policy shop": 3,
+        "Use the Departmental Science Advisor": 3,
+        "Caucus and critics": 1
+      },
+      "influencers": ["Chemical Institute of Canada", "BIOTECanada", "Council of Canadian Academies", "Canadian Science Policy Centre", "Mitacs", "U15"],
+      "actors": {
+        "decision_makers": ["Minister of Industry", "Minister of Energy and Natural Resources", "Minister of Environment and Climate Change"],
+        "influencers": ["Departmental Science Advisors at Natural Resources Canada and Environment and Climate Change Canada", "National Research Council Canada", "Council of Canadian Academies"],
+        "implementers": ["Natural Resources Canada program branches", "National Research Council Canada research centres", "Standards Council of Canada", "Health Canada regulatory branches"]
+      },
+      "hook": { "text": "HESA is taking briefs on Canada's Pharmaceutical Sovereignty, a study that has already drawn 36 briefs and turns directly on domestic manufacturing capacity.", "date": "2026-09-03", "confidence": "verified" },
+      "confidence": "check"
+    },
+    {
+      "id": "biomedical-eng",
+      "name": "Medical and biomedical engineering",
+      "division": "Engineering and technology",
+      "crdc_groups": ["RDF207"],
+      "domains": ["health", "science-research-innovation", "digital-data-privacy"],
+      "lead_departments": ["Health Canada", "Canadian Institutes of Health Research", "Innovation, Science and Economic Development Canada", "Public Health Agency of Canada"],
+      "committees": ["HESA", "INDU", "SRSR", "Standing Senate Committee on Social Affairs, Science and Technology"],
+      "evidence_culture": "Clinical evidence, device classification and a real-world safety record. Health Canada reads submissions against its own regulatory categories, so an argument that names the class and the pathway gets read. What does not land: a prototype with no clinical data, and a health equity claim with no access analysis. Software as a medical device and artificial intelligence tools are the live files and the guidance on them is still being written.",
+      "best_stages": [
+        { "policyStage": 5, "why": "Device guidance, review pathways and post-market surveillance rules are written at implementation and shape what reaches patients." },
+        { "policyStage": 4, "why": "Medical device and health product instruments run through Canada Gazette Part I with published comment." },
+        { "policyStage": 2, "why": "Health Canada and CIHR draft regulatory and funding options over months and the Departmental Science Advisor at Health Canada is reachable." }
+      ],
+      "route_weights": {
+        "Use the Departmental Science Advisor": 3,
+        "Canada Gazette Part I comment": 3,
+        "Join the program's advisory layer": 3,
+        "Run the pilot or the evaluation": 3,
+        "Caucus and critics": 1
+      },
+      "influencers": ["Canadian Medical Association", "HealthCareCAN", "Council of Canadian Academies", "Canadian Science Policy Centre", "Mitacs", "U15"],
+      "actors": {
+        "decision_makers": ["Minister of Health", "Governor in Council for health product regulations"],
+        "influencers": ["Departmental Science Advisor at Health Canada", "Canadian Institutes of Health Research", "Council of Canadian Academies", "Canada's Drug Agency"],
+        "implementers": ["Health Canada Health Products and Food Branch", "provincial health technology assessment bodies", "hospital procurement"]
+      },
+      "hook": { "text": "Bill C-224, an Act to amend the Food and Drugs Act on natural health products, was referred to HESA after second reading and the committee has already received 43 briefs with no meetings held.", "date": "2026-09-03", "confidence": "verified" },
+      "confidence": "check"
+    },
+    {
+      "id": "medicine-health",
+      "name": "Medicine and health sciences",
+      "division": "Medical, health and life sciences",
+      "crdc_groups": ["RDF301", "RDF302", "RDF303", "RDF304", "RDF305"],
+      "domains": ["health", "science-research-innovation", "labour-skills-social", "indigenous"],
+      "lead_departments": ["Health Canada", "Public Health Agency of Canada", "Canadian Institutes of Health Research", "Indigenous Services Canada", "Patented Medicine Prices Review Board"],
+      "committees": ["HESA", "FEWO", "INAN", "AMAD", "Standing Senate Committee on Social Affairs, Science and Technology"],
+      "evidence_culture": "Systematic reviews, trial evidence, population data and a cost-effectiveness figure. Health policy in Canada has a working evidence hierarchy and departments use it. What does not land: a single trial argued as a policy conclusion, and a recommendation that ignores that delivery is provincial. Jurisdiction is the first question every federal health analyst asks, so answer it before they do.",
+      "best_stages": [
+        { "policyStage": 2, "why": "Health Canada and PHAC draft options over months, both have a Departmental Science Advisor, and CIHR sets synthesis themes with departments." },
+        { "policyStage": 6, "why": "Health programs above five million dollars a year are evaluated at least every five years under the Policy on Results, on a published schedule." },
+        { "policyStage": 4, "why": "Health product, food and tobacco instruments run through Gazette Part I, and health bills draw the largest committee brief volumes in Parliament." }
+      ],
+      "route_weights": {
+        "Use the Departmental Science Advisor": 3,
+        "Feed the foresight and advisory layer": 3,
+        "The evaluation unit": 3,
+        "House of Commons committee brief": 3,
+        "Caucus and critics": 1
+      },
+      "influencers": ["Canadian Medical Association", "HealthCareCAN", "Council of Canadian Academies", "Canadian Academy of Health Sciences", "Evidence for Democracy", "Canadian Science Policy Centre", "U15"],
+      "actors": {
+        "decision_makers": ["Minister of Health", "Minister of Indigenous Services", "Governor in Council"],
+        "influencers": ["Departmental Science Advisors at Health Canada and the Public Health Agency of Canada", "Office of the Chief Science Advisor", "Canadian Academy of Health Sciences", "Canada's Drug Agency", "Council of Canadian Academies"],
+        "implementers": ["Health Canada branches", "Public Health Agency of Canada", "provincial and territorial health ministries", "First Nations and Inuit Health Branch"]
+      },
+      "hook": { "text": "FEWO is taking briefs on the Labour Force Impacts of Menopause and Perimenopause until 11:59 p.m. eastern on 30 September 2026, with a two-page limit of roughly 1,000 words.", "date": "2026-09-30", "confidence": "verified" },
+      "confidence": "check"
+    },
+    {
+      "id": "agriculture-food-veterinary",
+      "name": "Agriculture, food and veterinary sciences",
+      "division": "Agricultural and veterinary sciences",
+      "crdc_groups": ["RDF401", "RDF402", "RDF403", "RDF404", "RDF405"],
+      "domains": ["agriculture-food", "health", "environment-climate", "economy-finance-trade"],
+      "lead_departments": ["Agriculture and Agri-Food Canada", "Canadian Food Inspection Agency", "Health Canada", "Pest Management Regulatory Agency"],
+      "committees": ["AGRI", "HESA", "ENVI", "Standing Senate Committee on Agriculture and Forestry"],
+      "evidence_culture": "Field trial data, farm-level economics and traceable risk assessment. Agricultural policy is negotiated with producer organizations, so evidence that speaks to farm income and market access is read first. What does not land: an environmental recommendation with no cost to the producer estimated, and a food safety claim with no exposure pathway. Agriculture and Agri-Food Canada has no Departmental Science Advisor, so the policy Director General is the door.",
+      "best_stages": [
+        { "policyStage": 4, "why": "Pesticide, feed, seed and food safety instruments run through Canada Gazette Part I and trade-affecting proposals carry at least a 70-day window." },
+        { "policyStage": 2, "why": "The five-year agricultural policy framework and its programs are drafted inside the department with producer groups already at the table." },
+        { "policyStage": 5, "why": "Program terms and conditions decide which practices a farm can be paid to adopt." }
+      ],
+      "route_weights": {
+        "Canada Gazette Part I comment": 3,
+        "Go direct to the policy shop": 3,
+        "Join the program's advisory layer": 3,
+        "Use the Departmental Science Advisor": 1,
+        "An independent cost estimate": 1
+      },
+      "influencers": ["Canadian Federation of Agriculture", "Agricultural Institute of Canada", "Council of Canadian Academies", "Canadian Science Policy Centre", "Acfas", "U15"],
+      "actors": {
+        "decision_makers": ["Minister of Agriculture and Agri-Food", "Minister of Health for pesticide decisions", "Governor in Council"],
+        "influencers": ["Canadian Federation of Agriculture", "commodity organizations", "Council of Canadian Academies", "Canadian Agricultural Human Resource Council"],
+        "implementers": ["Agriculture and Agri-Food Canada research centres", "Canadian Food Inspection Agency", "Pest Management Regulatory Agency", "provincial agriculture ministries"]
+      },
+      "hook": { "text": "The Pest Management Regulatory Agency sits inside Health Canada and falls under both AGRI and HESA, so a pesticide argument can be put to two committees and one Gazette window.", "date": "2026-09-03", "confidence": "verified" },
+      "confidence": "check"
+    },
+    {
+      "id": "psychology",
+      "name": "Psychology and cognitive sciences",
+      "division": "Social sciences",
+      "crdc_groups": ["RDF501"],
+      "domains": ["health", "labour-skills-social", "education-youth", "justice-rights-security"],
+      "lead_departments": ["Public Health Agency of Canada", "Employment and Social Development Canada", "Department of National Defence", "Correctional Service Canada", "Canadian Institutes of Health Research"],
+      "committees": ["HESA", "HUMA", "NDDN", "SECU", "Standing Senate Committee on Social Affairs, Science and Technology"],
+      "evidence_culture": "Effect sizes, replication and a named population. Behavioural evidence lands hardest when it names the intervention, the size of the effect and the group it applies to. What does not land: a laboratory finding presented as a service design, and a mental health recommendation that ignores provincial delivery. Departments increasingly run their own behavioural insight units, so an offer to test a design beats a call for awareness.",
+      "best_stages": [
+        { "policyStage": 5, "why": "Service design, forms, screening tools and delivery models are where behavioural evidence actually changes an outcome." },
+        { "policyStage": 2, "why": "Departments buy behavioural research through CanadaBuys and set synthesis themes with the granting agencies." },
+        { "policyStage": 6, "why": "Evaluations of social and health programs need outcome measurement that most departments cannot do in house." }
+      ],
+      "route_weights": {
+        "Run the pilot or the evaluation": 3,
+        "Shape what gets measured": 3,
+        "The evaluation unit": 3,
+        "Get on the panel or win the contract": 3,
+        "An independent cost estimate": 1
+      },
+      "influencers": ["Canadian Psychological Association", "Mental Health Commission of Canada", "Federation for the Humanities and Social Sciences", "Evidence for Democracy", "Canadian Science Policy Centre", "U15"],
+      "actors": {
+        "decision_makers": ["Minister of Health", "Minister of Jobs and Families", "Minister of Public Safety"],
+        "influencers": ["Mental Health Commission of Canada", "Canadian Psychological Association", "Canadian Institutes of Health Research", "Council of Canadian Academies"],
+        "implementers": ["Public Health Agency of Canada", "Employment and Social Development Canada service delivery", "Correctional Service Canada", "Canadian Armed Forces health services"]
+      },
+      "hook": { "text": "NDDN is taking briefs on Canadian Armed Forces recruitment and training programs, a study with no meetings held yet, which puts selection, retention and training design in front of the committee.", "date": "2026-09-03", "confidence": "verified" },
+      "confidence": "check"
+    },
+    {
+      "id": "economics-business",
+      "name": "Economics and business",
+      "division": "Social sciences",
+      "crdc_groups": ["RDF502"],
+      "domains": ["economy-finance-trade", "labour-skills-social", "governance-public-administration"],
+      "lead_departments": ["Department of Finance Canada", "Innovation, Science and Economic Development Canada", "Employment and Social Development Canada", "Statistics Canada", "Global Affairs Canada"],
+      "committees": ["FINA", "INDU", "CIIT", "HUMA", "Standing Senate Committee on National Finance", "Standing Senate Committee on Banking, Commerce and the Economy"],
+      "evidence_culture": "A costed number with a stated counterfactual. Finance and the Parliamentary Budget Officer both work in fiscal impact, incidence and elasticity, and a submission without a number is a submission about someone else's number. What does not land: a distributional claim with no data source, and a growth argument with no time horizon. Microdata access through Statistics Canada research data centres is a credential in itself.",
+      "best_stages": [
+        { "policyStage": 3, "why": "Two separate pre-budget processes run every cycle and a costed ask in the government's own vocabulary is exactly what they take." },
+        { "policyStage": 6, "why": "The Parliamentary Budget Officer and departmental evaluation units both need independent estimates of what a program cost and delivered." },
+        { "policyStage": 2, "why": "Finance and ISED draft options over months and buy economic analysis through CanadaBuys." }
+      ],
+      "route_weights": {
+        "Pre-budget consultations, both of them": 3,
+        "An independent cost estimate": 3,
+        "PBO through a parliamentarian": 3,
+        "The evaluation unit": 3,
+        "Canada Gazette Part I comment": 1
+      },
+      "influencers": ["Canadian Economics Association", "C.D. Howe Institute", "Institute for Research on Public Policy", "Federation for the Humanities and Social Sciences", "Canadian Science Policy Centre", "U15"],
+      "actors": {
+        "decision_makers": ["Minister of Finance", "Minister of Industry", "Treasury Board"],
+        "influencers": ["Parliamentary Budget Officer", "Bank of Canada research", "C.D. Howe Institute", "Institute for Research on Public Policy", "Chief Statistician of Canada"],
+        "implementers": ["Department of Finance Canada branches", "Canada Revenue Agency", "Statistics Canada", "Employment and Social Development Canada"]
+      },
+      "hook": { "text": "The Department of Finance 2026 Pre-Budget Consultations close on 8 September 2026 with no word limit on formal submissions, and the Finance committee's separate Budget 2027 call is expected between January and June 2027.", "date": "2026-09-08", "confidence": "verified" },
+      "confidence": "check"
+    },
+    {
+      "id": "education",
+      "name": "Education",
+      "division": "Social sciences",
+      "crdc_groups": ["RDF503"],
+      "domains": ["education-youth", "labour-skills-social", "indigenous", "official-languages"],
+      "lead_departments": ["Employment and Social Development Canada", "Indigenous Services Canada", "Department of Canadian Heritage", "Immigration, Refugees and Citizenship Canada"],
+      "committees": ["HUMA", "INAN", "LANG", "CIMM", "Standing Senate Committee on Social Affairs, Science and Technology"],
+      "evidence_culture": "Outcome data across cohorts, and an honest answer on jurisdiction. Education is provincial, so federal traction comes through skills, student aid, official-language minority education, Indigenous education and immigration pathways. What does not land: a curriculum recommendation addressed to Ottawa, and an equity claim with no disaggregated data. Framing your finding as a labour market or a rights question is often what makes it federal.",
+      "best_stages": [
+        { "policyStage": 5, "why": "Eligibility rules, program terms and reporting requirements in federal transfers decide what provinces and institutions actually do." },
+        { "policyStage": 2, "why": "Skills, student aid and official-language education programs are designed inside departments where synthesis work is welcome." },
+        { "policyStage": 6, "why": "Transfer agreements and skills programs carry evaluation clauses on a published schedule." }
+      ],
+      "route_weights": {
+        "Shape what gets measured": 3,
+        "The evaluation unit": 3,
+        "Go direct to the policy shop": 3,
+        "Put it in the public conversation": 3,
+        "Canada Gazette Part I comment": 1,
+        "An independent cost estimate": 1
+      },
+      "influencers": ["Federation for the Humanities and Social Sciences", "Universities Canada", "Colleges and Institutes Canada", "Canadian Society for the Study of Education", "Acfas", "Evidence for Democracy"],
+      "actors": {
+        "decision_makers": ["Minister of Jobs and Families", "Minister of Indigenous Services", "Minister of Canadian Heritage for official-language education"],
+        "influencers": ["Universities Canada", "Colleges and Institutes Canada", "Council of Ministers of Education, Canada", "Federation for the Humanities and Social Sciences"],
+        "implementers": ["Employment and Social Development Canada", "Indigenous Services Canada education branch", "provincial ministries of education", "school boards and institutions"]
+      },
+      "hook": { "text": "SRSR adopted a study on 15 June 2026 into the External Advisory Panel report on creating and disseminating scientific information in French, with no meetings held yet and a government response required under Standing Order 109.", "date": "2026-06-15", "confidence": "verified" },
+      "confidence": "check"
+    },
+    {
+      "id": "sociology-anthropology-social-work",
+      "name": "Sociology, anthropology and social work",
+      "division": "Social sciences",
+      "crdc_groups": ["RDF504"],
+      "domains": ["labour-skills-social", "indigenous", "immigration-multiculturalism", "justice-rights-security", "health"],
+      "lead_departments": ["Employment and Social Development Canada", "Immigration, Refugees and Citizenship Canada", "Crown-Indigenous Relations and Northern Affairs Canada", "Department for Women and Gender Equality", "Public Safety Canada"],
+      "committees": ["HUMA", "CIMM", "INAN", "FEWO", "SECU", "Standing Senate Committee on Human Rights"],
+      "evidence_culture": "Qualitative depth with a defensible sample, paired with a number a department already collects. Lived experience carries real weight in Canadian social policy, especially where a community holds the data. What does not land: a critique with no proposal attached, and research on a community done without it. Gender-based Analysis Plus is a mandatory step inside government, so evidence framed that way is directly usable.",
+      "best_stages": [
+        { "policyStage": 2, "why": "Social policy options are drafted over months with mandatory Gender-based Analysis Plus, and departments actively look for community evidence." },
+        { "policyStage": 5, "why": "Eligibility rules, application forms and delivery models are where social policy either reaches people or does not." },
+        { "policyStage": 1, "why": "Committees choose their own studies, and a community problem with a clear owner is exactly what a study motion needs." }
+      ],
+      "route_weights": {
+        "Go direct to the policy shop": 3,
+        "Get a committee to study it": 3,
+        "Shape what gets measured": 3,
+        "Put it in the public conversation": 3,
+        "An independent cost estimate": 1,
+        "Canada Gazette Part I comment": 1
+      },
+      "influencers": ["Federation for the Humanities and Social Sciences", "Canadian Association of Social Workers", "Canadian Sociological Association", "Acfas", "Evidence for Democracy", "Canadian Science Policy Centre"],
+      "actors": {
+        "decision_makers": ["Minister of Jobs and Families", "Minister of Immigration, Refugees and Citizenship", "Minister for Women and Gender Equality"],
+        "influencers": ["Federation for the Humanities and Social Sciences", "national community and settlement organizations", "Indigenous national representative organizations", "Institute for Research on Public Policy"],
+        "implementers": ["Employment and Social Development Canada", "Immigration, Refugees and Citizenship Canada", "settlement service providers", "provincial social services"]
+      },
+      "hook": { "text": "FEWO's study on the Labour Force Impacts of Menopause and Perimenopause takes briefs until 30 September 2026 and caps them at two pages, which is a rare hard deadline on a House committee study.", "date": "2026-09-30", "confidence": "verified" },
+      "confidence": "check"
+    },
+    {
+      "id": "law",
+      "name": "Law",
+      "division": "Social sciences",
+      "crdc_groups": ["RDF505"],
+      "domains": ["justice-rights-security", "governance-public-administration", "digital-data-privacy", "indigenous"],
+      "lead_departments": ["Department of Justice", "Public Safety Canada", "Innovation, Science and Economic Development Canada", "Crown-Indigenous Relations and Northern Affairs Canada"],
+      "committees": ["JUST", "SECU", "ETHI", "REGS", "Standing Senate Committee on Legal and Constitutional Affairs"],
+      "evidence_culture": "Doctrinal precision and comparative jurisdictions. A legal submission is read for whether the clause does what the department says it does, and whether it survives Charter and division-of-powers scrutiny. What does not land: a policy preference dressed as a legal conclusion. Drafted clause wording with a one-paragraph rationale is the highest-value object a law researcher can produce, and almost nobody supplies it.",
+      "best_stages": [
+        { "policyStage": 4, "why": "This is the only stage with formal submission channels, and a drafted amendment with a mover is the intervention that changes text." },
+        { "policyStage": 6, "why": "Statutory review dates are written into the Acts themselves, so the calendar is public years ahead." },
+        { "policyStage": 2, "why": "Legislative and regulatory teams draft the instrument long before it is public, and comparative analysis is welcome then." }
+      ],
+      "route_weights": {
+        "House of Commons committee brief": 3,
+        "Senate committee brief": 3,
+        "Sponsor an amendment": 3,
+        "Statutory review submission": 3,
+        "Use the Departmental Science Advisor": 1,
+        "An independent cost estimate": 1
+      },
+      "influencers": ["Canadian Bar Association", "Canadian Association of Law Teachers", "Federation for the Humanities and Social Sciences", "Institute for Research on Public Policy", "Canadian Civil Liberties Association"],
+      "actors": {
+        "decision_makers": ["Minister of Justice and Attorney General of Canada", "Minister of Public Safety", "senators on Legal and Constitutional Affairs"],
+        "influencers": ["Library of Parliament legislative analysts", "Canadian Bar Association", "Standing Joint Committee for the Scrutiny of Regulations", "Canadian Human Rights Commission"],
+        "implementers": ["Department of Justice legislative services", "Public Prosecution Service of Canada", "administrative tribunals", "provincial attorneys general"]
+      },
+      "hook": { "text": "The Senate amends more often than it used to and accepts self-nomination as a witness, so on technical and rights grounds it is the higher-yield chamber for a researcher with no political sponsor.", "date": "2026-09-03", "confidence": "verified" },
+      "confidence": "check"
+    },
+    {
+      "id": "political-science-public-admin",
+      "name": "Political science and public administration",
+      "division": "Social sciences",
+      "crdc_groups": ["RDF506"],
+      "domains": ["governance-public-administration", "international-defence", "justice-rights-security", "economy-finance-trade"],
+      "lead_departments": ["Privy Council Office", "Treasury Board of Canada Secretariat", "Global Affairs Canada", "Department of National Defence", "Elections Canada"],
+      "committees": ["PROC", "OGGO", "FAAE", "NDDN", "PACP", "Standing Senate Committee on National Finance"],
+      "evidence_culture": "Institutional detail and comparative practice. Public administration research lands when it names the mechanism: the standing order, the directive, the reporting line, the incentive. What does not land: a democratic reform argument with no implementation path, and an international comparison that ignores federalism. Committees and the Library of Parliament both cite academic work on process directly, which is unusual and worth using.",
+      "best_stages": [
+        { "policyStage": 6, "why": "Public Accounts, the Auditor General and statutory reviews are structurally about how government works, which is the discipline's subject." },
+        { "policyStage": 4, "why": "Committee briefs and Senate appearances on institutional bills are a formal channel this discipline is unusually well suited to." },
+        { "policyStage": 1, "why": "Committees choose their own studies on process and governance, and a well-framed study proposal is often adopted." }
+      ],
+      "route_weights": {
+        "House of Commons committee brief": 3,
+        "Senate committee brief": 3,
+        "Get a committee to study it": 3,
+        "Put it in the public conversation": 3,
+        "Use the Departmental Science Advisor": 1,
+        "Canada Gazette Part I comment": 1
+      },
+      "influencers": ["Canadian Political Science Association", "Institute on Governance", "Institute for Research on Public Policy", "Federation for the Humanities and Social Sciences", "Canada School of Public Service", "Acfas"],
+      "actors": {
+        "decision_makers": ["Clerk of the Privy Council", "President of the Treasury Board", "committee chairs", "the Speaker"],
+        "influencers": ["Library of Parliament analysts", "Parliamentary Budget Officer", "Institute on Governance", "Institute for Research on Public Policy", "Policy Horizons Canada"],
+        "implementers": ["Privy Council Office machinery of government", "Treasury Board of Canada Secretariat", "Canada School of Public Service", "committee clerks"]
+      },
+      "hook": { "text": "The SSHRC Knowledge Synthesis Grants competition on The Changing Nature of Security and Conflict closes on 3 December 2026 at 8 p.m. eastern, and syntheses on these themes are set with federal departments.", "date": "2026-12-03", "confidence": "verified" },
+      "confidence": "check"
+    },
+    {
+      "id": "geography-planning",
+      "name": "Geography, planning and environment",
+      "division": "Social sciences",
+      "crdc_groups": ["RDF507"],
+      "domains": ["environment-climate", "transport-infrastructure-housing", "indigenous", "energy-natural-resources"],
+      "lead_departments": ["Housing, Infrastructure and Communities Canada", "Environment and Climate Change Canada", "Natural Resources Canada", "Crown-Indigenous Relations and Northern Affairs Canada", "Statistics Canada"],
+      "committees": ["TRAN", "ENVI", "INAN", "HUMA", "Standing Senate Committee on Transport and Communications"],
+      "evidence_culture": "Spatial data at a policy-relevant resolution, and a defensible boundary. Federal housing, infrastructure and adaptation files run on maps, census geography and cost per household. What does not land: a regional case study offered as national evidence, and a planning recommendation that ignores that land use is municipal. Where the work touches Indigenous lands, data governance is part of the credibility of the evidence.",
+      "best_stages": [
+        { "policyStage": 5, "why": "Program eligibility maps, allocation formulas and reporting indicators decide where federal money physically lands." },
+        { "policyStage": 2, "why": "Housing, adaptation and infrastructure options are drafted inside departments, which buy spatial analysis through CanadaBuys." },
+        { "policyStage": 6, "why": "Infrastructure and housing programs are audited and evaluated on a schedule and outcome geography is what auditors lack." }
+      ],
+      "route_weights": {
+        "Shape what gets measured": 3,
+        "Go direct to the policy shop": 3,
+        "Get on the panel or win the contract": 3,
+        "Run the pilot or the evaluation": 3,
+        "An independent cost estimate": 1
+      },
+      "influencers": ["Canadian Association of Geographers", "Canadian Institute of Planners", "Federation of Canadian Municipalities", "Federation for the Humanities and Social Sciences", "Evidence for Democracy", "Acfas"],
+      "actors": {
+        "decision_makers": ["Minister of Housing and Infrastructure", "Minister of Environment and Climate Change", "Treasury Board"],
+        "influencers": ["Federation of Canadian Municipalities", "Canadian Institute of Planners", "Canada Mortgage and Housing Corporation research", "Policy Horizons Canada"],
+        "implementers": ["Housing, Infrastructure and Communities Canada", "Canada Mortgage and Housing Corporation", "municipalities", "Indigenous governments"]
+      },
+      "hook": { "text": "NDDN's Arctic Transformation study on security, defence and partnerships in the North is taking briefs with no meetings held yet, which is the point at which the scope and the witness list are still open.", "date": "2026-09-03", "confidence": "verified" },
+      "confidence": "check"
+    },
+    {
+      "id": "media-communication-journalism",
+      "name": "Media, communication and journalism",
+      "division": "Social sciences",
+      "crdc_groups": ["RDF508"],
+      "domains": ["culture-heritage-media", "digital-data-privacy", "governance-public-administration"],
+      "lead_departments": ["Department of Canadian Heritage", "Innovation, Science and Economic Development Canada", "Canadian Radio-television and Telecommunications Commission"],
+      "committees": ["CHPC", "INDU", "ETHI", "Standing Senate Committee on Transport and Communications"],
+      "evidence_culture": "Measured audience and platform data, and a named policy instrument. Broadcasting and online-content files are argued in front of the CRTC as much as in front of departments, and CRTC proceedings accept public interventions on the record. What does not land: a normative claim about misinformation with no measurement, and a media critique with no regulatory hook. Your published commentary is itself a route here, because this is the sector that reads it.",
+      "best_stages": [
+        { "policyStage": 4, "why": "CRTC proceedings and broadcasting and online-content instruments are formal, public and open to any intervener." },
+        { "policyStage": 1, "why": "CHPC chooses its own studies on media and culture regularly, and public commentary is read directly by the people who move those motions." },
+        { "policyStage": 2, "why": "Heritage and ISED draft content, platform and journalism-support options inside the department before any consultation opens." }
+      ],
+      "route_weights": {
+        "Put it in the public conversation": 3,
+        "Get a committee to study it": 3,
+        "House of Commons committee brief": 3,
+        "Use the Departmental Science Advisor": 1,
+        "An independent cost estimate": 1
+      },
+      "influencers": ["Canadian Communication Association", "Federation for the Humanities and Social Sciences", "Canadian Journalism Foundation", "Acfas", "Canadian Science Policy Centre", "Evidence for Democracy"],
+      "actors": {
+        "decision_makers": ["Minister of Canadian Heritage", "Minister of Industry", "CRTC commissioners"],
+        "influencers": ["Library of Parliament analysts", "Policy Options and The Conversation Canada", "Canadian Journalism Foundation", "Federation for the Humanities and Social Sciences"],
+        "implementers": ["Canadian Radio-television and Telecommunications Commission", "Department of Canadian Heritage program branches", "Canadian Broadcasting Corporation", "Telefilm Canada"]
+      },
+      "hook": { "text": "Library of Parliament HillNotes and HillStudies cite published, accessible work and have no submission channel, so for this discipline being citable is the channel.", "date": "2026-09-03", "confidence": "verified" },
+      "confidence": "check"
+    },
+    {
+      "id": "history-classics-religion",
+      "name": "History, archaeology, classics and religion",
+      "division": "Humanities and the arts",
+      "crdc_groups": ["RDF601", "RDF605"],
+      "domains": ["culture-heritage-media", "indigenous", "education-youth", "governance-public-administration"],
+      "lead_departments": ["Department of Canadian Heritage", "Parks Canada Agency", "Library and Archives Canada", "Crown-Indigenous Relations and Northern Affairs Canada"],
+      "committees": ["CHPC", "INAN", "SRSR", "Standing Senate Committee on Indigenous Peoples"],
+      "evidence_culture": "Archival authority, provenance and long-run context. This field has fewer formal routes into government than the sciences, and the honest consequence is that influencers matter more than decision-makers. What lands: precedent, an account of how a policy came to be, and heritage and repatriation expertise. What does not land: a request that Ottawa endorse an interpretation. Being cited by a Library of Parliament analyst is worth more than a submission nobody asked for.",
+      "best_stages": [
+        { "policyStage": 1, "why": "With no formal channel open to this field, the real opening is framing an issue before it becomes a file, through commentary and committee study motions." },
+        { "policyStage": 5, "why": "Heritage designation, archives policy and commemoration programs are built at implementation, and expertise is genuinely needed there." },
+        { "policyStage": 6, "why": "Statutory and program reviews of heritage and archives institutions are scheduled, public and thinly attended." }
+      ],
+      "route_weights": {
+        "Put it in the public conversation": 3,
+        "Feed the foresight and advisory layer": 3,
+        "Get a committee to study it": 3,
+        "Join the program's advisory layer": 3,
+        "Use the Departmental Science Advisor": 1,
+        "An independent cost estimate": 1,
+        "Canada Gazette Part I comment": 1,
+        "Pre-budget consultations, both of them": 1
+      },
+      "influencers": ["Federation for the Humanities and Social Sciences", "Canadian Historical Association", "Canadian Museums Association", "Library and Archives Canada advisory bodies", "Acfas", "Canadian Science Policy Centre"],
+      "actors": {
+        "decision_makers": ["Minister of Canadian Heritage", "Minister of Crown-Indigenous Relations", "committee chairs at CHPC and INAN"],
+        "influencers": ["Library of Parliament analysts", "Federation for the Humanities and Social Sciences", "Canadian Historical Association", "Canadian Museums Association", "national museums"],
+        "implementers": ["Parks Canada Agency heritage programs", "Library and Archives Canada", "national museums", "Department of Canadian Heritage program officers"]
+      },
+      "hook": { "text": "The SSHRC Knowledge Synthesis Grants competition on The Changing Nature of Security and Conflict closes on 3 December 2026, and these themes are set with federal departments, which makes the call itself a readout of what Ottawa is about to decide.", "date": "2026-12-03", "confidence": "verified" },
+      "confidence": "check"
+    },
+    {
+      "id": "languages-literature-linguistics",
+      "name": "Languages, literature and linguistics",
+      "division": "Humanities and the arts",
+      "crdc_groups": ["RDF602"],
+      "domains": ["official-languages", "culture-heritage-media", "indigenous", "education-youth"],
+      "lead_departments": ["Department of Canadian Heritage", "Treasury Board of Canada Secretariat", "Office of the Commissioner of Official Languages", "Indigenous Services Canada"],
+      "committees": ["LANG", "CHPC", "INAN", "SRSR", "Standing Senate Committee on Official Languages"],
+      "evidence_culture": "Language data, vitality measures and legal obligation. Official languages is one of the few humanities-adjacent files with a statutory review mechanism and a dedicated committee in each chamber, and Indigenous language revitalisation has its own legislation. This field has fewer formal routes than the sciences, so use the two it does have. What does not land: an argument about language that carries no obligation or population number.",
+      "best_stages": [
+        { "policyStage": 6, "why": "The Official Languages Act is reviewed on a permanent basis by a designated committee in each chamber, and the Commissioner's reports are automatically referred." },
+        { "policyStage": 1, "why": "Language files reach the agenda through published commentary and committee study motions rather than through any call for submissions." },
+        { "policyStage": 5, "why": "Language program terms, funding formulas and Indigenous language funding models are set at implementation." }
+      ],
+      "route_weights": {
+        "Put it in the public conversation": 3,
+        "Get a committee to study it": 3,
+        "Senate committee brief": 3,
+        "Statutory review submission": 3,
+        "Use the Departmental Science Advisor": 1,
+        "An independent cost estimate": 1,
+        "Canada Gazette Part I comment": 1
+      },
+      "influencers": ["Federation for the Humanities and Social Sciences", "Acfas", "Association canadienne de linguistique", "Fédération des communautés francophones et acadienne du Canada", "Canadian Science Policy Centre"],
+      "actors": {
+        "decision_makers": ["Minister of Canadian Heritage", "President of the Treasury Board", "Minister of Indigenous Services"],
+        "influencers": ["Commissioner of Official Languages", "Acfas", "Federation for the Humanities and Social Sciences", "Office of the Commissioner of Indigenous Languages"],
+        "implementers": ["Department of Canadian Heritage official languages branch", "Treasury Board of Canada Secretariat", "school boards and minority-language institutions", "Indigenous language authorities"]
+      },
+      "hook": { "text": "SRSR adopted a study on 15 June 2026 of the External Advisory Panel report on the creation and dissemination of scientific information in French, has held no meetings, and has requested a comprehensive government response.", "date": "2026-06-15", "confidence": "verified" },
+      "confidence": "check"
+    },
+    {
+      "id": "philosophy",
+      "name": "Philosophy",
+      "division": "Humanities and the arts",
+      "crdc_groups": ["RDF603"],
+      "domains": ["justice-rights-security", "health", "science-research-innovation", "digital-data-privacy"],
+      "lead_departments": ["Department of Justice", "Health Canada", "Innovation, Science and Economic Development Canada", "Canadian Institutes of Health Research"],
+      "committees": ["JUST", "HESA", "ETHI", "AMAD", "Standing Senate Committee on Legal and Constitutional Affairs"],
+      "evidence_culture": "Argument quality, and a framework someone can apply on Monday. This field has the fewest formal routes into government of any in this list, which is a structural fact and not a comment on the work. Ethics enters federal decisions through advisory bodies, research ethics governance and bill studies on ethically contested questions. What does not land: a position paper with no decision procedure attached to it.",
+      "best_stages": [
+        { "policyStage": 1, "why": "With almost no formal channel available, the opening is putting the question into the conversation before it is a file, and getting a committee to take it up." },
+        { "policyStage": 4, "why": "Bills on ethically contested subjects, including medical assistance in dying and artificial intelligence, hold the only formal submission window this discipline reliably gets." },
+        { "policyStage": 5, "why": "Ethics frameworks, research governance and advisory panels are assembled at implementation and genuinely need this expertise." }
+      ],
+      "route_weights": {
+        "Put it in the public conversation": 3,
+        "Feed the foresight and advisory layer": 3,
+        "Get a committee to study it": 3,
+        "Join the program's advisory layer": 3,
+        "Use the Departmental Science Advisor": 1,
+        "An independent cost estimate": 1,
+        "Pre-budget consultations, both of them": 1,
+        "Canada Gazette Part I comment": 1
+      },
+      "influencers": ["Federation for the Humanities and Social Sciences", "Canadian Philosophical Association", "Council of Canadian Academies", "Canadian Science Policy Centre", "Acfas", "Evidence for Democracy"],
+      "actors": {
+        "decision_makers": ["Minister of Justice", "Minister of Health", "Minister of Industry", "members of the Special Joint Committee on Medical Assistance in Dying"],
+        "influencers": ["Council of Canadian Academies panels", "Office of the Chief Science Advisor", "Library of Parliament analysts", "Federation for the Humanities and Social Sciences", "research ethics boards"],
+        "implementers": ["Panel on Research Ethics and the Secretariat on Responsible Conduct of Research", "Health Canada policy branches", "departmental ethics and artificial intelligence governance units"]
+      },
+      "hook": { "text": "The Special Joint Committee on Medical Assistance in Dying is appointed to review Criminal Code provisions on medical assistance in dying and their application where mental illness is the sole underlying condition.", "date": "2026-09-03", "confidence": "verified" },
+      "confidence": "check"
+    },
+    {
+      "id": "fine-arts-design-architecture-film",
+      "name": "Fine arts, design, architecture, performing arts and film",
+      "division": "Humanities and the arts",
+      "crdc_groups": ["RDF604"],
+      "domains": ["culture-heritage-media", "education-youth", "indigenous", "transport-infrastructure-housing"],
+      "lead_departments": ["Department of Canadian Heritage", "Canada Council for the Arts", "Telefilm Canada", "National Film Board of Canada"],
+      "committees": ["CHPC", "INDU", "INAN", "Standing Senate Committee on Transport and Communications"],
+      "evidence_culture": "The work itself, sector economics and reach. Research creation has fewer formal routes into federal decision-making than any science field, and pretending otherwise wastes a researcher's time. What lands: audience and sector data, a named funding instrument you want changed, and the work seen by people who advise ministers. What does not land: an argument for the value of art with no instrument attached. The Canada Council and the Federation carry this field further than any submission portal.",
+      "best_stages": [
+        { "policyStage": 5, "why": "Arts funding program terms, eligibility and assessment criteria are the real policy, and they are rewritten at implementation." },
+        { "policyStage": 1, "why": "There is no call for submissions in this field, so the opening is public visibility and a committee motion at CHPC." },
+        { "policyStage": 3, "why": "Arts and culture budget lines are decided in the closed room, reached through the minister's office and a sector coalition." }
+      ],
+      "route_weights": {
+        "Put it in the public conversation": 3,
+        "Get a committee to study it": 3,
+        "Join the program's advisory layer": 3,
+        "The minister's office": 3,
+        "Use the Departmental Science Advisor": 1,
+        "An independent cost estimate": 1,
+        "Canada Gazette Part I comment": 1,
+        "Sponsor an amendment": 1
+      },
+      "influencers": ["Canada Council for the Arts", "Federation for the Humanities and Social Sciences", "Canadian Arts Coalition", "Canadian Museums Association", "Acfas", "Royal Architectural Institute of Canada"],
+      "actors": {
+        "decision_makers": ["Minister of Canadian Heritage", "Minister of Finance for budget lines", "CHPC committee members"],
+        "influencers": ["Canada Council for the Arts", "Canadian Arts Coalition", "Library of Parliament analysts", "Federation for the Humanities and Social Sciences", "national arts institutions"],
+        "implementers": ["Canada Council for the Arts program officers", "Telefilm Canada", "National Film Board of Canada", "Department of Canadian Heritage program branches"]
+      },
+      "hook": { "text": "The most recent SSHRC Knowledge Synthesis Grants competition on The Arts Transformed closed on 2 December 2025, so the current live routes for this field are Connection Grants, closing 2 November 2026, and CHPC study motions.", "date": "2026-11-02", "confidence": "check" },
+      "confidence": "check"
+    }
+  ]
+}

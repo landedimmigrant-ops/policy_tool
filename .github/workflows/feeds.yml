@@ -1,0 +1,66 @@
+# Refreshes data/feeds.json from the three tier-2 sources (LEGISinfo,
+# Canada Gazette Part I, CanadaBuys) and pushes it back to main when the
+# records actually changed. See scripts/fetch_feeds.py and
+# scripts/validate.py for what each step runs.
+name: Refresh feeds
+
+"on":
+  schedule:
+    # 10:00 UTC = 06:00 Eastern while Eastern observes daylight time
+    # (EDT, UTC-4). GitHub Actions cron is always UTC and does not shift
+    # for daylight saving, so once Eastern falls back to standard time
+    # (EST, UTC-5) this same line runs at 05:00 Eastern instead.
+    - cron: "0 10 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Fetch feeds
+        run: python scripts/fetch_feeds.py
+
+      - name: Validate data
+        run: python scripts/validate.py
+
+      - name: Fail loudly if validation failed
+        # A distinct step from "Validate data" above, so a broken data file
+        # (curated.json included, even though this workflow never writes it)
+        # shows as its own clearly labelled, annotated failure rather than
+        # relying on the previous step's bare exit code to be noticed.
+        if: failure()
+        run: |
+          echo "::error::scripts/validate.py failed. data/feeds.json was not committed. See the 'Validate data' step above for which file and record."
+          exit 1
+
+      - name: Commit and push if feeds changed
+        run: |
+          # data/feeds.json's built_at, and each source's fetched_at, are one
+          # shared timestamp written on every run, even when no upstream
+          # record changed at all. -I tells git diff to ignore a changed
+          # line when it matches the given pattern on both the old and new
+          # side, so these two ever-changing fields never trigger a commit
+          # by themselves; only an actual record change does. (Each source
+          # in data/feeds.json also carries a sha256 "hash" of just its own
+          # records, for anyone who wants a narrower check by hand instead
+          # of this git diff.)
+          if git diff --quiet -I '"built_at"' -I '"fetched_at"' -- data/feeds.json; then
+            echo "No record changes; nothing to commit."
+            exit 0
+          fi
+          git config user.name "policy-tool bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/feeds.json
+          git commit -m "Refresh feeds $(date -u +%Y-%m-%d)"
+          git push

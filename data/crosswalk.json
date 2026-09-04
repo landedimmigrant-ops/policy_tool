@@ -1,0 +1,447 @@
+{
+  "verified_on": "2026-09-03",
+  "source_notes": [
+    "Committee list taken from https://www.ourcommons.ca/committees/en/list on 2026-09-03, session 45-1. That page groups committees as Standing Committees (25), Other Committees (1: Liaison) and Joint Committees (4: AMAD, BCAN, BILI, REGS).",
+    "Count discrepancy resolved. The brief reported the Work page filter as saying 27 standing committees and 4 joint committees. On 2026-09-03 no such sentence appears on https://www.ourcommons.ca/Committees/en/Work. Its committee filter has two groups: Committees of the House of Commons with 26 entries, and Joint Committees with 4. The 26 are the 25 standing committees plus Liaison. Standing Order 104(2) names exactly 25 standing committees, paragraphs (a) to (y), ending at Veterans Affairs. The most likely reading of 27 is 25 standing committees plus Liaison plus one of the two standing joint committees. This table carries 25 standing, Liaison, 4 joint and 13 Senate committees, 43 rows in all.",
+    "Standing Order 104(2) lists the 25 standing committees. Standing Order 104(3) names the two standing joint committees, on the Library of Parliament and for the Scrutiny of Regulations. Standing Order 107 establishes the Liaison Committee, which is a permanent committee but not a standing committee. Standing Order 108(2) gives committees the power to study all matters relating to the mandate, management and operation of the departments assigned to them, and Standing Order 108(3) sets out the special mandates of ETHI, FEWO, LANG, OGGO, PACP, PROC and SRSR. Read at https://www.ourcommons.ca/procedure/standing-orders/chap13-e.html on 2026-09-03.",
+    "Department and agency assignments for House committees are transcribed from each committee's own About page, https://www.ourcommons.ca/Committees/en/<ACRONYM>/About, all fetched and read on 2026-09-03. Where a committee's About page names a portfolio without enumerating it, the row is marked check.",
+    "AMAD and BCAN are special joint committees appointed for the current Parliament, not standing joint committees. They exist only while their order of reference stands, so re-verify them before relying on them.",
+    "Senate committee names and URLs were verified by request on 2026-09-03; all 13 returned HTTP 200 with the official title in the page title. Senate committees are assigned subject areas by the Rules of the Senate rather than departments, so the departments listed on Senate rows are an editorial mapping and every Senate row is marked check.",
+    "An empty departments array means no department is assigned to that committee under Standing Order 108(2). Its mandate is a subject area. This is the case for LANG, SRSR, LIAI, REGS and BCAN.",
+    "senate_counterpart is null on Senate and joint rows. The House rows carry the pairing, so the House-to-Senate mapping is complete when read from the House side.",
+    "The confidence field describes the committee identity and its department list, both taken from the official page. Domain assignment is editorial judgement in every row, not a published mapping, and no official source maps committees to research domains. Treat domains as a starting point for a researcher, not as authority.",
+    "No published table in Canada maps House standing committees to their assigned departments and to subject domains. This table is assembled by hand from the sources above."
+  ],
+  "committees": [
+    {
+      "acronym": "ACVA",
+      "name": "Standing Committee on Veterans Affairs",
+      "chamber": "house",
+      "departments": ["Department of Veterans Affairs", "Veterans Review and Appeal Board"],
+      "domains": ["health", "labour-skills-social", "international-defence"],
+      "senate_counterpart": "Standing Senate Committee on National Security, Defence and Veterans Affairs",
+      "about_url": "https://www.ourcommons.ca/Committees/en/ACVA/About",
+      "confidence": "verified"
+    },
+    {
+      "acronym": "AGRI",
+      "name": "Standing Committee on Agriculture and Agri-Food",
+      "chamber": "house",
+      "departments": ["Agriculture and Agri-Food Canada", "Canadian Grain Commission", "Farm Products Council of Canada", "Canadian Dairy Commission", "Farm Credit Canada", "Canadian Food Inspection Agency", "Pest Management Regulatory Agency"],
+      "domains": ["agriculture-food", "environment-climate", "economy-finance-trade", "health"],
+      "senate_counterpart": "Standing Senate Committee on Agriculture and Forestry",
+      "about_url": "https://www.ourcommons.ca/Committees/en/AGRI/About",
+      "confidence": "verified"
+    },
+    {
+      "acronym": "CHPC",
+      "name": "Standing Committee on Canadian Heritage",
+      "chamber": "house",
+      "departments": ["Department of Canadian Heritage", "Canada Council for the Arts", "Canadian Broadcasting Corporation", "Canadian Radio-television and Telecommunications Commission", "Library and Archives Canada", "National Film Board of Canada", "Telefilm Canada", "Canadian Museum of History", "National Gallery of Canada"],
+      "domains": ["culture-heritage-media", "education-youth", "indigenous"],
+      "senate_counterpart": "Standing Senate Committee on Transport and Communications",
+      "about_url": "https://www.ourcommons.ca/Committees/en/CHPC/About",
+      "confidence": "check"
+    },
+    {
+      "acronym": "CIIT",
+      "name": "Standing Committee on International Trade",
+      "chamber": "house",
+      "departments": ["Global Affairs Canada (international trade component)", "Export Development Canada", "Canadian Commercial Corporation", "Invest in Canada"],
+      "domains": ["economy-finance-trade", "international-defence"],
+      "senate_counterpart": "Standing Senate Committee on Foreign Affairs and International Trade",
+      "about_url": "https://www.ourcommons.ca/Committees/en/CIIT/About",
+      "confidence": "verified"
+    },
+    {
+      "acronym": "CIMM",
+      "name": "Standing Committee on Citizenship and Immigration",
+      "chamber": "house",
+      "departments": ["Immigration, Refugees and Citizenship Canada", "Immigration and Refugee Board of Canada"],
+      "domains": ["immigration-multiculturalism", "labour-skills-social", "justice-rights-security"],
+      "senate_counterpart": "Standing Senate Committee on Social Affairs, Science and Technology",
+      "about_url": "https://www.ourcommons.ca/Committees/en/CIMM/About",
+      "confidence": "verified"
+    },
+    {
+      "acronym": "ENVI",
+      "name": "Standing Committee on Environment and Sustainable Development",
+      "chamber": "house",
+      "departments": ["Environment and Climate Change Canada", "Impact Assessment Agency of Canada", "Canada Water Agency", "Parks Canada Agency"],
+      "domains": ["environment-climate", "energy-natural-resources", "health"],
+      "senate_counterpart": "Standing Senate Committee on Energy, the Environment and Natural Resources",
+      "about_url": "https://www.ourcommons.ca/Committees/en/ENVI/About",
+      "confidence": "verified"
+    },
+    {
+      "acronym": "ETHI",
+      "name": "Standing Committee on Access to Information, Privacy and Ethics",
+      "chamber": "house",
+      "departments": ["Office of the Information Commissioner of Canada", "Office of the Privacy Commissioner of Canada", "Office of the Commissioner of Lobbying of Canada", "Office of the Conflict of Interest and Ethics Commissioner"],
+      "domains": ["digital-data-privacy", "governance-public-administration", "justice-rights-security"],
+      "senate_counterpart": "Standing Senate Committee on Legal and Constitutional Affairs",
+      "about_url": "https://www.ourcommons.ca/Committees/en/ETHI/About",
+      "confidence": "verified"
+    },
+    {
+      "acronym": "FAAE",
+      "name": "Standing Committee on Foreign Affairs and International Development",
+      "chamber": "house",
+      "departments": ["Global Affairs Canada", "International Development Research Centre", "International Joint Commission", "Asia Pacific Foundation of Canada", "Roosevelt Campobello International Park Commission", "Great Lakes Fishery Commission"],
+      "domains": ["international-defence", "justice-rights-security", "science-research-innovation"],
+      "senate_counterpart": "Standing Senate Committee on Foreign Affairs and International Trade",
+      "about_url": "https://www.ourcommons.ca/Committees/en/FAAE/About",
+      "confidence": "verified"
+    },
+    {
+      "acronym": "FEWO",
+      "name": "Standing Committee on the Status of Women",
+      "chamber": "house",
+      "departments": ["Department for Women and Gender Equality"],
+      "domains": ["labour-skills-social", "health", "justice-rights-security"],
+      "senate_counterpart": "Standing Senate Committee on Human Rights",
+      "about_url": "https://www.ourcommons.ca/Committees/en/FEWO/About",
+      "confidence": "verified"
+    },
+    {
+      "acronym": "FINA",
+      "name": "Standing Committee on Finance",
+      "chamber": "house",
+      "departments": ["Department of Finance Canada", "Canada Revenue Agency"],
+      "domains": ["economy-finance-trade", "governance-public-administration", "labour-skills-social"],
+      "senate_counterpart": "Standing Senate Committee on National Finance",
+      "about_url": "https://www.ourcommons.ca/Committees/en/FINA/About",
+      "confidence": "verified"
+    },
+    {
+      "acronym": "FOPO",
+      "name": "Standing Committee on Fisheries and Oceans",
+      "chamber": "house",
+      "departments": ["Fisheries and Oceans Canada", "Canadian Coast Guard"],
+      "domains": ["fisheries-oceans", "environment-climate", "indigenous"],
+      "senate_counterpart": "Standing Senate Committee on Fisheries and Oceans",
+      "about_url": "https://www.ourcommons.ca/Committees/en/FOPO/About",
+      "confidence": "verified"
+    },
+    {
+      "acronym": "HESA",
+      "name": "Standing Committee on Health",
+      "chamber": "house",
+      "departments": ["Health Canada", "Pest Management Regulatory Agency", "Canadian Institutes of Health Research", "Patented Medicine Prices Review Board", "Canadian Food Inspection Agency", "Public Health Agency of Canada"],
+      "domains": ["health", "science-research-innovation", "agriculture-food"],
+      "senate_counterpart": "Standing Senate Committee on Social Affairs, Science and Technology",
+      "about_url": "https://www.ourcommons.ca/Committees/en/HESA/About",
+      "confidence": "verified"
+    },
+    {
+      "acronym": "HUMA",
+      "name": "Standing Committee on Human Resources, Skills and Social Development and the Status of Persons with Disabilities",
+      "chamber": "house",
+      "departments": ["Employment and Social Development Canada", "Canada Industrial Relations Board", "Canadian Centre for Occupational Health and Safety", "Canada Mortgage and Housing Corporation", "Accessibility Standards Canada"],
+      "domains": ["labour-skills-social", "education-youth", "transport-infrastructure-housing", "health"],
+      "senate_counterpart": "Standing Senate Committee on Social Affairs, Science and Technology",
+      "about_url": "https://www.ourcommons.ca/Committees/en/HUMA/About",
+      "confidence": "verified"
+    },
+    {
+      "acronym": "INAN",
+      "name": "Standing Committee on Indigenous and Northern Affairs",
+      "chamber": "house",
+      "departments": ["Indigenous Services Canada", "Crown-Indigenous Relations and Northern Affairs Canada"],
+      "domains": ["indigenous", "health", "education-youth", "environment-climate"],
+      "senate_counterpart": "Standing Senate Committee on Indigenous Peoples",
+      "about_url": "https://www.ourcommons.ca/Committees/en/INAN/About",
+      "confidence": "verified"
+    },
+    {
+      "acronym": "INDU",
+      "name": "Standing Committee on Industry and Technology",
+      "chamber": "house",
+      "departments": ["Innovation, Science and Economic Development Canada", "National Research Council Canada", "Natural Sciences and Engineering Research Council of Canada", "Social Sciences and Humanities Research Council", "Statistics Canada", "Canadian Space Agency", "Canadian Intellectual Property Office", "Copyright Board Canada", "Competition Bureau Canada", "Standards Council of Canada", "Communications Research Centre Canada", "Business Development Bank of Canada", "Measurement Canada", "Office of Consumer Affairs", "Office of the Superintendent of Bankruptcy", "Destination Canada", "Atlantic Canada Opportunities Agency", "Canada Economic Development for Quebec Regions", "Canadian Northern Economic Development Agency", "Federal Economic Development Agency for Northern Ontario", "Federal Economic Development Agency for Southern Ontario", "Pacific Economic Development Canada", "Prairies Economic Development Canada", "Canada Foundation for Innovation", "Council of Canadian Academies", "Genome Canada", "Pierre Elliott Trudeau Foundation"],
+      "domains": ["science-research-innovation", "digital-data-privacy", "economy-finance-trade"],
+      "senate_counterpart": "Standing Senate Committee on Banking, Commerce and the Economy",
+      "about_url": "https://www.ourcommons.ca/Committees/en/INDU/About",
+      "confidence": "verified"
+    },
+    {
+      "acronym": "JUST",
+      "name": "Standing Committee on Justice and Human Rights",
+      "chamber": "house",
+      "departments": ["Department of Justice", "Canadian Human Rights Commission", "Office of the Commissioner for Federal Judicial Affairs Canada", "Supreme Court of Canada", "Courts Administration Service", "Administrative Tribunals Support Service of Canada", "Public Prosecution Service of Canada"],
+      "domains": ["justice-rights-security", "governance-public-administration"],
+      "senate_counterpart": "Standing Senate Committee on Legal and Constitutional Affairs",
+      "about_url": "https://www.ourcommons.ca/Committees/en/JUST/About",
+      "confidence": "verified"
+    },
+    {
+      "acronym": "LANG",
+      "name": "Standing Committee on Official Languages",
+      "chamber": "house",
+      "departments": [],
+      "domains": ["official-languages", "education-youth", "culture-heritage-media"],
+      "senate_counterpart": "Standing Senate Committee on Official Languages",
+      "about_url": "https://www.ourcommons.ca/Committees/en/LANG/About",
+      "confidence": "verified"
+    },
+    {
+      "acronym": "NDDN",
+      "name": "Standing Committee on National Defence",
+      "chamber": "house",
+      "departments": ["Department of National Defence", "Canadian Armed Forces"],
+      "domains": ["international-defence", "science-research-innovation", "justice-rights-security"],
+      "senate_counterpart": "Standing Senate Committee on National Security, Defence and Veterans Affairs",
+      "about_url": "https://www.ourcommons.ca/Committees/en/NDDN/About",
+      "confidence": "verified"
+    },
+    {
+      "acronym": "OGGO",
+      "name": "Standing Committee on Government Operations and Estimates",
+      "chamber": "house",
+      "departments": ["Privy Council Office and Prime Minister's Office", "Public Services and Procurement Canada", "Treasury Board of Canada Secretariat", "Shared Services Canada", "Canada School of Public Service", "Public Service Commission of Canada", "Federal Public Sector Labour Relations and Employment Board", "Public Servants Disclosure Protection Tribunal Canada", "Canada Post Corporation", "Canada Lands Company Limited", "Public Sector Pension Investment Board", "Defence Construction (1951) Limited", "National Capital Commission", "Old Port of Montreal Corporation Inc.", "Parc Downsview Park Inc.", "Canadian Intergovernmental Conference Secretariat", "Transportation Safety Board of Canada", "Office of the Parliamentary Budget Officer", "Office of the Procurement Ombud", "Office of the Public Sector Integrity Commissioner of Canada"],
+      "domains": ["governance-public-administration", "economy-finance-trade", "digital-data-privacy"],
+      "senate_counterpart": "Standing Senate Committee on National Finance",
+      "about_url": "https://www.ourcommons.ca/Committees/en/OGGO/About",
+      "confidence": "verified"
+    },
+    {
+      "acronym": "PACP",
+      "name": "Standing Committee on Public Accounts",
+      "chamber": "house",
+      "departments": ["Office of the Auditor General of Canada"],
+      "domains": ["governance-public-administration"],
+      "senate_counterpart": "Standing Senate Committee on National Finance",
+      "about_url": "https://www.ourcommons.ca/Committees/en/PACP/About",
+      "confidence": "verified"
+    },
+    {
+      "acronym": "PROC",
+      "name": "Standing Committee on Procedure and House Affairs",
+      "chamber": "house",
+      "departments": ["Office of the Chief Electoral Officer and Elections Canada", "Office of the Conflict of Interest and Ethics Commissioner", "Board of Internal Economy"],
+      "domains": ["governance-public-administration"],
+      "senate_counterpart": "Standing Committee on Rules, Procedures and the Rights of Parliament",
+      "about_url": "https://www.ourcommons.ca/Committees/en/PROC/About",
+      "confidence": "verified"
+    },
+    {
+      "acronym": "RNNR",
+      "name": "Standing Committee on Natural Resources",
+      "chamber": "house",
+      "departments": ["Natural Resources Canada", "Atomic Energy of Canada Limited", "Canadian Nuclear Safety Commission", "Canada Energy Regulator", "Canada-Newfoundland and Labrador Offshore Petroleum Board", "Canada-Nova Scotia Offshore Energy Regulator", "Northern Pipeline Agency", "Energy Supplies Allocation Board"],
+      "domains": ["energy-natural-resources", "environment-climate", "economy-finance-trade", "science-research-innovation"],
+      "senate_counterpart": "Standing Senate Committee on Energy, the Environment and Natural Resources",
+      "about_url": "https://www.ourcommons.ca/Committees/en/RNNR/About",
+      "confidence": "verified"
+    },
+    {
+      "acronym": "SECU",
+      "name": "Standing Committee on Public Safety and National Security",
+      "chamber": "house",
+      "departments": ["Public Safety Canada", "Canada Border Services Agency", "Canadian Security Intelligence Service", "Correctional Service Canada", "Parole Board of Canada", "Royal Canadian Mounted Police", "National Security and Intelligence Review Agency", "Civilian Review and Complaints Commission for the Royal Canadian Mounted Police", "Royal Canadian Mounted Police External Review Committee", "Office of the Correctional Investigator", "National Security and Intelligence Committee of Parliamentarians"],
+      "domains": ["justice-rights-security", "immigration-multiculturalism", "digital-data-privacy"],
+      "senate_counterpart": "Standing Senate Committee on National Security, Defence and Veterans Affairs",
+      "about_url": "https://www.ourcommons.ca/Committees/en/SECU/About",
+      "confidence": "verified"
+    },
+    {
+      "acronym": "SRSR",
+      "name": "Standing Committee on Science and Research",
+      "chamber": "house",
+      "departments": [],
+      "domains": ["science-research-innovation", "education-youth"],
+      "senate_counterpart": "Standing Senate Committee on Social Affairs, Science and Technology",
+      "about_url": "https://www.ourcommons.ca/Committees/en/SRSR/About",
+      "confidence": "verified"
+    },
+    {
+      "acronym": "TRAN",
+      "name": "Standing Committee on Transport, Infrastructure and Communities",
+      "chamber": "house",
+      "departments": ["Transport Canada", "Housing, Infrastructure and Communities Canada", "Canadian Transportation Agency", "Transportation Appeal Tribunal of Canada", "Canada Infrastructure Bank", "VIA Rail Canada Inc.", "Alto"],
+      "domains": ["transport-infrastructure-housing", "economy-finance-trade", "environment-climate"],
+      "senate_counterpart": "Standing Senate Committee on Transport and Communications",
+      "about_url": "https://www.ourcommons.ca/Committees/en/TRAN/About",
+      "confidence": "verified"
+    },
+    {
+      "acronym": "LIAI",
+      "name": "Liaison Committee",
+      "chamber": "house",
+      "departments": [],
+      "domains": ["governance-public-administration"],
+      "senate_counterpart": null,
+      "about_url": "https://www.ourcommons.ca/Committees/en/LIAI/About",
+      "confidence": "verified"
+    },
+    {
+      "acronym": "BILI",
+      "name": "Standing Joint Committee on the Library of Parliament",
+      "chamber": "joint",
+      "departments": ["Library of Parliament"],
+      "domains": ["governance-public-administration", "science-research-innovation"],
+      "senate_counterpart": null,
+      "about_url": "https://www.parl.ca/Committees/en/BILI",
+      "confidence": "verified"
+    },
+    {
+      "acronym": "REGS",
+      "name": "Standing Joint Committee for the Scrutiny of Regulations",
+      "chamber": "joint",
+      "departments": [],
+      "domains": ["governance-public-administration", "justice-rights-security"],
+      "senate_counterpart": null,
+      "about_url": "https://www.parl.ca/Committees/en/REGS",
+      "confidence": "verified"
+    },
+    {
+      "acronym": "AMAD",
+      "name": "Special Joint Committee on Medical Assistance in Dying",
+      "chamber": "joint",
+      "departments": ["Department of Justice", "Health Canada"],
+      "domains": ["health", "justice-rights-security"],
+      "senate_counterpart": null,
+      "about_url": "https://www.parl.ca/Committees/en/AMAD",
+      "confidence": "check"
+    },
+    {
+      "acronym": "BCAN",
+      "name": "Special Joint Committee on the Exercise of Powers Under the Building Canada Act",
+      "chamber": "joint",
+      "departments": [],
+      "domains": ["transport-infrastructure-housing", "governance-public-administration", "environment-climate", "indigenous"],
+      "senate_counterpart": null,
+      "about_url": "https://www.parl.ca/Committees/en/BCAN",
+      "confidence": "verified"
+    },
+    {
+      "acronym": "SOCI",
+      "name": "Standing Senate Committee on Social Affairs, Science and Technology",
+      "chamber": "senate",
+      "departments": ["Health Canada", "Public Health Agency of Canada", "Employment and Social Development Canada", "Canadian Institutes of Health Research", "Immigration, Refugees and Citizenship Canada"],
+      "domains": ["health", "labour-skills-social", "science-research-innovation", "education-youth", "immigration-multiculturalism"],
+      "senate_counterpart": null,
+      "about_url": "https://sencanada.ca/en/committees/soci/",
+      "confidence": "check"
+    },
+    {
+      "acronym": "ENEV",
+      "name": "Standing Senate Committee on Energy, the Environment and Natural Resources",
+      "chamber": "senate",
+      "departments": ["Natural Resources Canada", "Environment and Climate Change Canada", "Canada Energy Regulator", "Impact Assessment Agency of Canada"],
+      "domains": ["energy-natural-resources", "environment-climate"],
+      "senate_counterpart": null,
+      "about_url": "https://sencanada.ca/en/committees/enev/",
+      "confidence": "check"
+    },
+    {
+      "acronym": "AGFO",
+      "name": "Standing Senate Committee on Agriculture and Forestry",
+      "chamber": "senate",
+      "departments": ["Agriculture and Agri-Food Canada", "Canadian Food Inspection Agency", "Natural Resources Canada (Canadian Forest Service)"],
+      "domains": ["agriculture-food", "environment-climate", "energy-natural-resources"],
+      "senate_counterpart": null,
+      "about_url": "https://sencanada.ca/en/committees/agfo/",
+      "confidence": "check"
+    },
+    {
+      "acronym": "NFFN",
+      "name": "Standing Senate Committee on National Finance",
+      "chamber": "senate",
+      "departments": ["Department of Finance Canada", "Treasury Board of Canada Secretariat", "Canada Revenue Agency"],
+      "domains": ["economy-finance-trade", "governance-public-administration"],
+      "senate_counterpart": null,
+      "about_url": "https://sencanada.ca/en/committees/nffn/",
+      "confidence": "check"
+    },
+    {
+      "acronym": "LCJC",
+      "name": "Standing Senate Committee on Legal and Constitutional Affairs",
+      "chamber": "senate",
+      "departments": ["Department of Justice", "Public Prosecution Service of Canada", "Supreme Court of Canada"],
+      "domains": ["justice-rights-security", "governance-public-administration"],
+      "senate_counterpart": null,
+      "about_url": "https://sencanada.ca/en/committees/lcjc/",
+      "confidence": "check"
+    },
+    {
+      "acronym": "APPA",
+      "name": "Standing Senate Committee on Indigenous Peoples",
+      "chamber": "senate",
+      "departments": ["Crown-Indigenous Relations and Northern Affairs Canada", "Indigenous Services Canada"],
+      "domains": ["indigenous"],
+      "senate_counterpart": null,
+      "about_url": "https://sencanada.ca/en/committees/appa/",
+      "confidence": "check"
+    },
+    {
+      "acronym": "OLLO",
+      "name": "Standing Senate Committee on Official Languages",
+      "chamber": "senate",
+      "departments": ["Office of the Commissioner of Official Languages", "Department of Canadian Heritage", "Treasury Board of Canada Secretariat"],
+      "domains": ["official-languages", "education-youth", "culture-heritage-media"],
+      "senate_counterpart": null,
+      "about_url": "https://sencanada.ca/en/committees/ollo/",
+      "confidence": "check"
+    },
+    {
+      "acronym": "RIDR",
+      "name": "Standing Senate Committee on Human Rights",
+      "chamber": "senate",
+      "departments": ["Canadian Human Rights Commission", "Department of Justice", "Immigration, Refugees and Citizenship Canada"],
+      "domains": ["justice-rights-security", "immigration-multiculturalism", "indigenous"],
+      "senate_counterpart": null,
+      "about_url": "https://sencanada.ca/en/committees/ridr/",
+      "confidence": "check"
+    },
+    {
+      "acronym": "BANC",
+      "name": "Standing Senate Committee on Banking, Commerce and the Economy",
+      "chamber": "senate",
+      "departments": ["Department of Finance Canada", "Innovation, Science and Economic Development Canada", "Bank of Canada", "Office of the Superintendent of Financial Institutions"],
+      "domains": ["economy-finance-trade", "science-research-innovation", "digital-data-privacy"],
+      "senate_counterpart": null,
+      "about_url": "https://sencanada.ca/en/committees/banc/",
+      "confidence": "check"
+    },
+    {
+      "acronym": "POFO",
+      "name": "Standing Senate Committee on Fisheries and Oceans",
+      "chamber": "senate",
+      "departments": ["Fisheries and Oceans Canada", "Canadian Coast Guard"],
+      "domains": ["fisheries-oceans", "environment-climate", "indigenous"],
+      "senate_counterpart": null,
+      "about_url": "https://sencanada.ca/en/committees/pofo/",
+      "confidence": "check"
+    },
+    {
+      "acronym": "AEFA",
+      "name": "Standing Senate Committee on Foreign Affairs and International Trade",
+      "chamber": "senate",
+      "departments": ["Global Affairs Canada", "International Development Research Centre", "Export Development Canada"],
+      "domains": ["international-defence", "economy-finance-trade"],
+      "senate_counterpart": null,
+      "about_url": "https://sencanada.ca/en/committees/aefa/",
+      "confidence": "check"
+    },
+    {
+      "acronym": "SECD",
+      "name": "Standing Senate Committee on National Security, Defence and Veterans Affairs",
+      "chamber": "senate",
+      "departments": ["Department of National Defence", "Public Safety Canada", "Veterans Affairs Canada", "Royal Canadian Mounted Police", "Canadian Security Intelligence Service"],
+      "domains": ["international-defence", "justice-rights-security", "health"],
+      "senate_counterpart": null,
+      "about_url": "https://sencanada.ca/en/committees/secd/",
+      "confidence": "check"
+    },
+    {
+      "acronym": "TRCM",
+      "name": "Standing Senate Committee on Transport and Communications",
+      "chamber": "senate",
+      "departments": ["Transport Canada", "Housing, Infrastructure and Communities Canada", "Canadian Radio-television and Telecommunications Commission", "Innovation, Science and Economic Development Canada (telecommunications)"],
+      "domains": ["transport-infrastructure-housing", "culture-heritage-media", "digital-data-privacy"],
+      "senate_counterpart": null,
+      "about_url": "https://sencanada.ca/en/committees/trcm/",
+      "confidence": "check"
+    }
+  ]
+}

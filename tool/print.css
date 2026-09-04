@@ -1,0 +1,107 @@
+/* Federal Policy Pathways: the tool.
+   tool/print.css. Owner: Sonnet UI. Built to docs/design-spec.md 7.6.
+   Loaded by tool/index.html with media="print", so everything in this file already
+   applies only when printing or when a browser's print preview is engaged (or DevTools'
+   "Emulate CSS media type: print"). The @media print wrapper below is redundant with
+   that link, kept only so the file still behaves correctly if it is ever included
+   another way.
+
+   What this hides and shows is a plan, not a page: #pt-print (given both the id, for
+   mode-plan.js's own hook, and the class .pt-print, so this file never needs an id
+   selector) is built by mode-plan.js in what / so what / now what order and normally
+   sits on screen with the hidden attribute. Printing from any mode other than Plan it
+   has nothing to show, since that container only exists while Mode C is mounted; that
+   is a deliberate consequence of this being Plan it's export feature, not a general
+   print-any-page one. */
+
+/* @page is kept outside the @media print block below: nesting it inside a media
+   query has patchy support across print engines, and this whole file already
+   applies only to print, via the media="print" attribute on its <link>. */
+@page { margin: 18mm; }
+
+@media print {
+
+  /* ============================================================
+     1. Hide everything, then show only the brief.
+     ============================================================ */
+  body * { visibility: hidden; }
+  .pt-print, .pt-print * { visibility: visible; }
+  .pt-print {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+  }
+
+  /* ============================================================
+     2. Page and type. Serif, black on white, no fills. The tool's
+     own tokens still resolve here (:root is not media-scoped), so
+     --serif is used for the typeface, but colour is hard-coded:
+     this must stay black on white regardless of the reader's
+     screen theme, which --ink and --surface are not guaranteed to
+     be once dark mode has swapped them.
+     ============================================================ */
+
+  .pt-print {
+    font-family: var(--serif, Georgia, "Times New Roman", serif);
+    font-size: 11pt;
+    line-height: 1.45;
+    color: #000;
+    background: #fff;
+    max-width: none;
+  }
+
+  /* mode-plan.js builds these as real h2/h3/h4 so a saved PDF has an outline.
+     The UA sheet's own heading sizes and margins are overridden here, which is
+     why every one of these rules sets both. */
+  .pt-print__title {
+    font-family: var(--serif, Georgia, "Times New Roman", serif);
+    font-size: 18pt;
+    font-weight: 500;
+    margin: 0 0 14pt;
+  }
+
+  .pt-print__heading {
+    font-family: inherit;
+    font-size: 13pt;
+    font-weight: 700;
+    margin: 16pt 0 8pt;
+    padding-top: 8pt;
+    border-top: 1pt solid #000;
+  }
+  .pt-print__section:first-of-type .pt-print__heading { border-top: 0; padding-top: 0; margin-top: 0; }
+
+  .pt-print__label {
+    font-family: inherit;
+    font-size: 11pt;
+    font-weight: 700;
+    text-transform: none;
+    letter-spacing: 0;
+    margin: 10pt 0 2pt;
+  }
+
+  .pt-print__body {
+    margin: 0 0 8pt;
+  }
+  .pt-print__body--indent { margin-left: 14pt; }
+
+  .pt-print a {
+    color: inherit;
+    text-decoration: none;
+  }
+  .pt-print a[href]:after {
+    content: " [" attr(href) "]";
+    font-size: 0.85em;
+    word-break: break-all;
+  }
+
+  /* ============================================================
+     3. Page breaks, so a short block is not split across pages
+     and the document is otherwise free to flow across one or two.
+     ============================================================ */
+  .pt-print__section {
+    break-inside: avoid;
+    break-before: auto;
+  }
+}

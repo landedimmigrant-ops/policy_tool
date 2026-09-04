@@ -1,0 +1,345 @@
+{
+  "codes": {
+    "AA": {
+      "label": "Arts",
+      "domains": [
+        "culture-heritage-media"
+      ]
+    },
+    "AD": {
+      "label": "Advertising / Marketing",
+      "domains": [
+        "economy-finance-trade"
+      ]
+    },
+    "AG": {
+      "label": "Agriculture",
+      "domains": [
+        "agriculture-food"
+      ]
+    },
+    "AM": {
+      "label": "Amendments",
+      "domains": [
+        "governance-public-administration"
+      ]
+    },
+    "AN": {
+      "label": "Animals",
+      "domains": [
+        "agriculture-food",
+        "environment-climate"
+      ]
+    },
+    "CD": {
+      "label": "Children",
+      "domains": [
+        "education-youth",
+        "labour-skills-social"
+      ]
+    },
+    "CM": {
+      "label": "Communication",
+      "domains": [
+        "digital-data-privacy"
+      ]
+    },
+    "CR": {
+      "label": "Copyright / Trademarks / Patents",
+      "domains": [
+        "economy-finance-trade",
+        "science-research-innovation",
+        "culture-heritage-media"
+      ]
+    },
+    "CU": {
+      "label": "Culture",
+      "domains": [
+        "culture-heritage-media"
+      ]
+    },
+    "DV": {
+      "label": "Development",
+      "domains": [
+        "international-defence",
+        "economy-finance-trade"
+      ]
+    },
+    "EC": {
+      "label": "Economy",
+      "domains": [
+        "economy-finance-trade"
+      ]
+    },
+    "ED": {
+      "label": "Economic development",
+      "domains": [
+        "economy-finance-trade"
+      ]
+    },
+    "EM": {
+      "label": "Employment",
+      "domains": [
+        "labour-skills-social"
+      ]
+    },
+    "EN": {
+      "label": "Environment",
+      "domains": [
+        "environment-climate"
+      ]
+    },
+    "EU": {
+      "label": "Education",
+      "domains": [
+        "education-youth"
+      ]
+    },
+    "EX": {
+      "label": "Exporting / Importing",
+      "domains": [
+        "economy-finance-trade"
+      ]
+    },
+    "FA": {
+      "label": "Financial assistance and entitlements",
+      "domains": [
+        "labour-skills-social",
+        "economy-finance-trade"
+      ]
+    },
+    "FD": {
+      "label": "Food and drug",
+      "domains": [
+        "health",
+        "agriculture-food"
+      ]
+    },
+    "FI": {
+      "label": "Finance",
+      "domains": [
+        "economy-finance-trade"
+      ]
+    },
+    "FO": {
+      "label": "Foreign affairs",
+      "domains": [
+        "international-defence"
+      ]
+    },
+    "FS": {
+      "label": "Fisheries",
+      "domains": [
+        "fisheries-oceans"
+      ]
+    },
+    "GBA": {
+      "label": "Gender Based Analysis",
+      "domains": [
+        "governance-public-administration",
+        "labour-skills-social"
+      ]
+    },
+    "GE": {
+      "label": "Gender",
+      "domains": [
+        "labour-skills-social",
+        "justice-rights-security"
+      ]
+    },
+    "GP": {
+      "label": "Government procurement",
+      "domains": [
+        "economy-finance-trade",
+        "governance-public-administration"
+      ]
+    },
+    "HL": {
+      "label": "Housing",
+      "domains": [
+        "transport-infrastructure-housing"
+      ]
+    },
+    "HP": {
+      "label": "Heritage",
+      "domains": [
+        "culture-heritage-media"
+      ]
+    },
+    "HR": {
+      "label": "Human resources",
+      "domains": [
+        "labour-skills-social",
+        "governance-public-administration"
+      ]
+    },
+    "HS": {
+      "label": "Health",
+      "domains": [
+        "health"
+      ]
+    },
+    "IM": {
+      "label": "Immigration",
+      "domains": [
+        "immigration-multiculturalism"
+      ]
+    },
+    "IN": {
+      "label": "Industry",
+      "domains": [
+        "economy-finance-trade"
+      ]
+    },
+    "IP": {
+      "label": "Indigenous Peoples",
+      "domains": [
+        "indigenous"
+      ]
+    },
+    "IT": {
+      "label": "International",
+      "domains": [
+        "international-defence"
+      ]
+    },
+    "JL": {
+      "label": "Justice and the Law",
+      "domains": [
+        "justice-rights-security"
+      ]
+    },
+    "LT": {
+      "label": "Labour",
+      "domains": [
+        "labour-skills-social"
+      ]
+    },
+    "ND": {
+      "label": "National Defence",
+      "domains": [
+        "international-defence"
+      ]
+    },
+    "NR": {
+      "label": "Natural resources",
+      "domains": [
+        "energy-natural-resources"
+      ]
+    },
+    "PD": {
+      "label": "Persons with disabilities",
+      "domains": [
+        "labour-skills-social",
+        "justice-rights-security"
+      ]
+    },
+    "PL": {
+      "label": "Plants",
+      "domains": [
+        "agriculture-food",
+        "environment-climate"
+      ]
+    },
+    "PO": {
+      "label": "Policy",
+      "domains": [
+        "governance-public-administration"
+      ]
+    },
+    "PR": {
+      "label": "Private sector",
+      "domains": [
+        "economy-finance-trade"
+      ]
+    },
+    "PS": {
+      "label": "Public safety",
+      "domains": [
+        "justice-rights-security"
+      ]
+    },
+    "RE": {
+      "label": "Regulations",
+      "domains": [
+        "governance-public-administration"
+      ]
+    },
+    "RL": {
+      "label": "Recreation",
+      "domains": [
+        "culture-heritage-media"
+      ]
+    },
+    "RU": {
+      "label": "Rural and remote services",
+      "domains": [
+        "governance-public-administration",
+        "transport-infrastructure-housing"
+      ]
+    },
+    "SA": {
+      "label": "Seniors",
+      "domains": [
+        "labour-skills-social",
+        "health"
+      ]
+    },
+    "SE": {
+      "label": "Service",
+      "domains": [
+        "governance-public-administration"
+      ]
+    },
+    "SO": {
+      "label": "Society",
+      "domains": [
+        "labour-skills-social"
+      ]
+    },
+    "SP": {
+      "label": "Sport",
+      "domains": [
+        "culture-heritage-media"
+      ]
+    },
+    "ST": {
+      "label": "Science and technology",
+      "domains": [
+        "science-research-innovation"
+      ]
+    },
+    "TC": {
+      "label": "Trade",
+      "domains": [
+        "economy-finance-trade"
+      ]
+    },
+    "TF": {
+      "label": "Training and careers",
+      "domains": [
+        "labour-skills-social",
+        "education-youth"
+      ]
+    },
+    "TR": {
+      "label": "Transportation",
+      "domains": [
+        "transport-infrastructure-housing"
+      ]
+    },
+    "TX": {
+      "label": "Taxes",
+      "domains": [
+        "economy-finance-trade"
+      ]
+    },
+    "YJ": {
+      "label": "Youth",
+      "domains": [
+        "education-youth",
+        "labour-skills-social"
+      ]
+    }
+  }
+}

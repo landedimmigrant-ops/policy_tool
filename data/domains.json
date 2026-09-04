@@ -1,0 +1,22 @@
+{
+  "domains": [
+    { "id": "health", "label": "Health and public health" },
+    { "id": "environment-climate", "label": "Environment and climate" },
+    { "id": "energy-natural-resources", "label": "Energy and natural resources" },
+    { "id": "agriculture-food", "label": "Agriculture and food" },
+    { "id": "fisheries-oceans", "label": "Fisheries and oceans" },
+    { "id": "science-research-innovation", "label": "Science, research and innovation" },
+    { "id": "digital-data-privacy", "label": "Digital, data and privacy" },
+    { "id": "economy-finance-trade", "label": "Economy, finance and trade" },
+    { "id": "labour-skills-social", "label": "Labour, skills and social policy" },
+    { "id": "education-youth", "label": "Education and youth" },
+    { "id": "immigration-multiculturalism", "label": "Immigration and multiculturalism" },
+    { "id": "justice-rights-security", "label": "Justice, rights and public safety" },
+    { "id": "indigenous", "label": "Indigenous and northern affairs" },
+    { "id": "culture-heritage-media", "label": "Culture, heritage and media" },
+    { "id": "official-languages", "label": "Official languages" },
+    { "id": "transport-infrastructure-housing", "label": "Transport, infrastructure and housing" },
+    { "id": "international-defence", "label": "Foreign affairs and defence" },
+    { "id": "governance-public-administration", "label": "Governance and public administration" }
+  ]
+}

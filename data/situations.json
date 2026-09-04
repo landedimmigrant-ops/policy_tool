@@ -1,0 +1,61 @@
+{
+  "situations": [
+    {
+      "id": "bill-touches-my-field",
+      "label": "A bill just landed on my subject",
+      "policyStage": 4,
+      "view": "both",
+      "note": "A bill sits at authorization, the only policy stage with formal submission channels, and reading the machine view first tells you why you are arguing a clause rather than the principle."
+    },
+    {
+      "id": "consultation-just-opened",
+      "label": "A consultation just opened and I want in",
+      "policyStage": 2,
+      "view": "influence",
+      "note": "A published consultation is a live opening, so this card goes straight to the board filtered to consultations. The routes for policy stage 2 are one click away from each card.",
+      "route": "#/openings?kind=consultation"
+    },
+    {
+      "id": "finding-no-audience",
+      "label": "I have a finding and nobody to send it to",
+      "policyStage": 1,
+      "view": "both",
+      "note": "With no file, no owner and no call for submissions, you are at agenda setting, where the work is finding who should own the problem and framing it for them."
+    },
+    {
+      "id": "program-being-reviewed",
+      "label": "My program or field is being evaluated",
+      "policyStage": 6,
+      "view": "influence",
+      "note": "Evaluations, audits and statutory reviews are policy stage 6, and the routes there are the evaluation unit, the reviewing committee and the Auditor General rather than the policy shop."
+    },
+    {
+      "id": "committee-studying-my-topic",
+      "label": "A committee is studying my topic",
+      "policyStage": 1,
+      "view": "influence",
+      "note": "Most committee studies are self-initiated with no bill attached, so the leverage is in the scope and the witness list before meetings start, which is agenda setting rather than authorization."
+    },
+    {
+      "id": "pre-budget-season",
+      "label": "It is pre-budget season",
+      "policyStage": 3,
+      "view": "influence",
+      "note": "Pre-budget submissions aim at the closed room, so the routes are the two separate consultations, the minister's office and an independent cost estimate through a parliamentarian."
+    },
+    {
+      "id": "asked-to-brief",
+      "label": "Someone asked me to brief them",
+      "policyStage": 3,
+      "view": "influence",
+      "note": "A briefing request means a decision is close and a person is preparing to argue it, so the format rules of policy stage 3 apply: one page, one number, their words."
+    },
+    {
+      "id": "regulation-out-for-comment",
+      "label": "A regulation is out for comment",
+      "policyStage": 4,
+      "view": "influence",
+      "note": "Canada Gazette Part I comment windows sit at authorization, and the routes there tell you to aim at the Regulatory Impact Analysis Statement rather than the policy in general."
+    }
+  ]
+}

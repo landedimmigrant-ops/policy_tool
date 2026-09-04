@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en-CA">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Federal Policy Pathways: the tool</title>
+<meta name="description" content="Walk the six policy stages for your field, see what is open in Ottawa right now, and build a plan you can print.">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=Public+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="print.css" media="print">
+</head>
+<body>
+
+<a class="pt-skip" href="#pt-outlet">Skip to content</a>
+
+<header class="masthead pt-masthead" id="pt-masthead"></header>
+
+<nav class="pt-modebar" id="pt-modebar" aria-label="Modes"></nav>
+
+<div class="pt-contextbar" id="pt-context" hidden></div>
+
+<div class="pt-notices" id="pt-notices" hidden></div>
+
+<main class="pt-outlet" id="pt-outlet" tabindex="-1"></main>
+
+<div class="pt-sr" id="pt-live" aria-live="polite" aria-atomic="true"></div>
+
+<footer class="pt-footer" id="pt-footer"></footer>
+
+<script src="app.js"></script>
+<script src="feeds-live.js"></script>
+<script src="mode-walk.js"></script>
+<script src="mode-openings.js"></script>
+<script src="mode-plan.js"></script>
+<script>PolicyTool.boot();</script>
+
+</body>
+</html>
