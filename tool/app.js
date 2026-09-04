@@ -738,6 +738,13 @@
     });
     out = out.filter(function (r) { return !isGone(r); });
     out.sort(function (a, b) {
+      /* Open dated items first, then standing items, then expired ones. A board
+         that says "what is open now" should not open on what just closed; the
+         expired cards stay visible at the end, greyed, so the shut window is
+         still on record. Director's decision of 4 September 2026, amending
+         spec section 8.5. */
+      var ae = isExpired(a), be = isExpired(b);
+      if (ae !== be) return ae ? 1 : -1;
       var as = isStanding(a), bs = isStanding(b);
       if (as !== bs) return as ? 1 : -1;
       if (as && bs) return String(a.title).localeCompare(String(b.title));
