@@ -851,7 +851,7 @@ international-defence, governance-public-administration
 
 **Merge rule.** Concatenate `curated.records`, `feeds.records`, `live.records` in that order. Deduplicate on `id` first, then on normalized `source_url` (lower-cased, trailing slash and query stripped). **First wins**, so curated beats the build beats live, because a curated record carries a hand-written tip and a human check date. Each surviving record is stamped with `_tier` (3, 2 or 1) for the freshness banner only.
 
-**Sort.** By effective close date ascending. Standing items last, then alphabetical by title. Expired items sort last, after standing items, and render grey, so the board opens on what is open and a reader still sees that a window just shut. (Amended 4 September 2026 by the director; the first live board opened on two expired Gazette issues.)
+**Sort.** By effective close date ascending. Standing items last, then alphabetical by title. Order is: open dated items by close date, then standing items, then items whose close date has passed but whose expiry has not (rendered "Closed"), then expired items, greyed. The board opens on what is open and a reader still sees that a window just shut. (Amended 4 September 2026 by the director; the first live board opened on two expired Gazette issues.)
 
 **Bucketing.** `closes` more than 365 days out is treated as `standing`, per the plan's finding about standing engagements in the consultations registry.
 
