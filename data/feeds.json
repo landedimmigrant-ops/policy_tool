@@ -1,26 +1,26 @@
 {
-  "built_at": "2026-09-04T05:34:01Z",
+  "built_at": "2026-09-04T14:07:04Z",
   "sources": {
     "legisinfo": {
-      "fetched_at": "2026-09-04T05:34:01Z",
-      "count": 80,
+      "fetched_at": "2026-09-04T14:07:04Z",
+      "count": 79,
       "ok": true,
       "error": null,
-      "hash": "2b8974d757bc50bc61582198fdcb991765b45c5e68e77d54421d26b00054e251"
+      "hash": "c14be52ff60dd97ae20f83135356d2769e0387847dd90e9b9fa7aa8ff7bdcd12"
     },
     "gazette": {
-      "fetched_at": "2026-09-04T05:34:01Z",
+      "fetched_at": "2026-09-04T14:07:04Z",
       "count": 16,
       "ok": true,
       "error": null,
       "hash": "3978aa286eea1bf70390cea4d30acbf2ddeeb331b25800f677b915fe8e1eefd3"
     },
     "canadabuys": {
-      "fetched_at": "2026-09-04T05:34:01Z",
-      "count": 2,
+      "fetched_at": "2026-09-04T14:07:04Z",
+      "count": 0,
       "ok": true,
       "error": null,
-      "hash": "db1be70f5b0eb10f1ba5a15d15e15da75e71dae8cb6373e94df6947d0240c0f0"
+      "hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
     }
   },
   "records": [
@@ -1228,24 +1228,6 @@
       "tip": ""
     },
     {
-      "id": "bill-s-247",
-      "title": "Bill S-247: National Framework on Food Allergy Act",
-      "body": "Debate at second reading on May 7, 2026 (Senate)",
-      "policyStage": 4,
-      "domains": [
-        "health",
-        "agriculture-food"
-      ],
-      "opens": "2026-05-07",
-      "closes": null,
-      "open_to": "anyone",
-      "source_url": "https://www.parl.ca/legisinfo/en/bill/45-1/S-247",
-      "source_kind": "bill",
-      "verified_on": "2026-09-04",
-      "expires_on": null,
-      "tip": ""
-    },
-    {
       "id": "bill-s-248",
       "title": "Bill S-248: Caribbean Heritage Month Act",
       "body": "Referral to committee on June 9, 2026 (Senate)",
@@ -1581,41 +1563,6 @@
       "source_kind": "gazette",
       "verified_on": "2026-09-04",
       "expires_on": "2026-11-07",
-      "tip": ""
-    },
-    {
-      "id": "tender-cb-619-77529222",
-      "title": "Trade and Transportation Information System (TTIS) Modernization",
-      "body": "Transport Canada has a requirement to obtain specialized professional informatics services to perform defined, task-based activities that modernize the data processes supporting the Transportation Statistical Addendum Tables and related Trade and Transportation Information System (TTIS) intelligence products.",
-      "policyStage": 2,
-      "domains": [
-        "economy-finance-trade",
-        "transport-infrastructure-housing"
-      ],
-      "opens": "2026-09-03",
-      "closes": "2026-09-18",
-      "open_to": "organisation",
-      "source_url": "https://canadabuys.canada.ca/en/tender-opportunities/tender-notice/cb-619-77529222",
-      "source_kind": "tender",
-      "verified_on": "2026-09-04",
-      "expires_on": "2026-09-18",
-      "tip": ""
-    },
-    {
-      "id": "tender-cb-753-23152908",
-      "title": "Letter of Interest / Advance Notice to Industry Multidisciplinary Environmental Services RFSO",
-      "body": "This published notice is not a solicitation. This document does not offer any commitments with respect to future purchases or contracts. The information in this notice is illustrative and may be revised as circumstances change. The purpose of this notice is to inform industry that Public Works and Government Services Canada (PWGSC) intends to establish new Departmental Individual Standing Offers...",
-      "policyStage": 2,
-      "domains": [
-        "environment-climate"
-      ],
-      "opens": "2026-09-03",
-      "closes": "2026-09-30",
-      "open_to": "organisation",
-      "source_url": "https://canadabuys.canada.ca/en/tender-opportunities/tender-notice/cb-753-23152908",
-      "source_kind": "tender",
-      "verified_on": "2026-09-04",
-      "expires_on": "2026-09-30",
       "tip": ""
     }
   ]
