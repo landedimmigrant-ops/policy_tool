@@ -1,29 +1,1091 @@
 {
-  "built_at": "2026-10-04T15:12:32Z",
+  "built_at": "2026-10-05T19:10:09Z",
   "sources": {
     "legisinfo": {
-      "fetched_at": "2026-10-04T15:12:32Z",
-      "count": 0,
-      "ok": false,
-      "error": "HTTPError: HTTP Error 403: Forbidden",
-      "hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      "fetched_at": "2026-10-05T19:10:09Z",
+      "count": 64,
+      "ok": true,
+      "error": null,
+      "hash": "b22e9a88d84ce23a294f729026332449fbc16525cc46d2a8b8b711d76307018f"
     },
     "gazette": {
-      "fetched_at": "2026-10-04T15:12:32Z",
+      "fetched_at": "2026-10-05T19:10:09Z",
       "count": 15,
       "ok": true,
       "error": null,
-      "hash": "33f4035906d43de835423a1ba8ec51b1fb670b3290020fca7f1862aba2321e64"
+      "hash": "cba4716bd6019bb65b4dc505fa5eaf3de0ff2f543472333d32b09acac3f8bb13"
     },
     "canadabuys": {
-      "fetched_at": "2026-10-04T15:12:32Z",
-      "count": 0,
+      "fetched_at": "2026-10-05T19:10:09Z",
+      "count": 5,
       "ok": true,
       "error": null,
-      "hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      "hash": "c51f69909a7a871aa6f56d8358309051a7864495000ec7ec20b153c3e5171146"
     }
   },
   "records": [
+    {
+      "id": "bill-c-10",
+      "title": "Bill C-10: Commissioner for Modern Treaty Implementation Act",
+      "body": "First reading on September 28, 2026 (Senate)",
+      "policyStage": 4,
+      "domains": [
+        "indigenous"
+      ],
+      "opens": "2026-09-28",
+      "closes": null,
+      "open_to": "anyone",
+      "source_url": "https://www.parl.ca/legisinfo/en/bill/45-1/C-10",
+      "source_kind": "bill",
+      "verified_on": "2026-10-05",
+      "expires_on": null,
+      "tip": ""
+    },
+    {
+      "id": "bill-c-11",
+      "title": "Bill C-11: Military Justice System Modernization Act",
+      "body": "Royal assent on June 18, 2026 (Senate)",
+      "policyStage": 4,
+      "domains": [
+        "justice-rights-security",
+        "international-defence"
+      ],
+      "opens": "2026-06-18",
+      "closes": null,
+      "open_to": "anyone",
+      "source_url": "https://www.parl.ca/legisinfo/en/bill/45-1/C-11",
+      "source_kind": "bill",
+      "verified_on": "2026-10-05",
+      "expires_on": null,
+      "tip": ""
+    },
+    {
+      "id": "bill-c-14",
+      "title": "Bill C-14: Bail and Sentencing Reform Act",
+      "body": "The Senate does not insist on its amendment(s) on June 15, 2026 (Senate)",
+      "policyStage": 4,
+      "domains": [
+        "justice-rights-security"
+      ],
+      "opens": "2026-06-15",
+      "closes": null,
+      "open_to": "anyone",
+      "source_url": "https://www.parl.ca/legisinfo/en/bill/45-1/C-14",
+      "source_kind": "bill",
+      "verified_on": "2026-10-05",
+      "expires_on": null,
+      "tip": ""
+    },
+    {
+      "id": "bill-c-16",
+      "title": "Bill C-16: Protecting Victims Act",
+      "body": "Royal assent on June 18, 2026 (Senate)",
+      "policyStage": 4,
+      "domains": [
+        "justice-rights-security"
+      ],
+      "opens": "2026-06-18",
+      "closes": null,
+      "open_to": "anyone",
+      "source_url": "https://www.parl.ca/legisinfo/en/bill/45-1/C-16",
+      "source_kind": "bill",
+      "verified_on": "2026-10-05",
+      "expires_on": null,
+      "tip": ""
+    },
+    {
+      "id": "bill-c-20",
+      "title": "Bill C-20: Build Canada Homes Act",
+      "body": "Royal assent on June 18, 2026 (Senate)",
+      "policyStage": 4,
+      "domains": [],
+      "opens": "2026-06-18",
+      "closes": null,
+      "open_to": "anyone",
+      "source_url": "https://www.parl.ca/legisinfo/en/bill/45-1/C-20",
+      "source_kind": "bill",
+      "verified_on": "2026-10-05",
+      "expires_on": null,
+      "tip": ""
+    },
+    {
+      "id": "bill-c-218",
+      "title": "Bill C-218: An Act to amend the Criminal Code (medical assistance in dying)",
+      "body": "Debate at second reading on September 23, 2026 (House of Commons)",
+      "policyStage": 4,
+      "domains": [
+        "health",
+        "justice-rights-security"
+      ],
+      "opens": "2026-09-23",
+      "closes": null,
+      "open_to": "anyone",
+      "source_url": "https://www.parl.ca/legisinfo/en/bill/45-1/C-218",
+      "source_kind": "bill",
+      "verified_on": "2026-10-05",
+      "expires_on": null,
+      "tip": ""
+    },
+    {
+      "id": "bill-c-219",
+      "title": "Bill C-219: Sergei Magnitsky International Anti-Corruption and Human Rights Act",
+      "body": "Committee report presented with amendments on June 18, 2026 (House of Commons)",
+      "policyStage": 4,
+      "domains": [
+        "international-defence"
+      ],
+      "opens": "2026-06-18",
+      "closes": null,
+      "open_to": "anyone",
+      "source_url": "https://www.parl.ca/legisinfo/en/bill/45-1/C-219",
+      "source_kind": "bill",
+      "verified_on": "2026-10-05",
+      "expires_on": null,
+      "tip": ""
+    },
+    {
+      "id": "bill-c-22",
+      "title": "Bill C-22: Lawful Access Act, 2026",
+      "body": "First reading on June 18, 2026 (Senate)",
+      "policyStage": 4,
+      "domains": [
+        "digital-data-privacy"
+      ],
+      "opens": "2026-06-18",
+      "closes": null,
+      "open_to": "anyone",
+      "source_url": "https://www.parl.ca/legisinfo/en/bill/45-1/C-22",
+      "source_kind": "bill",
+      "verified_on": "2026-10-05",
+      "expires_on": null,
+      "tip": ""
+    },
+    {
+      "id": "bill-c-221",
+      "title": "Bill C-221: An Act to amend the Corrections and Conditional Release Act (disclosure of information to victims)",
+      "body": "Committee report presented with amendments on September 25, 2026 (House of Commons)",
+      "policyStage": 4,
+      "domains": [
+        "justice-rights-security"
+      ],
+      "opens": "2026-09-25",
+      "closes": null,
+      "open_to": "anyone",
+      "source_url": "https://www.parl.ca/legisinfo/en/bill/45-1/C-221",
+      "source_kind": "bill",
+      "verified_on": "2026-10-05",
+      "expires_on": null,
+      "tip": ""
+    },
+    {
+      "id": "bill-c-225",
+      "title": "Bill C-225: An Act to amend the Criminal Code",
+      "body": "Royal assent on June 17, 2026 (Senate)",
+      "policyStage": 4,
+      "domains": [
+        "justice-rights-security"
+      ],
+      "opens": "2026-06-17",
+      "closes": null,
+      "open_to": "anyone",
+      "source_url": "https://www.parl.ca/legisinfo/en/bill/45-1/C-225",
+      "source_kind": "bill",
+      "verified_on": "2026-10-05",
+      "expires_on": null,
+      "tip": ""
+    },
+    {
+      "id": "bill-c-230",
+      "title": "Bill C-230: An Act to amend the Financial Administration Act and to make consequential amendments to other Acts (debt forgiveness registry)",
+      "body": "Referral to committee on June 16, 2026 (Senate)",
+      "policyStage": 4,
+      "domains": [
+        "economy-finance-trade"
+      ],
+      "opens": "2026-06-16",
+      "closes": null,
+      "open_to": "anyone",
+      "source_url": "https://www.parl.ca/legisinfo/en/bill/45-1/C-230",
+      "source_kind": "bill",
+      "verified_on": "2026-10-05",
+      "expires_on": null,
+      "tip": ""
+    },
+    {
+      "id": "bill-c-232",
+      "title": "Bill C-232: An Act to amend the Corrections and Conditional Release Act (maximum security offenders)",
+      "body": "Bill defeated at second reading on June 10, 2026 (House of Commons)",
+      "policyStage": 4,
+      "domains": [
+        "justice-rights-security"
+      ],
+      "opens": "2026-06-10",
+      "closes": null,
+      "open_to": "anyone",
+      "source_url": "https://www.parl.ca/legisinfo/en/bill/45-1/C-232",
+      "source_kind": "bill",
+      "verified_on": "2026-10-05",
+      "expires_on": null,
+      "tip": ""
+    },
+    {
+      "id": "bill-c-235",
+      "title": "Bill C-235: Respecting Families of Murdered and Brutalized Persons Act",
+      "body": "Committee report presented with amendments on June 8, 2026 (House of Commons)",
+      "policyStage": 4,
+      "domains": [],
+      "opens": "2026-06-08",
+      "closes": null,
+      "open_to": "anyone",
+      "source_url": "https://www.parl.ca/legisinfo/en/bill/45-1/C-235",
+      "source_kind": "bill",
+      "verified_on": "2026-10-05",
+      "expires_on": null,
+      "tip": ""
+    },
+    {
+      "id": "bill-c-241",
+      "title": "Bill C-241: National Strategy on Flood and Drought Forecasting Act",
+      "body": "Committee report presented with amendments on June 17, 2026 (House of Commons)",
+      "policyStage": 4,
+      "domains": [
+        "environment-climate"
+      ],
+      "opens": "2026-06-17",
+      "closes": null,
+      "open_to": "anyone",
+      "source_url": "https://www.parl.ca/legisinfo/en/bill/45-1/C-241",
+      "source_kind": "bill",
+      "verified_on": "2026-10-05",
+      "expires_on": null,
+      "tip": ""
+    },
+    {
+      "id": "bill-c-244",
+      "title": "Bill C-244: Clean Coasts Act",
+      "body": "Committee report presented with amendments on September 23, 2026 (House of Commons)",
+      "policyStage": 4,
+      "domains": [
+        "environment-climate"
+      ],
+      "opens": "2026-09-23",
+      "closes": null,
+      "open_to": "anyone",
+      "source_url": "https://www.parl.ca/legisinfo/en/bill/45-1/C-244",
+      "source_kind": "bill",
+      "verified_on": "2026-10-05",
+      "expires_on": null,
+      "tip": ""
+    },
+    {
+      "id": "bill-c-25",
+      "title": "Bill C-25: Strong and Free Elections Act",
+      "body": "Royal assent on June 18, 2026 (Senate)",
+      "policyStage": 4,
+      "domains": [
+        "governance-public-administration"
+      ],
+      "opens": "2026-06-18",
+      "closes": null,
+      "open_to": "anyone",
+      "source_url": "https://www.parl.ca/legisinfo/en/bill/45-1/C-25",
+      "source_kind": "bill",
+      "verified_on": "2026-10-05",
+      "expires_on": null,
+      "tip": ""
+    },
+    {
+      "id": "bill-c-26",
+      "title": "Bill C-26: An Act to authorize certain payments to be made out of the Consolidated Revenue Fund for the purpose of improving housing supply",
+      "body": "Royal assent on June 18, 2026 (Senate)",
+      "policyStage": 4,
+      "domains": [
+        "transport-infrastructure-housing"
+      ],
+      "opens": "2026-06-18",
+      "closes": null,
+      "open_to": "anyone",
+      "source_url": "https://www.parl.ca/legisinfo/en/bill/45-1/C-26",
+      "source_kind": "bill",
+      "verified_on": "2026-10-05",
+      "expires_on": null,
+      "tip": ""
+    },
+    {
+      "id": "bill-c-265",
+      "title": "Bill C-265: An Act to amend the Food and Drugs Act (List of Therapeutic Products Pre-approved for Special Access)",
+      "body": "Second reading and referral to committee on June 10, 2026 (House of Commons)",
+      "policyStage": 4,
+      "domains": [
+        "agriculture-food"
+      ],
+      "opens": "2026-06-10",
+      "closes": null,
+      "open_to": "anyone",
+      "source_url": "https://www.parl.ca/legisinfo/en/bill/45-1/C-265",
+      "source_kind": "bill",
+      "verified_on": "2026-10-05",
+      "expires_on": null,
+      "tip": ""
+    },
+    {
+      "id": "bill-c-266",
+      "title": "Bill C-266: National Framework on Skilled Trades and Labour Mobility Act",
+      "body": "Second reading and referral to committee on September 23, 2026 (House of Commons)",
+      "policyStage": 4,
+      "domains": [
+        "economy-finance-trade",
+        "labour-skills-social"
+      ],
+      "opens": "2026-09-23",
+      "closes": null,
+      "open_to": "anyone",
+      "source_url": "https://www.parl.ca/legisinfo/en/bill/45-1/C-266",
+      "source_kind": "bill",
+      "verified_on": "2026-10-05",
+      "expires_on": null,
+      "tip": ""
+    },
+    {
+      "id": "bill-c-267",
+      "title": "Bill C-267: National Framework on the Durability of Electronic Products and Essential Home Appliances Act",
+      "body": "Second reading and referral to committee on June 17, 2026 (House of Commons)",
+      "policyStage": 4,
+      "domains": [],
+      "opens": "2026-06-17",
+      "closes": null,
+      "open_to": "anyone",
+      "source_url": "https://www.parl.ca/legisinfo/en/bill/45-1/C-267",
+      "source_kind": "bill",
+      "verified_on": "2026-10-05",
+      "expires_on": null,
+      "tip": ""
+    },
+    {
+      "id": "bill-c-268",
+      "title": "Bill C-268: Spectrum Policy Framework for Canada Act",
+      "body": "Second reading and referral to committee on June 17, 2026 (House of Commons)",
+      "policyStage": 4,
+      "domains": [
+        "science-research-innovation"
+      ],
+      "opens": "2026-06-17",
+      "closes": null,
+      "open_to": "anyone",
+      "source_url": "https://www.parl.ca/legisinfo/en/bill/45-1/C-268",
+      "source_kind": "bill",
+      "verified_on": "2026-10-05",
+      "expires_on": null,
+      "tip": ""
+    },
+    {
+      "id": "bill-c-269",
+      "title": "Bill C-269: An Act to amend the Income Tax Act (heat recovery tax credit)",
+      "body": "Debate at second reading on June 15, 2026 (House of Commons)",
+      "policyStage": 4,
+      "domains": [
+        "economy-finance-trade"
+      ],
+      "opens": "2026-06-15",
+      "closes": null,
+      "open_to": "anyone",
+      "source_url": "https://www.parl.ca/legisinfo/en/bill/45-1/C-269",
+      "source_kind": "bill",
+      "verified_on": "2026-10-05",
+      "expires_on": null,
+      "tip": ""
+    },
+    {
+      "id": "bill-c-27",
+      "title": "Bill C-27: Final Self-Government Agreement for the Tlegohli Got’ine Act",
+      "body": "Referral to committee on September 28, 2026 (Senate)",
+      "policyStage": 4,
+      "domains": [],
+      "opens": "2026-09-28",
+      "closes": null,
+      "open_to": "anyone",
+      "source_url": "https://www.parl.ca/legisinfo/en/bill/45-1/C-27",
+      "source_kind": "bill",
+      "verified_on": "2026-10-05",
+      "expires_on": null,
+      "tip": ""
+    },
+    {
+      "id": "bill-c-283",
+      "title": "Bill C-283: Somali Heritage Month Act",
+      "body": "Introduction and first reading on June 8, 2026 (House of Commons)",
+      "policyStage": 4,
+      "domains": [
+        "culture-heritage-media"
+      ],
+      "opens": "2026-06-08",
+      "closes": null,
+      "open_to": "anyone",
+      "source_url": "https://www.parl.ca/legisinfo/en/bill/45-1/C-283",
+      "source_kind": "bill",
+      "verified_on": "2026-10-05",
+      "expires_on": null,
+      "tip": ""
+    },
+    {
+      "id": "bill-c-284",
+      "title": "Bill C-284: An Act to amend the Canada Labour Code (replacement workers)",
+      "body": "Introduction and first reading on June 8, 2026 (House of Commons)",
+      "policyStage": 4,
+      "domains": [
+        "labour-skills-social"
+      ],
+      "opens": "2026-06-08",
+      "closes": null,
+      "open_to": "anyone",
+      "source_url": "https://www.parl.ca/legisinfo/en/bill/45-1/C-284",
+      "source_kind": "bill",
+      "verified_on": "2026-10-05",
+      "expires_on": null,
+      "tip": ""
+    },
+    {
+      "id": "bill-c-285",
+      "title": "Bill C-285: Used Car Tax Cut Act",
+      "body": "Introduction and first reading on June 12, 2026 (House of Commons)",
+      "policyStage": 4,
+      "domains": [
+        "economy-finance-trade"
+      ],
+      "opens": "2026-06-12",
+      "closes": null,
+      "open_to": "anyone",
+      "source_url": "https://www.parl.ca/legisinfo/en/bill/45-1/C-285",
+      "source_kind": "bill",
+      "verified_on": "2026-10-05",
+      "expires_on": null,
+      "tip": ""
+    },
+    {
+      "id": "bill-c-286",
+      "title": "Bill C-286: An act to amend the Controlled Drugs and Substances Act and the Food and Drugs Act",
+      "body": "Introduction and first reading on June 16, 2026 (House of Commons)",
+      "policyStage": 4,
+      "domains": [
+        "agriculture-food"
+      ],
+      "opens": "2026-06-16",
+      "closes": null,
+      "open_to": "anyone",
+      "source_url": "https://www.parl.ca/legisinfo/en/bill/45-1/C-286",
+      "source_kind": "bill",
+      "verified_on": "2026-10-05",
+      "expires_on": null,
+      "tip": ""
+    },
+    {
+      "id": "bill-c-287",
+      "title": "Bill C-287: Housing Cost Transparency Act",
+      "body": "Introduction and first reading on June 17, 2026 (House of Commons)",
+      "policyStage": 4,
+      "domains": [
+        "transport-infrastructure-housing"
+      ],
+      "opens": "2026-06-17",
+      "closes": null,
+      "open_to": "anyone",
+      "source_url": "https://www.parl.ca/legisinfo/en/bill/45-1/C-287",
+      "source_kind": "bill",
+      "verified_on": "2026-10-05",
+      "expires_on": null,
+      "tip": ""
+    },
+    {
+      "id": "bill-c-288",
+      "title": "Bill C-288: Protection Against Online Fraud Act",
+      "body": "Introduction and first reading on June 17, 2026 (House of Commons)",
+      "policyStage": 4,
+      "domains": [
+        "digital-data-privacy"
+      ],
+      "opens": "2026-06-17",
+      "closes": null,
+      "open_to": "anyone",
+      "source_url": "https://www.parl.ca/legisinfo/en/bill/45-1/C-288",
+      "source_kind": "bill",
+      "verified_on": "2026-10-05",
+      "expires_on": null,
+      "tip": ""
+    },
+    {
+      "id": "bill-c-289",
+      "title": "Bill C-289: Stopping Supply to Save Lives Act",
+      "body": "Introduction and first reading on June 17, 2026 (House of Commons)",
+      "policyStage": 4,
+      "domains": [],
+      "opens": "2026-06-17",
+      "closes": null,
+      "open_to": "anyone",
+      "source_url": "https://www.parl.ca/legisinfo/en/bill/45-1/C-289",
+      "source_kind": "bill",
+      "verified_on": "2026-10-05",
+      "expires_on": null,
+      "tip": ""
+    },
+    {
+      "id": "bill-c-29",
+      "title": "Bill C-29: Financial Crimes Agency Act",
+      "body": "Second reading and referral to committee on June 18, 2026 (House of Commons)",
+      "policyStage": 4,
+      "domains": [
+        "economy-finance-trade"
+      ],
+      "opens": "2026-06-18",
+      "closes": null,
+      "open_to": "anyone",
+      "source_url": "https://www.parl.ca/legisinfo/en/bill/45-1/C-29",
+      "source_kind": "bill",
+      "verified_on": "2026-10-05",
+      "expires_on": null,
+      "tip": ""
+    },
+    {
+      "id": "bill-c-290",
+      "title": "Bill C-290: An Act to amend the Criminal Code (theft of property of cultural or religious significance)",
+      "body": "Introduction and first reading on June 17, 2026 (House of Commons)",
+      "policyStage": 4,
+      "domains": [
+        "justice-rights-security"
+      ],
+      "opens": "2026-06-17",
+      "closes": null,
+      "open_to": "anyone",
+      "source_url": "https://www.parl.ca/legisinfo/en/bill/45-1/C-290",
+      "source_kind": "bill",
+      "verified_on": "2026-10-05",
+      "expires_on": null,
+      "tip": ""
+    },
+    {
+      "id": "bill-c-291",
+      "title": "Bill C-291: An Act to amend the Department of Industry Act (small businesses)",
+      "body": "Introduction and first reading on June 17, 2026 (House of Commons)",
+      "policyStage": 4,
+      "domains": [],
+      "opens": "2026-06-17",
+      "closes": null,
+      "open_to": "anyone",
+      "source_url": "https://www.parl.ca/legisinfo/en/bill/45-1/C-291",
+      "source_kind": "bill",
+      "verified_on": "2026-10-05",
+      "expires_on": null,
+      "tip": ""
+    },
+    {
+      "id": "bill-c-30",
+      "title": "Bill C-30: Spring Economic Update 2026 Implementation Act",
+      "body": "Royal assent on June 18, 2026 (Senate)",
+      "policyStage": 4,
+      "domains": [
+        "economy-finance-trade"
+      ],
+      "opens": "2026-06-18",
+      "closes": null,
+      "open_to": "anyone",
+      "source_url": "https://www.parl.ca/legisinfo/en/bill/45-1/C-30",
+      "source_kind": "bill",
+      "verified_on": "2026-10-05",
+      "expires_on": null,
+      "tip": ""
+    },
+    {
+      "id": "bill-c-31",
+      "title": "Bill C-31: Budget 2025 Implementation Act, No. 2",
+      "body": "Pre-study of House bill on June 10, 2026 (Senate)",
+      "policyStage": 4,
+      "domains": [
+        "economy-finance-trade"
+      ],
+      "opens": "2026-06-09",
+      "closes": null,
+      "open_to": "anyone",
+      "source_url": "https://www.parl.ca/legisinfo/en/bill/45-1/C-31",
+      "source_kind": "bill",
+      "verified_on": "2026-10-05",
+      "expires_on": null,
+      "tip": ""
+    },
+    {
+      "id": "bill-c-32",
+      "title": "Bill C-32: Appropriation Act No. 2, 2026-27",
+      "body": "Royal assent on June 17, 2026 (Senate)",
+      "policyStage": 4,
+      "domains": [
+        "economy-finance-trade"
+      ],
+      "opens": "2026-06-17",
+      "closes": null,
+      "open_to": "anyone",
+      "source_url": "https://www.parl.ca/legisinfo/en/bill/45-1/C-32",
+      "source_kind": "bill",
+      "verified_on": "2026-10-05",
+      "expires_on": null,
+      "tip": ""
+    },
+    {
+      "id": "bill-c-33",
+      "title": "Bill C-33: Appropriation Act No. 3, 2026-27",
+      "body": "Royal assent on June 17, 2026 (Senate)",
+      "policyStage": 4,
+      "domains": [
+        "economy-finance-trade"
+      ],
+      "opens": "2026-06-17",
+      "closes": null,
+      "open_to": "anyone",
+      "source_url": "https://www.parl.ca/legisinfo/en/bill/45-1/C-33",
+      "source_kind": "bill",
+      "verified_on": "2026-10-05",
+      "expires_on": null,
+      "tip": ""
+    },
+    {
+      "id": "bill-c-34",
+      "title": "Bill C-34: Safe Social Media Act",
+      "body": "Introduction and first reading on June 10, 2026 (House of Commons)",
+      "policyStage": 4,
+      "domains": [],
+      "opens": "2026-06-10",
+      "closes": null,
+      "open_to": "anyone",
+      "source_url": "https://www.parl.ca/legisinfo/en/bill/45-1/C-34",
+      "source_kind": "bill",
+      "verified_on": "2026-10-05",
+      "expires_on": null,
+      "tip": ""
+    },
+    {
+      "id": "bill-c-35",
+      "title": "Bill C-35: Ban on Importing Goods Made with Forced Labour Act",
+      "body": "Introduction and first reading on June 12, 2026 (House of Commons)",
+      "policyStage": 4,
+      "domains": [
+        "labour-skills-social"
+      ],
+      "opens": "2026-06-12",
+      "closes": null,
+      "open_to": "anyone",
+      "source_url": "https://www.parl.ca/legisinfo/en/bill/45-1/C-35",
+      "source_kind": "bill",
+      "verified_on": "2026-10-05",
+      "expires_on": null,
+      "tip": ""
+    },
+    {
+      "id": "bill-c-36",
+      "title": "Bill C-36: An Act to enact the Protecting Privacy and Consumer Data Act, to amend the Personal Information Protection and Electronic Documents Act and to make amendments to other Acts",
+      "body": "Introduction and first reading on June 15, 2026 (House of Commons)",
+      "policyStage": 4,
+      "domains": [
+        "digital-data-privacy"
+      ],
+      "opens": "2026-06-15",
+      "closes": null,
+      "open_to": "anyone",
+      "source_url": "https://www.parl.ca/legisinfo/en/bill/45-1/C-36",
+      "source_kind": "bill",
+      "verified_on": "2026-10-05",
+      "expires_on": null,
+      "tip": ""
+    },
+    {
+      "id": "bill-c-37",
+      "title": "Bill C-37: First Nations Clean Water Act",
+      "body": "Introduction and first reading on June 16, 2026 (House of Commons)",
+      "policyStage": 4,
+      "domains": [
+        "indigenous"
+      ],
+      "opens": "2026-06-16",
+      "closes": null,
+      "open_to": "anyone",
+      "source_url": "https://www.parl.ca/legisinfo/en/bill/45-1/C-37",
+      "source_kind": "bill",
+      "verified_on": "2026-10-05",
+      "expires_on": null,
+      "tip": ""
+    },
+    {
+      "id": "bill-c-38",
+      "title": "Bill C-38: Canadian Fuel Affordability Act",
+      "body": "Second reading and referral to committee on September 22, 2026 (House of Commons)",
+      "policyStage": 4,
+      "domains": [
+        "economy-finance-trade"
+      ],
+      "opens": "2026-09-22",
+      "closes": null,
+      "open_to": "anyone",
+      "source_url": "https://www.parl.ca/legisinfo/en/bill/45-1/C-38",
+      "source_kind": "bill",
+      "verified_on": "2026-10-05",
+      "expires_on": null,
+      "tip": ""
+    },
+    {
+      "id": "bill-c-39",
+      "title": "Bill C-39: Building Canada Strong Act",
+      "body": "Debate at second reading on September 25, 2026 (House of Commons)",
+      "policyStage": 4,
+      "domains": [],
+      "opens": "2026-09-25",
+      "closes": null,
+      "open_to": "anyone",
+      "source_url": "https://www.parl.ca/legisinfo/en/bill/45-1/C-39",
+      "source_kind": "bill",
+      "verified_on": "2026-10-05",
+      "expires_on": null,
+      "tip": ""
+    },
+    {
+      "id": "bill-c-8",
+      "title": "Bill C-8: An Act respecting cyber security, amending the Telecommunications Act and making consequential amendments to other Acts",
+      "body": "Royal assent on June 15, 2026 (Senate)",
+      "policyStage": 4,
+      "domains": [
+        "digital-data-privacy",
+        "justice-rights-security"
+      ],
+      "opens": "2026-06-15",
+      "closes": null,
+      "open_to": "anyone",
+      "source_url": "https://www.parl.ca/legisinfo/en/bill/45-1/C-8",
+      "source_kind": "bill",
+      "verified_on": "2026-10-05",
+      "expires_on": null,
+      "tip": ""
+    },
+    {
+      "id": "bill-c-9",
+      "title": "Bill C-9: Combatting Hate Act",
+      "body": "Royal assent on June 18, 2026 (Senate)",
+      "policyStage": 4,
+      "domains": [],
+      "opens": "2026-06-18",
+      "closes": null,
+      "open_to": "anyone",
+      "source_url": "https://www.parl.ca/legisinfo/en/bill/45-1/C-9",
+      "source_kind": "bill",
+      "verified_on": "2026-10-05",
+      "expires_on": null,
+      "tip": ""
+    },
+    {
+      "id": "bill-s-201",
+      "title": "Bill S-201: National Framework on Sickle Cell Disease Act",
+      "body": "Second reading and referral to committee on June 16, 2026 (House of Commons)",
+      "policyStage": 4,
+      "domains": [
+        "health"
+      ],
+      "opens": "2026-06-16",
+      "closes": null,
+      "open_to": "anyone",
+      "source_url": "https://www.parl.ca/legisinfo/en/bill/45-1/S-201",
+      "source_kind": "bill",
+      "verified_on": "2026-10-05",
+      "expires_on": null,
+      "tip": ""
+    },
+    {
+      "id": "bill-s-202",
+      "title": "Bill S-202: An Act to amend the Food and Drugs Act (warning label on alcoholic beverages)",
+      "body": "Debate at third reading on October 1, 2026 (Senate)",
+      "policyStage": 4,
+      "domains": [
+        "agriculture-food"
+      ],
+      "opens": "2026-10-01",
+      "closes": null,
+      "open_to": "anyone",
+      "source_url": "https://www.parl.ca/legisinfo/en/bill/45-1/S-202",
+      "source_kind": "bill",
+      "verified_on": "2026-10-05",
+      "expires_on": null,
+      "tip": ""
+    },
+    {
+      "id": "bill-s-209",
+      "title": "Bill S-209: Protecting Young Persons from Exposure to Pornography Act",
+      "body": "Debate at second reading on September 24, 2026 (House of Commons)",
+      "policyStage": 4,
+      "domains": [],
+      "opens": "2026-09-24",
+      "closes": null,
+      "open_to": "anyone",
+      "source_url": "https://www.parl.ca/legisinfo/en/bill/45-1/S-209",
+      "source_kind": "bill",
+      "verified_on": "2026-10-05",
+      "expires_on": null,
+      "tip": ""
+    },
+    {
+      "id": "bill-s-210",
+      "title": "Bill S-210: Ukrainian Heritage Month Act",
+      "body": "Debate at third reading on June 12, 2026 (House of Commons)",
+      "policyStage": 4,
+      "domains": [
+        "culture-heritage-media"
+      ],
+      "opens": "2026-06-12",
+      "closes": null,
+      "open_to": "anyone",
+      "source_url": "https://www.parl.ca/legisinfo/en/bill/45-1/S-210",
+      "source_kind": "bill",
+      "verified_on": "2026-10-05",
+      "expires_on": null,
+      "tip": ""
+    },
+    {
+      "id": "bill-s-215",
+      "title": "Bill S-215: National Immigration Month Act",
+      "body": "Placed in the Order of Precedence on June 17, 2026 (House of Commons)",
+      "policyStage": 4,
+      "domains": [
+        "immigration-multiculturalism"
+      ],
+      "opens": "2026-06-17",
+      "closes": null,
+      "open_to": "anyone",
+      "source_url": "https://www.parl.ca/legisinfo/en/bill/45-1/S-215",
+      "source_kind": "bill",
+      "verified_on": "2026-10-05",
+      "expires_on": null,
+      "tip": ""
+    },
+    {
+      "id": "bill-s-219",
+      "title": "Bill S-219: Judicial Independence Day Act",
+      "body": "Third reading on June 11, 2026 (Senate)",
+      "policyStage": 4,
+      "domains": [
+        "justice-rights-security"
+      ],
+      "opens": "2026-06-11",
+      "closes": null,
+      "open_to": "anyone",
+      "source_url": "https://www.parl.ca/legisinfo/en/bill/45-1/S-219",
+      "source_kind": "bill",
+      "verified_on": "2026-10-05",
+      "expires_on": null,
+      "tip": ""
+    },
+    {
+      "id": "bill-s-221",
+      "title": "Bill S-221: National Bird of Canada Act",
+      "body": "Third reading on June 11, 2026 (Senate)",
+      "policyStage": 4,
+      "domains": [],
+      "opens": "2026-06-11",
+      "closes": null,
+      "open_to": "anyone",
+      "source_url": "https://www.parl.ca/legisinfo/en/bill/45-1/S-221",
+      "source_kind": "bill",
+      "verified_on": "2026-10-05",
+      "expires_on": null,
+      "tip": ""
+    },
+    {
+      "id": "bill-s-223",
+      "title": "Bill S-223: An Act to amend the Royal Canadian Mounted Police Act",
+      "body": "Referral to committee on June 11, 2026 (Senate)",
+      "policyStage": 4,
+      "domains": [],
+      "opens": "2026-06-11",
+      "closes": null,
+      "open_to": "anyone",
+      "source_url": "https://www.parl.ca/legisinfo/en/bill/45-1/S-223",
+      "source_kind": "bill",
+      "verified_on": "2026-10-05",
+      "expires_on": null,
+      "tip": ""
+    },
+    {
+      "id": "bill-s-224",
+      "title": "Bill S-224: An Act to amend the Director of Public Prosecutions Act",
+      "body": "Referral to committee on June 11, 2026 (Senate)",
+      "policyStage": 4,
+      "domains": [
+        "justice-rights-security"
+      ],
+      "opens": "2026-06-11",
+      "closes": null,
+      "open_to": "anyone",
+      "source_url": "https://www.parl.ca/legisinfo/en/bill/45-1/S-224",
+      "source_kind": "bill",
+      "verified_on": "2026-10-05",
+      "expires_on": null,
+      "tip": ""
+    },
+    {
+      "id": "bill-s-226",
+      "title": "Bill S-226: Jury Duty Appreciation Week Act",
+      "body": "Second reading and referral to committee on September 22, 2026 (House of Commons)",
+      "policyStage": 4,
+      "domains": [],
+      "opens": "2026-09-22",
+      "closes": null,
+      "open_to": "anyone",
+      "source_url": "https://www.parl.ca/legisinfo/en/bill/45-1/S-226",
+      "source_kind": "bill",
+      "verified_on": "2026-10-05",
+      "expires_on": null,
+      "tip": ""
+    },
+    {
+      "id": "bill-s-227",
+      "title": "Bill S-227: Arab Heritage Month Act",
+      "body": "Royal assent on June 18, 2026 (Senate)",
+      "policyStage": 4,
+      "domains": [
+        "culture-heritage-media"
+      ],
+      "opens": "2026-06-18",
+      "closes": null,
+      "open_to": "anyone",
+      "source_url": "https://www.parl.ca/legisinfo/en/bill/45-1/S-227",
+      "source_kind": "bill",
+      "verified_on": "2026-10-05",
+      "expires_on": null,
+      "tip": ""
+    },
+    {
+      "id": "bill-s-228",
+      "title": "Bill S-228: An Act to amend the Criminal Code (sterilization procedures)",
+      "body": "Royal assent on June 15, 2026 (Senate)",
+      "policyStage": 4,
+      "domains": [
+        "justice-rights-security"
+      ],
+      "opens": "2026-06-15",
+      "closes": null,
+      "open_to": "anyone",
+      "source_url": "https://www.parl.ca/legisinfo/en/bill/45-1/S-228",
+      "source_kind": "bill",
+      "verified_on": "2026-10-05",
+      "expires_on": null,
+      "tip": ""
+    },
+    {
+      "id": "bill-s-239",
+      "title": "Bill S-239: Canadian Prosperity Act",
+      "body": "Referral to committee on June 9, 2026 (Senate)",
+      "policyStage": 4,
+      "domains": [
+        "economy-finance-trade"
+      ],
+      "opens": "2026-06-09",
+      "closes": null,
+      "open_to": "anyone",
+      "source_url": "https://www.parl.ca/legisinfo/en/bill/45-1/S-239",
+      "source_kind": "bill",
+      "verified_on": "2026-10-05",
+      "expires_on": null,
+      "tip": ""
+    },
+    {
+      "id": "bill-s-246",
+      "title": "Bill S-246: Wartime Service Recognition Act",
+      "body": "Placed in the Order of Precedence on June 8, 2026 (House of Commons)",
+      "policyStage": 4,
+      "domains": [],
+      "opens": "2026-06-08",
+      "closes": null,
+      "open_to": "anyone",
+      "source_url": "https://www.parl.ca/legisinfo/en/bill/45-1/S-246",
+      "source_kind": "bill",
+      "verified_on": "2026-10-05",
+      "expires_on": null,
+      "tip": ""
+    },
+    {
+      "id": "bill-s-248",
+      "title": "Bill S-248: Caribbean Heritage Month Act",
+      "body": "Referral to committee on June 9, 2026 (Senate)",
+      "policyStage": 4,
+      "domains": [
+        "culture-heritage-media"
+      ],
+      "opens": "2026-06-09",
+      "closes": null,
+      "open_to": "anyone",
+      "source_url": "https://www.parl.ca/legisinfo/en/bill/45-1/S-248",
+      "source_kind": "bill",
+      "verified_on": "2026-10-05",
+      "expires_on": null,
+      "tip": ""
+    },
+    {
+      "id": "bill-s-249",
+      "title": "Bill S-249: Christian Heritage Month Act",
+      "body": "Introduction and first reading on June 9, 2026 (Senate)",
+      "policyStage": 4,
+      "domains": [
+        "culture-heritage-media"
+      ],
+      "opens": "2026-06-09",
+      "closes": null,
+      "open_to": "anyone",
+      "source_url": "https://www.parl.ca/legisinfo/en/bill/45-1/S-249",
+      "source_kind": "bill",
+      "verified_on": "2026-10-05",
+      "expires_on": null,
+      "tip": ""
+    },
+    {
+      "id": "bill-s-250",
+      "title": "Bill S-250: Indigenous Rights Statement Act",
+      "body": "Introduction and first reading on June 18, 2026 (Senate)",
+      "policyStage": 4,
+      "domains": [
+        "indigenous"
+      ],
+      "opens": "2026-06-18",
+      "closes": null,
+      "open_to": "anyone",
+      "source_url": "https://www.parl.ca/legisinfo/en/bill/45-1/S-250",
+      "source_kind": "bill",
+      "verified_on": "2026-10-05",
+      "expires_on": null,
+      "tip": ""
+    },
+    {
+      "id": "bill-s-251",
+      "title": "Bill S-251: An Act to establish a national strategy to end energy poverty",
+      "body": "Introduction and first reading on October 1, 2026 (Senate)",
+      "policyStage": 4,
+      "domains": [
+        "energy-natural-resources"
+      ],
+      "opens": "2026-10-01",
+      "closes": null,
+      "open_to": "anyone",
+      "source_url": "https://www.parl.ca/legisinfo/en/bill/45-1/S-251",
+      "source_kind": "bill",
+      "verified_on": "2026-10-05",
+      "expires_on": null,
+      "tip": ""
+    },
+    {
+      "id": "bill-s-6",
+      "title": "Bill S-6: Federal Law–Civil Law Harmonization Act, No. 4",
+      "body": "Third reading on June 17, 2026 (Senate)",
+      "policyStage": 4,
+      "domains": [],
+      "opens": "2026-06-17",
+      "closes": null,
+      "open_to": "anyone",
+      "source_url": "https://www.parl.ca/legisinfo/en/bill/45-1/S-6",
+      "source_kind": "bill",
+      "verified_on": "2026-10-05",
+      "expires_on": null,
+      "tip": ""
+    },
     {
       "id": "gazette-2026-07-11",
       "title": "Canada Gazette - Part I, July 11, 2026, volume 160, number 28",
@@ -35,7 +1097,7 @@
       "open_to": "anyone",
       "source_url": "https://gazette.gc.ca/rp-pr/p1/2026/2026-07-11/html/index-eng.html",
       "source_kind": "gazette",
-      "verified_on": "2026-10-04",
+      "verified_on": "2026-10-05",
       "expires_on": "2026-09-19",
       "tip": ""
     },
@@ -50,7 +1112,7 @@
       "open_to": "anyone",
       "source_url": "https://gazette.gc.ca/rp-pr/p1/2026/2026-07-18/html/index-eng.html",
       "source_kind": "gazette",
-      "verified_on": "2026-10-04",
+      "verified_on": "2026-10-05",
       "expires_on": "2026-09-26",
       "tip": ""
     },
@@ -65,7 +1127,7 @@
       "open_to": "anyone",
       "source_url": "https://gazette.gc.ca/rp-pr/p1/2026/2026-07-25/html/index-eng.html",
       "source_kind": "gazette",
-      "verified_on": "2026-10-04",
+      "verified_on": "2026-10-05",
       "expires_on": "2026-10-03",
       "tip": ""
     },
@@ -80,7 +1142,7 @@
       "open_to": "anyone",
       "source_url": "https://gazette.gc.ca/rp-pr/p1/2026/2026-07-31-x6/html/extra6-eng.html",
       "source_kind": "gazette",
-      "verified_on": "2026-10-04",
+      "verified_on": "2026-10-05",
       "expires_on": "2026-10-09",
       "tip": ""
     },
@@ -95,7 +1157,7 @@
       "open_to": "anyone",
       "source_url": "https://gazette.gc.ca/rp-pr/p1/2026/2026-08-01/html/index-eng.html",
       "source_kind": "gazette",
-      "verified_on": "2026-10-04",
+      "verified_on": "2026-10-05",
       "expires_on": "2026-10-10",
       "tip": ""
     },
@@ -110,7 +1172,7 @@
       "open_to": "anyone",
       "source_url": "https://gazette.gc.ca/rp-pr/p1/2026/2026-08-08/html/index-eng.html",
       "source_kind": "gazette",
-      "verified_on": "2026-10-04",
+      "verified_on": "2026-10-05",
       "expires_on": "2026-10-17",
       "tip": ""
     },
@@ -125,7 +1187,7 @@
       "open_to": "anyone",
       "source_url": "https://gazette.gc.ca/rp-pr/p1/2026/2026-08-15/html/index-eng.html",
       "source_kind": "gazette",
-      "verified_on": "2026-10-04",
+      "verified_on": "2026-10-05",
       "expires_on": "2026-10-24",
       "tip": ""
     },
@@ -140,7 +1202,7 @@
       "open_to": "anyone",
       "source_url": "https://gazette.gc.ca/rp-pr/p1/2026/2026-08-22/html/index-eng.html",
       "source_kind": "gazette",
-      "verified_on": "2026-10-04",
+      "verified_on": "2026-10-05",
       "expires_on": "2026-10-31",
       "tip": ""
     },
@@ -155,7 +1217,7 @@
       "open_to": "anyone",
       "source_url": "https://gazette.gc.ca/rp-pr/p1/2026/2026-08-24-x7/html/extra7-eng.html",
       "source_kind": "gazette",
-      "verified_on": "2026-10-04",
+      "verified_on": "2026-10-05",
       "expires_on": "2026-11-02",
       "tip": ""
     },
@@ -170,7 +1232,7 @@
       "open_to": "anyone",
       "source_url": "https://gazette.gc.ca/rp-pr/p1/2026/2026-08-29/html/index-eng.html",
       "source_kind": "gazette",
-      "verified_on": "2026-10-04",
+      "verified_on": "2026-10-05",
       "expires_on": "2026-11-07",
       "tip": ""
     },
@@ -185,7 +1247,7 @@
       "open_to": "anyone",
       "source_url": "https://gazette.gc.ca/rp-pr/p1/2026/2026-09-05/html/index-eng.html",
       "source_kind": "gazette",
-      "verified_on": "2026-10-04",
+      "verified_on": "2026-10-05",
       "expires_on": "2026-11-14",
       "tip": ""
     },
@@ -200,7 +1262,7 @@
       "open_to": "anyone",
       "source_url": "https://gazette.gc.ca/rp-pr/p1/2026/2026-09-12/html/index-eng.html",
       "source_kind": "gazette",
-      "verified_on": "2026-10-04",
+      "verified_on": "2026-10-05",
       "expires_on": "2026-11-21",
       "tip": ""
     },
@@ -215,7 +1277,7 @@
       "open_to": "anyone",
       "source_url": "https://gazette.gc.ca/rp-pr/p1/2026/2026-09-19/html/index-eng.html",
       "source_kind": "gazette",
-      "verified_on": "2026-10-04",
+      "verified_on": "2026-10-05",
       "expires_on": "2026-11-28",
       "tip": ""
     },
@@ -230,7 +1292,7 @@
       "open_to": "anyone",
       "source_url": "https://gazette.gc.ca/rp-pr/p1/2026/2026-09-26/html/index-eng.html",
       "source_kind": "gazette",
-      "verified_on": "2026-10-04",
+      "verified_on": "2026-10-05",
       "expires_on": "2026-12-05",
       "tip": ""
     },
@@ -245,8 +1307,85 @@
       "open_to": "anyone",
       "source_url": "https://gazette.gc.ca/rp-pr/p1/2026/2026-10-03/html/index-eng.html",
       "source_kind": "gazette",
-      "verified_on": "2026-10-04",
+      "verified_on": "2026-10-05",
       "expires_on": "2026-12-12",
+      "tip": ""
+    },
+    {
+      "id": "tender-cb-1-10237566",
+      "title": "A.1. Application/Software Architect – Level 3",
+      "body": "ISED is currently modernizing and maturing its end-to-end systems development lifecycle and project management lifecycle processes. The Application Software Architect – Level 3 will support the modernization, configuration, enhancement and ongoing evolution of the Clarity PPM platform throughout the two-year contract period. The resource will provide architecture, technical design, configuration, integration, analysis, documentation and technical advisory services in support of...",
+      "policyStage": 2,
+      "domains": [],
+      "opens": "2026-10-05",
+      "closes": "2026-10-27",
+      "open_to": "organisation",
+      "source_url": "https://canadabuys.canada.ca/en/tender-opportunities/tender-notice/cb-1-10237566",
+      "source_kind": "tender",
+      "verified_on": "2026-10-05",
+      "expires_on": "2026-10-27",
+      "tip": ""
+    },
+    {
+      "id": "tender-cb-231-85342806",
+      "title": "Consultation and water treatment monitoring services",
+      "body": "Canada is seeking offers from Offerors to provide Consultation and water treatment monitoring services, including physicochemical monitoring and periodic monitoring of Legionella. Optional Work Site Visit. Canada recommends that the Offeror attend the site visit. An optional site visit will be held at the Saint-Hyacinthe Research and Development Centre (3600, boulevard Casavant Ouest, Saint-Hyacinthe QC J2S 8E3) on October 21,...",
+      "policyStage": 2,
+      "domains": [],
+      "opens": "2026-10-05",
+      "closes": "2026-11-04",
+      "open_to": "organisation",
+      "source_url": "https://canadabuys.canada.ca/en/tender-opportunities/tender-notice/cb-231-85342806",
+      "source_kind": "tender",
+      "verified_on": "2026-10-05",
+      "expires_on": "2026-11-04",
+      "tip": ""
+    },
+    {
+      "id": "tender-cb-287-23195599",
+      "title": "Supercritical Carbon Dioxide Compressor Maintenance and Service",
+      "body": "The objective of this contract is to perform required maintenance on a custom sCO2 (Supercitical Carbon Dioxide) compressor following the instructions of the maintenance manual. This service manual can be provided at any time upon request.",
+      "policyStage": 2,
+      "domains": [],
+      "opens": "2026-10-05",
+      "closes": "2026-11-16",
+      "open_to": "organisation",
+      "source_url": "https://canadabuys.canada.ca/en/tender-opportunities/tender-notice/cb-287-23195599",
+      "source_kind": "tender",
+      "verified_on": "2026-10-05",
+      "expires_on": "2026-11-16",
+      "tip": ""
+    },
+    {
+      "id": "tender-cb-965-17321735",
+      "title": "Application/Software Architect – Level 3 for Drupal",
+      "body": "The Canadian Food Inspection Agency (CFIA) requires an Application/Software Architect with extensive DrupalWXT expertise to support, monitor,and maintain our DrupalWXT system to serve the needs of the Agency through the DrupalWXT lifecycle. See the Notice of Proposed Procurement for details.",
+      "policyStage": 2,
+      "domains": [],
+      "opens": "2026-10-05",
+      "closes": "2026-10-23",
+      "open_to": "organisation",
+      "source_url": "https://canadabuys.canada.ca/en/tender-opportunities/tender-notice/cb-965-17321735",
+      "source_kind": "tender",
+      "verified_on": "2026-10-05",
+      "expires_on": "2026-10-23",
+      "tip": ""
+    },
+    {
+      "id": "tender-ws5207543128-doc5889924065",
+      "title": "T8009-250015 - Zero Emissions Propulsion Systems",
+      "body": "This solicitation of offers cancels and supersedes previous solicitation of offers number Doc5460258546 dated February 6, 2026 with a closing of May 25, 2026 at 11:00 Pacific time. Transport Canada - Multi-Modal Safety and Security - Research and Science Collaboration’s (MMSS-RSC’s) Clean Marine program seeks to conduct testing of Zero Emission Propulsion Systems (ZEPS). All projects must be completed by...",
+      "policyStage": 2,
+      "domains": [
+        "environment-climate"
+      ],
+      "opens": "2026-10-05",
+      "closes": "2027-02-01",
+      "open_to": "organisation",
+      "source_url": "https://portal.us.bn.cloud.ariba.com/dashboard/public/appext/comsapsbncdiscoveryui#/RfxEvent/preview/1110025630?anId=ANONYMOUS",
+      "source_kind": "tender",
+      "verified_on": "2026-10-05",
+      "expires_on": "2027-02-01",
       "tip": ""
     }
   ]
