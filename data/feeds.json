@@ -1,26 +1,26 @@
 {
-  "built_at": "2026-10-14T14:57:34Z",
+  "built_at": "2026-10-15T14:47:20Z",
   "sources": {
     "legisinfo": {
-      "fetched_at": "2026-10-14T14:57:34Z",
-      "count": 47,
+      "fetched_at": "2026-10-15T14:47:20Z",
+      "count": 42,
       "ok": true,
       "error": null,
-      "hash": "1f39152c123a9e4dc891977b391c13d7e9b530fd9b90bba271cc82499ccdcf2f"
+      "hash": "0b2dd7cb0bcb797124ab13c022fbe7d8e6881dd56b2a5c1204891d3dde493d3c"
     },
     "gazette": {
-      "fetched_at": "2026-10-14T14:57:34Z",
+      "fetched_at": "2026-10-15T14:47:20Z",
       "count": 15,
       "ok": true,
       "error": null,
-      "hash": "cc0e04a520290a05b71ebcce21bec3eda75e987c24ca7b355bd65f13961b7755"
+      "hash": "e2a101a20e8939772be778f1387b290febbbaf476b58a21c1bf18cac80de5d1e"
     },
     "canadabuys": {
-      "fetched_at": "2026-10-14T14:57:34Z",
+      "fetched_at": "2026-10-15T14:47:20Z",
       "count": 1,
       "ok": true,
       "error": null,
-      "hash": "a00916580bfb63d7059a9ed7da8ebc54631183c19ff70a29bab9cc58ed35e7e3"
+      "hash": "fc0a4985d24fa2265d1a17f0d0b09a8109e845b0c147d1af917ff485492cdb5e"
     }
   },
   "records": [
@@ -37,7 +37,7 @@
       "open_to": "anyone",
       "source_url": "https://www.parl.ca/legisinfo/en/bill/45-1/C-10",
       "source_kind": "bill",
-      "verified_on": "2026-10-14",
+      "verified_on": "2026-10-15",
       "expires_on": null,
       "tip": ""
     },
@@ -55,7 +55,7 @@
       "open_to": "anyone",
       "source_url": "https://www.parl.ca/legisinfo/en/bill/45-1/C-11",
       "source_kind": "bill",
-      "verified_on": "2026-10-14",
+      "verified_on": "2026-10-15",
       "expires_on": null,
       "tip": ""
     },
@@ -72,7 +72,7 @@
       "open_to": "anyone",
       "source_url": "https://www.parl.ca/legisinfo/en/bill/45-1/C-16",
       "source_kind": "bill",
-      "verified_on": "2026-10-14",
+      "verified_on": "2026-10-15",
       "expires_on": null,
       "tip": ""
     },
@@ -87,7 +87,7 @@
       "open_to": "anyone",
       "source_url": "https://www.parl.ca/legisinfo/en/bill/45-1/C-20",
       "source_kind": "bill",
-      "verified_on": "2026-10-14",
+      "verified_on": "2026-10-15",
       "expires_on": null,
       "tip": ""
     },
@@ -105,7 +105,7 @@
       "open_to": "anyone",
       "source_url": "https://www.parl.ca/legisinfo/en/bill/45-1/C-218",
       "source_kind": "bill",
-      "verified_on": "2026-10-14",
+      "verified_on": "2026-10-15",
       "expires_on": null,
       "tip": ""
     },
@@ -122,7 +122,7 @@
       "open_to": "anyone",
       "source_url": "https://www.parl.ca/legisinfo/en/bill/45-1/C-219",
       "source_kind": "bill",
-      "verified_on": "2026-10-14",
+      "verified_on": "2026-10-15",
       "expires_on": null,
       "tip": ""
     },
@@ -139,7 +139,7 @@
       "open_to": "anyone",
       "source_url": "https://www.parl.ca/legisinfo/en/bill/45-1/C-22",
       "source_kind": "bill",
-      "verified_on": "2026-10-14",
+      "verified_on": "2026-10-15",
       "expires_on": null,
       "tip": ""
     },
@@ -156,24 +156,7 @@
       "open_to": "anyone",
       "source_url": "https://www.parl.ca/legisinfo/en/bill/45-1/C-221",
       "source_kind": "bill",
-      "verified_on": "2026-10-14",
-      "expires_on": null,
-      "tip": ""
-    },
-    {
-      "id": "bill-c-225",
-      "title": "Bill C-225: An Act to amend the Criminal Code",
-      "body": "Royal assent on June 17, 2026 (Senate)",
-      "policyStage": 4,
-      "domains": [
-        "justice-rights-security"
-      ],
-      "opens": "2026-06-17",
-      "closes": null,
-      "open_to": "anyone",
-      "source_url": "https://www.parl.ca/legisinfo/en/bill/45-1/C-225",
-      "source_kind": "bill",
-      "verified_on": "2026-10-14",
+      "verified_on": "2026-10-15",
       "expires_on": null,
       "tip": ""
     },
@@ -190,7 +173,7 @@
       "open_to": "anyone",
       "source_url": "https://www.parl.ca/legisinfo/en/bill/45-1/C-227",
       "source_kind": "bill",
-      "verified_on": "2026-10-14",
+      "verified_on": "2026-10-15",
       "expires_on": null,
       "tip": ""
     },
@@ -208,7 +191,7 @@
       "open_to": "anyone",
       "source_url": "https://www.parl.ca/legisinfo/en/bill/45-1/C-231",
       "source_kind": "bill",
-      "verified_on": "2026-10-14",
+      "verified_on": "2026-10-15",
       "expires_on": null,
       "tip": ""
     },
@@ -225,7 +208,7 @@
       "open_to": "anyone",
       "source_url": "https://www.parl.ca/legisinfo/en/bill/45-1/C-238",
       "source_kind": "bill",
-      "verified_on": "2026-10-14",
+      "verified_on": "2026-10-15",
       "expires_on": null,
       "tip": ""
     },
@@ -242,7 +225,7 @@
       "open_to": "anyone",
       "source_url": "https://www.parl.ca/legisinfo/en/bill/45-1/C-241",
       "source_kind": "bill",
-      "verified_on": "2026-10-14",
+      "verified_on": "2026-10-15",
       "expires_on": null,
       "tip": ""
     },
@@ -259,7 +242,7 @@
       "open_to": "anyone",
       "source_url": "https://www.parl.ca/legisinfo/en/bill/45-1/C-244",
       "source_kind": "bill",
-      "verified_on": "2026-10-14",
+      "verified_on": "2026-10-15",
       "expires_on": null,
       "tip": ""
     },
@@ -276,7 +259,7 @@
       "open_to": "anyone",
       "source_url": "https://www.parl.ca/legisinfo/en/bill/45-1/C-25",
       "source_kind": "bill",
-      "verified_on": "2026-10-14",
+      "verified_on": "2026-10-15",
       "expires_on": null,
       "tip": ""
     },
@@ -293,7 +276,7 @@
       "open_to": "anyone",
       "source_url": "https://www.parl.ca/legisinfo/en/bill/45-1/C-255",
       "source_kind": "bill",
-      "verified_on": "2026-10-14",
+      "verified_on": "2026-10-15",
       "expires_on": null,
       "tip": ""
     },
@@ -310,7 +293,7 @@
       "open_to": "anyone",
       "source_url": "https://www.parl.ca/legisinfo/en/bill/45-1/C-26",
       "source_kind": "bill",
-      "verified_on": "2026-10-14",
+      "verified_on": "2026-10-15",
       "expires_on": null,
       "tip": ""
     },
@@ -328,7 +311,7 @@
       "open_to": "anyone",
       "source_url": "https://www.parl.ca/legisinfo/en/bill/45-1/C-266",
       "source_kind": "bill",
-      "verified_on": "2026-10-14",
+      "verified_on": "2026-10-15",
       "expires_on": null,
       "tip": ""
     },
@@ -343,7 +326,7 @@
       "open_to": "anyone",
       "source_url": "https://www.parl.ca/legisinfo/en/bill/45-1/C-267",
       "source_kind": "bill",
-      "verified_on": "2026-10-14",
+      "verified_on": "2026-10-15",
       "expires_on": null,
       "tip": ""
     },
@@ -360,7 +343,7 @@
       "open_to": "anyone",
       "source_url": "https://www.parl.ca/legisinfo/en/bill/45-1/C-268",
       "source_kind": "bill",
-      "verified_on": "2026-10-14",
+      "verified_on": "2026-10-15",
       "expires_on": null,
       "tip": ""
     },
@@ -375,7 +358,7 @@
       "open_to": "anyone",
       "source_url": "https://www.parl.ca/legisinfo/en/bill/45-1/C-27",
       "source_kind": "bill",
-      "verified_on": "2026-10-14",
+      "verified_on": "2026-10-15",
       "expires_on": null,
       "tip": ""
     },
@@ -392,7 +375,7 @@
       "open_to": "anyone",
       "source_url": "https://www.parl.ca/legisinfo/en/bill/45-1/C-287",
       "source_kind": "bill",
-      "verified_on": "2026-10-14",
+      "verified_on": "2026-10-15",
       "expires_on": null,
       "tip": ""
     },
@@ -409,7 +392,7 @@
       "open_to": "anyone",
       "source_url": "https://www.parl.ca/legisinfo/en/bill/45-1/C-288",
       "source_kind": "bill",
-      "verified_on": "2026-10-14",
+      "verified_on": "2026-10-15",
       "expires_on": null,
       "tip": ""
     },
@@ -424,7 +407,7 @@
       "open_to": "anyone",
       "source_url": "https://www.parl.ca/legisinfo/en/bill/45-1/C-289",
       "source_kind": "bill",
-      "verified_on": "2026-10-14",
+      "verified_on": "2026-10-15",
       "expires_on": null,
       "tip": ""
     },
@@ -441,7 +424,7 @@
       "open_to": "anyone",
       "source_url": "https://www.parl.ca/legisinfo/en/bill/45-1/C-29",
       "source_kind": "bill",
-      "verified_on": "2026-10-14",
+      "verified_on": "2026-10-15",
       "expires_on": null,
       "tip": ""
     },
@@ -458,7 +441,7 @@
       "open_to": "anyone",
       "source_url": "https://www.parl.ca/legisinfo/en/bill/45-1/C-290",
       "source_kind": "bill",
-      "verified_on": "2026-10-14",
+      "verified_on": "2026-10-15",
       "expires_on": null,
       "tip": ""
     },
@@ -473,7 +456,7 @@
       "open_to": "anyone",
       "source_url": "https://www.parl.ca/legisinfo/en/bill/45-1/C-291",
       "source_kind": "bill",
-      "verified_on": "2026-10-14",
+      "verified_on": "2026-10-15",
       "expires_on": null,
       "tip": ""
     },
@@ -490,7 +473,7 @@
       "open_to": "anyone",
       "source_url": "https://www.parl.ca/legisinfo/en/bill/45-1/C-292",
       "source_kind": "bill",
-      "verified_on": "2026-10-14",
+      "verified_on": "2026-10-15",
       "expires_on": null,
       "tip": ""
     },
@@ -507,41 +490,7 @@
       "open_to": "anyone",
       "source_url": "https://www.parl.ca/legisinfo/en/bill/45-1/C-30",
       "source_kind": "bill",
-      "verified_on": "2026-10-14",
-      "expires_on": null,
-      "tip": ""
-    },
-    {
-      "id": "bill-c-32",
-      "title": "Bill C-32: Appropriation Act No. 2, 2026-27",
-      "body": "Royal assent on June 17, 2026 (Senate)",
-      "policyStage": 4,
-      "domains": [
-        "economy-finance-trade"
-      ],
-      "opens": "2026-06-17",
-      "closes": null,
-      "open_to": "anyone",
-      "source_url": "https://www.parl.ca/legisinfo/en/bill/45-1/C-32",
-      "source_kind": "bill",
-      "verified_on": "2026-10-14",
-      "expires_on": null,
-      "tip": ""
-    },
-    {
-      "id": "bill-c-33",
-      "title": "Bill C-33: Appropriation Act No. 3, 2026-27",
-      "body": "Royal assent on June 17, 2026 (Senate)",
-      "policyStage": 4,
-      "domains": [
-        "economy-finance-trade"
-      ],
-      "opens": "2026-06-17",
-      "closes": null,
-      "open_to": "anyone",
-      "source_url": "https://www.parl.ca/legisinfo/en/bill/45-1/C-33",
-      "source_kind": "bill",
-      "verified_on": "2026-10-14",
+      "verified_on": "2026-10-15",
       "expires_on": null,
       "tip": ""
     },
@@ -558,7 +507,7 @@
       "open_to": "anyone",
       "source_url": "https://www.parl.ca/legisinfo/en/bill/45-1/C-37",
       "source_kind": "bill",
-      "verified_on": "2026-10-14",
+      "verified_on": "2026-10-15",
       "expires_on": null,
       "tip": ""
     },
@@ -575,7 +524,7 @@
       "open_to": "anyone",
       "source_url": "https://www.parl.ca/legisinfo/en/bill/45-1/C-38",
       "source_kind": "bill",
-      "verified_on": "2026-10-14",
+      "verified_on": "2026-10-15",
       "expires_on": null,
       "tip": ""
     },
@@ -590,7 +539,7 @@
       "open_to": "anyone",
       "source_url": "https://www.parl.ca/legisinfo/en/bill/45-1/C-39",
       "source_kind": "bill",
-      "verified_on": "2026-10-14",
+      "verified_on": "2026-10-15",
       "expires_on": null,
       "tip": ""
     },
@@ -607,7 +556,7 @@
       "open_to": "anyone",
       "source_url": "https://www.parl.ca/legisinfo/en/bill/45-1/C-40",
       "source_kind": "bill",
-      "verified_on": "2026-10-14",
+      "verified_on": "2026-10-15",
       "expires_on": null,
       "tip": ""
     },
@@ -622,24 +571,7 @@
       "open_to": "anyone",
       "source_url": "https://www.parl.ca/legisinfo/en/bill/45-1/C-9",
       "source_kind": "bill",
-      "verified_on": "2026-10-14",
-      "expires_on": null,
-      "tip": ""
-    },
-    {
-      "id": "bill-s-201",
-      "title": "Bill S-201: National Framework on Sickle Cell Disease Act",
-      "body": "Second reading and referral to committee on June 16, 2026 (House of Commons)",
-      "policyStage": 4,
-      "domains": [
-        "health"
-      ],
-      "opens": "2026-06-16",
-      "closes": null,
-      "open_to": "anyone",
-      "source_url": "https://www.parl.ca/legisinfo/en/bill/45-1/S-201",
-      "source_kind": "bill",
-      "verified_on": "2026-10-14",
+      "verified_on": "2026-10-15",
       "expires_on": null,
       "tip": ""
     },
@@ -656,7 +588,7 @@
       "open_to": "anyone",
       "source_url": "https://www.parl.ca/legisinfo/en/bill/45-1/S-202",
       "source_kind": "bill",
-      "verified_on": "2026-10-14",
+      "verified_on": "2026-10-15",
       "expires_on": null,
       "tip": ""
     },
@@ -671,7 +603,7 @@
       "open_to": "anyone",
       "source_url": "https://www.parl.ca/legisinfo/en/bill/45-1/S-209",
       "source_kind": "bill",
-      "verified_on": "2026-10-14",
+      "verified_on": "2026-10-15",
       "expires_on": null,
       "tip": ""
     },
@@ -688,7 +620,7 @@
       "open_to": "anyone",
       "source_url": "https://www.parl.ca/legisinfo/en/bill/45-1/S-210",
       "source_kind": "bill",
-      "verified_on": "2026-10-14",
+      "verified_on": "2026-10-15",
       "expires_on": null,
       "tip": ""
     },
@@ -705,7 +637,7 @@
       "open_to": "anyone",
       "source_url": "https://www.parl.ca/legisinfo/en/bill/45-1/S-215",
       "source_kind": "bill",
-      "verified_on": "2026-10-14",
+      "verified_on": "2026-10-15",
       "expires_on": null,
       "tip": ""
     },
@@ -720,7 +652,7 @@
       "open_to": "anyone",
       "source_url": "https://www.parl.ca/legisinfo/en/bill/45-1/S-226",
       "source_kind": "bill",
-      "verified_on": "2026-10-14",
+      "verified_on": "2026-10-15",
       "expires_on": null,
       "tip": ""
     },
@@ -737,7 +669,7 @@
       "open_to": "anyone",
       "source_url": "https://www.parl.ca/legisinfo/en/bill/45-1/S-227",
       "source_kind": "bill",
-      "verified_on": "2026-10-14",
+      "verified_on": "2026-10-15",
       "expires_on": null,
       "tip": ""
     },
@@ -754,7 +686,7 @@
       "open_to": "anyone",
       "source_url": "https://www.parl.ca/legisinfo/en/bill/45-1/S-250",
       "source_kind": "bill",
-      "verified_on": "2026-10-14",
+      "verified_on": "2026-10-15",
       "expires_on": null,
       "tip": ""
     },
@@ -771,22 +703,7 @@
       "open_to": "anyone",
       "source_url": "https://www.parl.ca/legisinfo/en/bill/45-1/S-251",
       "source_kind": "bill",
-      "verified_on": "2026-10-14",
-      "expires_on": null,
-      "tip": ""
-    },
-    {
-      "id": "bill-s-6",
-      "title": "Bill S-6: Federal Law–Civil Law Harmonization Act, No. 4",
-      "body": "Third reading on June 17, 2026 (Senate)",
-      "policyStage": 4,
-      "domains": [],
-      "opens": "2026-06-17",
-      "closes": null,
-      "open_to": "anyone",
-      "source_url": "https://www.parl.ca/legisinfo/en/bill/45-1/S-6",
-      "source_kind": "bill",
-      "verified_on": "2026-10-14",
+      "verified_on": "2026-10-15",
       "expires_on": null,
       "tip": ""
     },
@@ -801,7 +718,7 @@
       "open_to": "anyone",
       "source_url": "https://www.parl.ca/legisinfo/en/bill/45-1/S-7",
       "source_kind": "bill",
-      "verified_on": "2026-10-14",
+      "verified_on": "2026-10-15",
       "expires_on": null,
       "tip": ""
     },
@@ -816,7 +733,7 @@
       "open_to": "anyone",
       "source_url": "https://gazette.gc.ca/rp-pr/p1/2026/2026-07-18/html/index-eng.html",
       "source_kind": "gazette",
-      "verified_on": "2026-10-14",
+      "verified_on": "2026-10-15",
       "expires_on": "2026-09-26",
       "tip": ""
     },
@@ -831,7 +748,7 @@
       "open_to": "anyone",
       "source_url": "https://gazette.gc.ca/rp-pr/p1/2026/2026-07-25/html/index-eng.html",
       "source_kind": "gazette",
-      "verified_on": "2026-10-14",
+      "verified_on": "2026-10-15",
       "expires_on": "2026-10-03",
       "tip": ""
     },
@@ -846,7 +763,7 @@
       "open_to": "anyone",
       "source_url": "https://gazette.gc.ca/rp-pr/p1/2026/2026-07-31-x6/html/extra6-eng.html",
       "source_kind": "gazette",
-      "verified_on": "2026-10-14",
+      "verified_on": "2026-10-15",
       "expires_on": "2026-10-09",
       "tip": ""
     },
@@ -861,7 +778,7 @@
       "open_to": "anyone",
       "source_url": "https://gazette.gc.ca/rp-pr/p1/2026/2026-08-01/html/index-eng.html",
       "source_kind": "gazette",
-      "verified_on": "2026-10-14",
+      "verified_on": "2026-10-15",
       "expires_on": "2026-10-10",
       "tip": ""
     },
@@ -876,7 +793,7 @@
       "open_to": "anyone",
       "source_url": "https://gazette.gc.ca/rp-pr/p1/2026/2026-08-08/html/index-eng.html",
       "source_kind": "gazette",
-      "verified_on": "2026-10-14",
+      "verified_on": "2026-10-15",
       "expires_on": "2026-10-17",
       "tip": ""
     },
@@ -891,7 +808,7 @@
       "open_to": "anyone",
       "source_url": "https://gazette.gc.ca/rp-pr/p1/2026/2026-08-15/html/index-eng.html",
       "source_kind": "gazette",
-      "verified_on": "2026-10-14",
+      "verified_on": "2026-10-15",
       "expires_on": "2026-10-24",
       "tip": ""
     },
@@ -906,7 +823,7 @@
       "open_to": "anyone",
       "source_url": "https://gazette.gc.ca/rp-pr/p1/2026/2026-08-22/html/index-eng.html",
       "source_kind": "gazette",
-      "verified_on": "2026-10-14",
+      "verified_on": "2026-10-15",
       "expires_on": "2026-10-31",
       "tip": ""
     },
@@ -921,7 +838,7 @@
       "open_to": "anyone",
       "source_url": "https://gazette.gc.ca/rp-pr/p1/2026/2026-08-24-x7/html/extra7-eng.html",
       "source_kind": "gazette",
-      "verified_on": "2026-10-14",
+      "verified_on": "2026-10-15",
       "expires_on": "2026-11-02",
       "tip": ""
     },
@@ -936,7 +853,7 @@
       "open_to": "anyone",
       "source_url": "https://gazette.gc.ca/rp-pr/p1/2026/2026-08-29/html/index-eng.html",
       "source_kind": "gazette",
-      "verified_on": "2026-10-14",
+      "verified_on": "2026-10-15",
       "expires_on": "2026-11-07",
       "tip": ""
     },
@@ -951,7 +868,7 @@
       "open_to": "anyone",
       "source_url": "https://gazette.gc.ca/rp-pr/p1/2026/2026-09-05/html/index-eng.html",
       "source_kind": "gazette",
-      "verified_on": "2026-10-14",
+      "verified_on": "2026-10-15",
       "expires_on": "2026-11-14",
       "tip": ""
     },
@@ -966,7 +883,7 @@
       "open_to": "anyone",
       "source_url": "https://gazette.gc.ca/rp-pr/p1/2026/2026-09-12/html/index-eng.html",
       "source_kind": "gazette",
-      "verified_on": "2026-10-14",
+      "verified_on": "2026-10-15",
       "expires_on": "2026-11-21",
       "tip": ""
     },
@@ -981,7 +898,7 @@
       "open_to": "anyone",
       "source_url": "https://gazette.gc.ca/rp-pr/p1/2026/2026-09-19/html/index-eng.html",
       "source_kind": "gazette",
-      "verified_on": "2026-10-14",
+      "verified_on": "2026-10-15",
       "expires_on": "2026-11-28",
       "tip": ""
     },
@@ -996,7 +913,7 @@
       "open_to": "anyone",
       "source_url": "https://gazette.gc.ca/rp-pr/p1/2026/2026-09-26/html/index-eng.html",
       "source_kind": "gazette",
-      "verified_on": "2026-10-14",
+      "verified_on": "2026-10-15",
       "expires_on": "2026-12-05",
       "tip": ""
     },
@@ -1011,7 +928,7 @@
       "open_to": "anyone",
       "source_url": "https://gazette.gc.ca/rp-pr/p1/2026/2026-10-03/html/index-eng.html",
       "source_kind": "gazette",
-      "verified_on": "2026-10-14",
+      "verified_on": "2026-10-15",
       "expires_on": "2026-12-12",
       "tip": ""
     },
@@ -1026,23 +943,23 @@
       "open_to": "anyone",
       "source_url": "https://gazette.gc.ca/rp-pr/p1/2026/2026-10-10/html/index-eng.html",
       "source_kind": "gazette",
-      "verified_on": "2026-10-14",
+      "verified_on": "2026-10-15",
       "expires_on": "2026-12-19",
       "tip": ""
     },
     {
-      "id": "tender-ws5890300538-doc5930961203",
-      "title": "Phase 2 EZ899-270723 - Catenary Lighting Upgrade to LED",
-      "body": "This is the Phase 2 solicitation following an Invitation to Qualify. Only qualified suppliers have been invited to bid.",
+      "id": "tender-cb-375-90072544",
+      "title": "Safety Vocational Training - H2S Alive and Confined Space",
+      "body": "Safety Vocational Training - H2S Alive and Confined Space This requirement is for: The Correctional Service of Canada, CORCAN Prairie Region. Trade agreement: This procurement is not subject to any trade agreement. Policy on Reciprocal Procurement: This solicitation is open only to Canadian suppliers. Competitive Procurement Strategy: lowest priced compliant bid. Set-aside under the Procurement Strategy for Indigenous Business: This...",
       "policyStage": 2,
       "domains": [],
-      "opens": "2026-10-14",
-      "closes": "2026-10-29",
+      "opens": "2026-10-15",
+      "closes": "2026-11-05",
       "open_to": "organisation",
-      "source_url": "https://canadabuys.canada.ca/en/tender-opportunities/tender-notice/WS5890300538-Doc5930961203",
+      "source_url": "https://canadabuys.canada.ca/en/tender-opportunities/tender-notice/cb-375-90072544",
       "source_kind": "tender",
-      "verified_on": "2026-10-14",
-      "expires_on": "2026-10-29",
+      "verified_on": "2026-10-15",
+      "expires_on": "2026-11-05",
       "tip": ""
     }
   ]
