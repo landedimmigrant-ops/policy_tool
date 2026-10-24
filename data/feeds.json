@@ -1,22 +1,22 @@
 {
-  "built_at": "2026-10-23T14:49:39Z",
+  "built_at": "2026-10-24T13:54:08Z",
   "sources": {
     "legisinfo": {
-      "fetched_at": "2026-10-23T14:49:39Z",
+      "fetched_at": "2026-10-24T13:54:08Z",
       "count": 0,
       "ok": false,
       "error": "HTTPError: HTTP Error 403: Forbidden",
       "hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
     },
     "gazette": {
-      "fetched_at": "2026-10-23T14:49:39Z",
+      "fetched_at": "2026-10-24T13:54:08Z",
       "count": 15,
       "ok": true,
       "error": null,
-      "hash": "2d216cfcd164bd99730fec2630d79157aedd7255831a813130785bc6d16da655"
+      "hash": "b366b1cc1de868b04f1dc9ed9a1c01d1735740930faeacef92063c06901fe728"
     },
     "canadabuys": {
-      "fetched_at": "2026-10-23T14:49:39Z",
+      "fetched_at": "2026-10-24T13:54:08Z",
       "count": 0,
       "ok": true,
       "error": null,
@@ -24,21 +24,6 @@
     }
   },
   "records": [
-    {
-      "id": "gazette-2026-07-25",
-      "title": "Canada Gazette - Part I, July 25, 2026, volume 160, number 30",
-      "body": "Proposed regulations in this issue carry a 30-day comment window from publication, 70 days where trade is affected. Open the issue for the individual notices.",
-      "policyStage": 4,
-      "domains": [],
-      "opens": "2026-07-25",
-      "closes": "2026-08-24",
-      "open_to": "anyone",
-      "source_url": "https://gazette.gc.ca/rp-pr/p1/2026/2026-07-25/html/index-eng.html",
-      "source_kind": "gazette",
-      "verified_on": "2026-10-23",
-      "expires_on": "2026-10-03",
-      "tip": ""
-    },
     {
       "id": "gazette-2026-07-31-x6",
       "title": "Canada Gazette - Part I, July 31, 2026, volume 160, extra number 6",
@@ -50,7 +35,7 @@
       "open_to": "anyone",
       "source_url": "https://gazette.gc.ca/rp-pr/p1/2026/2026-07-31-x6/html/extra6-eng.html",
       "source_kind": "gazette",
-      "verified_on": "2026-10-23",
+      "verified_on": "2026-10-24",
       "expires_on": "2026-10-09",
       "tip": ""
     },
@@ -65,7 +50,7 @@
       "open_to": "anyone",
       "source_url": "https://gazette.gc.ca/rp-pr/p1/2026/2026-08-01/html/index-eng.html",
       "source_kind": "gazette",
-      "verified_on": "2026-10-23",
+      "verified_on": "2026-10-24",
       "expires_on": "2026-10-10",
       "tip": ""
     },
@@ -80,7 +65,7 @@
       "open_to": "anyone",
       "source_url": "https://gazette.gc.ca/rp-pr/p1/2026/2026-08-08/html/index-eng.html",
       "source_kind": "gazette",
-      "verified_on": "2026-10-23",
+      "verified_on": "2026-10-24",
       "expires_on": "2026-10-17",
       "tip": ""
     },
@@ -95,7 +80,7 @@
       "open_to": "anyone",
       "source_url": "https://gazette.gc.ca/rp-pr/p1/2026/2026-08-15/html/index-eng.html",
       "source_kind": "gazette",
-      "verified_on": "2026-10-23",
+      "verified_on": "2026-10-24",
       "expires_on": "2026-10-24",
       "tip": ""
     },
@@ -110,7 +95,7 @@
       "open_to": "anyone",
       "source_url": "https://gazette.gc.ca/rp-pr/p1/2026/2026-08-22/html/index-eng.html",
       "source_kind": "gazette",
-      "verified_on": "2026-10-23",
+      "verified_on": "2026-10-24",
       "expires_on": "2026-10-31",
       "tip": ""
     },
@@ -125,7 +110,7 @@
       "open_to": "anyone",
       "source_url": "https://gazette.gc.ca/rp-pr/p1/2026/2026-08-24-x7/html/extra7-eng.html",
       "source_kind": "gazette",
-      "verified_on": "2026-10-23",
+      "verified_on": "2026-10-24",
       "expires_on": "2026-11-02",
       "tip": ""
     },
@@ -140,7 +125,7 @@
       "open_to": "anyone",
       "source_url": "https://gazette.gc.ca/rp-pr/p1/2026/2026-08-29/html/index-eng.html",
       "source_kind": "gazette",
-      "verified_on": "2026-10-23",
+      "verified_on": "2026-10-24",
       "expires_on": "2026-11-07",
       "tip": ""
     },
@@ -155,7 +140,7 @@
       "open_to": "anyone",
       "source_url": "https://gazette.gc.ca/rp-pr/p1/2026/2026-09-05/html/index-eng.html",
       "source_kind": "gazette",
-      "verified_on": "2026-10-23",
+      "verified_on": "2026-10-24",
       "expires_on": "2026-11-14",
       "tip": ""
     },
@@ -170,7 +155,7 @@
       "open_to": "anyone",
       "source_url": "https://gazette.gc.ca/rp-pr/p1/2026/2026-09-12/html/index-eng.html",
       "source_kind": "gazette",
-      "verified_on": "2026-10-23",
+      "verified_on": "2026-10-24",
       "expires_on": "2026-11-21",
       "tip": ""
     },
@@ -185,7 +170,7 @@
       "open_to": "anyone",
       "source_url": "https://gazette.gc.ca/rp-pr/p1/2026/2026-09-19/html/index-eng.html",
       "source_kind": "gazette",
-      "verified_on": "2026-10-23",
+      "verified_on": "2026-10-24",
       "expires_on": "2026-11-28",
       "tip": ""
     },
@@ -200,7 +185,7 @@
       "open_to": "anyone",
       "source_url": "https://gazette.gc.ca/rp-pr/p1/2026/2026-09-26/html/index-eng.html",
       "source_kind": "gazette",
-      "verified_on": "2026-10-23",
+      "verified_on": "2026-10-24",
       "expires_on": "2026-12-05",
       "tip": ""
     },
@@ -215,7 +200,7 @@
       "open_to": "anyone",
       "source_url": "https://gazette.gc.ca/rp-pr/p1/2026/2026-10-03/html/index-eng.html",
       "source_kind": "gazette",
-      "verified_on": "2026-10-23",
+      "verified_on": "2026-10-24",
       "expires_on": "2026-12-12",
       "tip": ""
     },
@@ -230,7 +215,7 @@
       "open_to": "anyone",
       "source_url": "https://gazette.gc.ca/rp-pr/p1/2026/2026-10-10/html/index-eng.html",
       "source_kind": "gazette",
-      "verified_on": "2026-10-23",
+      "verified_on": "2026-10-24",
       "expires_on": "2026-12-19",
       "tip": ""
     },
@@ -245,8 +230,23 @@
       "open_to": "anyone",
       "source_url": "https://gazette.gc.ca/rp-pr/p1/2026/2026-10-17/html/index-eng.html",
       "source_kind": "gazette",
-      "verified_on": "2026-10-23",
+      "verified_on": "2026-10-24",
       "expires_on": "2026-12-26",
+      "tip": ""
+    },
+    {
+      "id": "gazette-2026-10-24",
+      "title": "Canada Gazette - Part I, October 24, 2026, volume 160, number 43",
+      "body": "Proposed regulations in this issue carry a 30-day comment window from publication, 70 days where trade is affected. Open the issue for the individual notices.",
+      "policyStage": 4,
+      "domains": [],
+      "opens": "2026-10-24",
+      "closes": "2026-11-23",
+      "open_to": "anyone",
+      "source_url": "https://gazette.gc.ca/rp-pr/p1/2026/2026-10-24/html/index-eng.html",
+      "source_kind": "gazette",
+      "verified_on": "2026-10-24",
+      "expires_on": "2027-01-02",
       "tip": ""
     }
   ]
