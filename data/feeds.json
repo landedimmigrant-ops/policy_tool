@@ -1,26 +1,26 @@
 {
-  "built_at": "2026-10-26T16:40:50Z",
+  "built_at": "2026-10-27T15:48:09Z",
   "sources": {
     "legisinfo": {
-      "fetched_at": "2026-10-26T16:40:50Z",
+      "fetched_at": "2026-10-27T15:48:09Z",
       "count": 0,
       "ok": false,
       "error": "HTTPError: HTTP Error 403: Forbidden",
       "hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
     },
     "gazette": {
-      "fetched_at": "2026-10-26T16:40:50Z",
+      "fetched_at": "2026-10-27T15:48:09Z",
       "count": 15,
       "ok": true,
       "error": null,
-      "hash": "f6fd2cfdefbb57f29d5fd614bf3074fe7c18e6103b1b64180e06ea0cc996186d"
+      "hash": "098ee0fe52f85388a089169a4aa2aa02847ea9676cd90be59ddf7d4fef0b88e2"
     },
     "canadabuys": {
-      "fetched_at": "2026-10-26T16:40:50Z",
+      "fetched_at": "2026-10-27T15:48:09Z",
       "count": 2,
       "ok": true,
       "error": null,
-      "hash": "6132f41c9587250f430980c8baf99e09b1187e1553b4d4da16986267579b0329"
+      "hash": "372881fbb8dc139532299f2425e3237e71124968c55be2ed86e06b6c0b8673c8"
     }
   },
   "records": [
@@ -35,7 +35,7 @@
       "open_to": "anyone",
       "source_url": "https://gazette.gc.ca/rp-pr/p1/2026/2026-07-31-x6/html/extra6-eng.html",
       "source_kind": "gazette",
-      "verified_on": "2026-10-26",
+      "verified_on": "2026-10-27",
       "expires_on": "2026-10-09",
       "tip": ""
     },
@@ -50,7 +50,7 @@
       "open_to": "anyone",
       "source_url": "https://gazette.gc.ca/rp-pr/p1/2026/2026-08-01/html/index-eng.html",
       "source_kind": "gazette",
-      "verified_on": "2026-10-26",
+      "verified_on": "2026-10-27",
       "expires_on": "2026-10-10",
       "tip": ""
     },
@@ -65,7 +65,7 @@
       "open_to": "anyone",
       "source_url": "https://gazette.gc.ca/rp-pr/p1/2026/2026-08-08/html/index-eng.html",
       "source_kind": "gazette",
-      "verified_on": "2026-10-26",
+      "verified_on": "2026-10-27",
       "expires_on": "2026-10-17",
       "tip": ""
     },
@@ -80,7 +80,7 @@
       "open_to": "anyone",
       "source_url": "https://gazette.gc.ca/rp-pr/p1/2026/2026-08-15/html/index-eng.html",
       "source_kind": "gazette",
-      "verified_on": "2026-10-26",
+      "verified_on": "2026-10-27",
       "expires_on": "2026-10-24",
       "tip": ""
     },
@@ -95,7 +95,7 @@
       "open_to": "anyone",
       "source_url": "https://gazette.gc.ca/rp-pr/p1/2026/2026-08-22/html/index-eng.html",
       "source_kind": "gazette",
-      "verified_on": "2026-10-26",
+      "verified_on": "2026-10-27",
       "expires_on": "2026-10-31",
       "tip": ""
     },
@@ -110,7 +110,7 @@
       "open_to": "anyone",
       "source_url": "https://gazette.gc.ca/rp-pr/p1/2026/2026-08-24-x7/html/extra7-eng.html",
       "source_kind": "gazette",
-      "verified_on": "2026-10-26",
+      "verified_on": "2026-10-27",
       "expires_on": "2026-11-02",
       "tip": ""
     },
@@ -125,7 +125,7 @@
       "open_to": "anyone",
       "source_url": "https://gazette.gc.ca/rp-pr/p1/2026/2026-08-29/html/index-eng.html",
       "source_kind": "gazette",
-      "verified_on": "2026-10-26",
+      "verified_on": "2026-10-27",
       "expires_on": "2026-11-07",
       "tip": ""
     },
@@ -140,7 +140,7 @@
       "open_to": "anyone",
       "source_url": "https://gazette.gc.ca/rp-pr/p1/2026/2026-09-05/html/index-eng.html",
       "source_kind": "gazette",
-      "verified_on": "2026-10-26",
+      "verified_on": "2026-10-27",
       "expires_on": "2026-11-14",
       "tip": ""
     },
@@ -155,7 +155,7 @@
       "open_to": "anyone",
       "source_url": "https://gazette.gc.ca/rp-pr/p1/2026/2026-09-12/html/index-eng.html",
       "source_kind": "gazette",
-      "verified_on": "2026-10-26",
+      "verified_on": "2026-10-27",
       "expires_on": "2026-11-21",
       "tip": ""
     },
@@ -170,7 +170,7 @@
       "open_to": "anyone",
       "source_url": "https://gazette.gc.ca/rp-pr/p1/2026/2026-09-19/html/index-eng.html",
       "source_kind": "gazette",
-      "verified_on": "2026-10-26",
+      "verified_on": "2026-10-27",
       "expires_on": "2026-11-28",
       "tip": ""
     },
@@ -185,7 +185,7 @@
       "open_to": "anyone",
       "source_url": "https://gazette.gc.ca/rp-pr/p1/2026/2026-09-26/html/index-eng.html",
       "source_kind": "gazette",
-      "verified_on": "2026-10-26",
+      "verified_on": "2026-10-27",
       "expires_on": "2026-12-05",
       "tip": ""
     },
@@ -200,7 +200,7 @@
       "open_to": "anyone",
       "source_url": "https://gazette.gc.ca/rp-pr/p1/2026/2026-10-03/html/index-eng.html",
       "source_kind": "gazette",
-      "verified_on": "2026-10-26",
+      "verified_on": "2026-10-27",
       "expires_on": "2026-12-12",
       "tip": ""
     },
@@ -215,7 +215,7 @@
       "open_to": "anyone",
       "source_url": "https://gazette.gc.ca/rp-pr/p1/2026/2026-10-10/html/index-eng.html",
       "source_kind": "gazette",
-      "verified_on": "2026-10-26",
+      "verified_on": "2026-10-27",
       "expires_on": "2026-12-19",
       "tip": ""
     },
@@ -230,7 +230,7 @@
       "open_to": "anyone",
       "source_url": "https://gazette.gc.ca/rp-pr/p1/2026/2026-10-17/html/index-eng.html",
       "source_kind": "gazette",
-      "verified_on": "2026-10-26",
+      "verified_on": "2026-10-27",
       "expires_on": "2026-12-26",
       "tip": ""
     },
@@ -245,40 +245,40 @@
       "open_to": "anyone",
       "source_url": "https://gazette.gc.ca/rp-pr/p1/2026/2026-10-24/html/index-eng.html",
       "source_kind": "gazette",
-      "verified_on": "2026-10-26",
+      "verified_on": "2026-10-27",
       "expires_on": "2027-01-02",
       "tip": ""
     },
     {
-      "id": "tender-cb-173-83287776",
-      "title": "LETTER OF INTEREST (LOI) – DETERMINATION OF V50 VELOCITIES FOR SELECTED PROJECTILES",
-      "body": "The Royal Canadian Mounted Police (RCMP) Specialized Firearms Support Services (SFSS) supports firearms classification activities, including determining whether certain devices meet the definition of a firearm under section 2 of the Criminal Code. A recurring challenge in the technical assessment of low-velocity projectile devices is determining whether a device is capable of causing serious bodily injury and therefore meeting the...",
+      "id": "tender-cb-257-68524581",
+      "title": "Conducted Energy Weapon (CEW) Testing",
+      "body": "The Royal Canadian Mounted Police (RCMP) requires a National Individual Standing Offer (NISO) for Conducted Energy Weapon (CEW) Testing as detailed herein. The period for making call-ups against the Standing Offer is five (5) years from date of issuance of the Standing Offer, with the option to extend the Standing Offer for up to three (3) additional one (1) year...",
       "policyStage": 2,
-      "domains": [],
-      "opens": "2026-10-26",
-      "closes": "2026-11-12",
+      "domains": [
+        "energy-natural-resources"
+      ],
+      "opens": "2026-10-27",
+      "closes": "2026-11-11",
       "open_to": "organisation",
-      "source_url": "https://canadabuys.canada.ca/en/tender-opportunities/tender-notice/cb-173-83287776",
+      "source_url": "https://canadabuys.canada.ca/en/tender-opportunities/tender-notice/cb-257-68524581",
       "source_kind": "tender",
-      "verified_on": "2026-10-26",
-      "expires_on": "2026-11-12",
+      "verified_on": "2026-10-27",
+      "expires_on": "2026-11-11",
       "tip": ""
     },
     {
-      "id": "tender-cb-629-72290055",
-      "title": "Simulation‑Based Nursing Education Services (SIMS), Ontario Region",
-      "body": "This requirement is for: The Correctional Service of Canada, Ontario Region Trade agreement: This procurement is not subject to any trade agreement. Policy on Reciprocal Procurement: This solicitation is open only to Canadian suppliers. Competitive Procurement Strategy: lowest priced compliant bid Set-aside under the Procurement Strategy for Indigenous Business: This procurement is not subject to any set-asides for Indigenous Suppliers....",
+      "id": "tender-cb-992-65109913",
+      "title": "Systèmes De Microréacteur Lunaire Canadien",
+      "body": "The Canadian Space Agency (CSA) is seeking information from Canadian industry, academia, research institutions, utilities, and other interested stakeholders on Canadian technologies and capabilities relevant to lunar microreactors and enabling technologies. The purpose of this Request for Information (RFI) is to obtain a broad, evidence-based view of Canada's existing strengths, technology maturity, facilities, supply chains, partnerships and development pathways. Respondents...",
       "policyStage": 2,
-      "domains": [
-        "education-youth"
-      ],
-      "opens": "2026-10-26",
-      "closes": "2026-11-17",
+      "domains": [],
+      "opens": "2026-10-27",
+      "closes": "2026-11-23",
       "open_to": "organisation",
-      "source_url": "https://canadabuys.canada.ca/en/tender-opportunities/tender-notice/cb-629-72290055",
+      "source_url": "https://canadabuys.canada.ca/en/tender-opportunities/tender-notice/cb-992-65109913",
       "source_kind": "tender",
-      "verified_on": "2026-10-26",
-      "expires_on": "2026-11-17",
+      "verified_on": "2026-10-27",
+      "expires_on": "2026-11-23",
       "tip": ""
     }
   ]
